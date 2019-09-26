@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style type="text/css">
+
+    #form_results{
+        display:block;
+        width:300px;
+        height:50px;
+        margin:50px auto;
+    }
+
+    #form_results .in-score{
+        display:inline-block;
+        width:220px;
+        height:30px;
+        line-height:30px;
+        text-align:center;
+        border-radius: 5px;
+        border: 1px solid #e8e8e8;
+        box-shadow: 1px 1px 1px #bbbbbb;
+    }
+
+    #form_results .btn{
+        display:inline-block;
+        width:70px;
+        height:34px;
+        line-height:30px;
+        text-align:center;
+        border-radius: 5px;
+        border:0;
+        color:#ffffff;
+        box-shadow: 1px 1px 1px #bbbbbb;
+        background-color:rgb(16,130,222);
+        cursor:pointer;
+    }
+</style>
+<body>
+
+    <form id="form_results">
+        <h2>极客学院学生成绩统计</h2>
+        <input id="studentScore" class="in-score" type="text" placeholder="输入成绩以查询">
+        <input id="checkScore" class="btn" type="button" value="点击查询">
+        <p id="finalScore">请输入0到100的数字</p>
+    </form>
+
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
