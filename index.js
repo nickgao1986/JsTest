@@ -17,7 +17,7 @@ var studentScore={
                 alert('你尚未输入成绩，请输入!');
                 return;
             }else{
-                studentScore.calculate();
+                studentScore.calculateTwo();
             }
         }
     },
@@ -39,6 +39,17 @@ var studentScore={
             default:
                 alert("请输入1-100的数字");
                 break;
+        }
+    },
+    calculateTwo:function () {
+        var score = studentScore.score;
+        var rank = null;
+        if(score >= 0 && score <= 100) {
+            rank = 10 - Math.floor(score/10);
+            rank += '等生';
+            this._finalScore(rank);
+        }else{
+            alert("请输入1-100的数字");
         }
     },
     _finalScore:function (str) {
