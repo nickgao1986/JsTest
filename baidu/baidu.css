@@ -1,0 +1,41 @@
+
+
+body{
+    font:12px Arial;
+}
+
+header{
+    overflow:hidden;
+}
+header nav{
+    width:400px;
+    float:right;
+}
+
+header nav a{
+    margin-left:15px;
+}
+
+.content{
+    text-align: center;
+}
+
+.content img{
+    width:270px;
+    height:129px;
+}
+
+.content input{
+    width:450px;
+    height:34px;
+}
+
+.content button{
+    width:100px;
+    height:38px;
+}
+
+footer{
+    padding-top: 50px;
+    text-align: center;
+}
