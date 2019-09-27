@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+</head>
+
+<link rel="stylesheet" href="findMaChar.css">
+<body>
+
+    <div class="wrapper">
+        <div class="content">
+            <h2>找到最多的一个字母并给出个数和每一个顺序</h2>
+            <label for="inputStr">请输入字符</label>
+            <input class="input-str" id="inputStr" type="text" value="" placeholder="请输入字符">
+            <button id="calculateBtn" type="button" value="计算">计算</button>
+            <div class="result">
+                <p>出现最多的字母<span id="maxChar"></span></p>
+                <p>出现最多的字母的次数<span id="maxCounter"></span></p>
+                <p>出现最多的字母的索引<span id="strIndex"></span></p>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="findMaxChar.js"></script>
+</body>
+</html>

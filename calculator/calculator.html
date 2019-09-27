@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+</head>
+<style type="text/css">
+    select{
+        display: block;
+    }
+    input{
+        display: block;
+    }
+</style>
+<body>
+
+    <div class="container">
+        <input type="text" name="firstnum" id="num1" placeholder="请输入第一个数字">
+        <select id="method">
+            <option value="add">+</option>
+            <option value="minus">-</option>
+            <option value="multiple">x</option>
+            <option value="divide">/</option>
+        </select>
+        <input type="text" name="secondnum" id="num2" placeholder="请输入第二个数字">
+        <input type="button" name="计算" id="cal" value="计算">
+        <p id="result"></p>
+    </div>
+    <script type="text/javascript" src="calculator.js"></script>
+</body>
+</html>
