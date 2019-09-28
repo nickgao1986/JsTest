@@ -17,16 +17,6 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="424">
-              <caret line="43" column="27" lean-forward="true" selection-start-line="43" selection-start-column="27" selection-end-line="43" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="maxChar.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/maxChar/maxChar.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -42,16 +32,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="450">
               <caret line="30" column="20" lean-forward="false" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="findMaxChar.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/maxChar/findMaxChar.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="56" column="22" lean-forward="false" selection-start-line="56" selection-start-column="22" selection-end-line="56" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -97,11 +77,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="baidu.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="baidu.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/baidu/baidu.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="38">
               <caret line="16" column="29" lean-forward="true" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cross.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cross/cross.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cross.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cross/cross.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="299">
+              <caret line="36" column="25" lean-forward="false" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -122,9 +122,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -132,8 +132,8 @@
     <findStrings>
       <find>alert</find>
       <find>num1</find>
-      <find>head</find>
       <find>nav</find>
+      <find>head</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -157,6 +157,8 @@
         <option value="$PROJECT_DIR$/baidu/table.html" />
         <option value="$PROJECT_DIR$/baidu/baidu.html" />
         <option value="$PROJECT_DIR$/baidu/baidu.css" />
+        <option value="$PROJECT_DIR$/cross/cross.html" />
+        <option value="$PROJECT_DIR$/cross/cross.css" />
       </list>
     </option>
   </component>
@@ -252,6 +254,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="cross" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="testJs1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="testJs1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="calculator" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -290,11 +306,11 @@
       <recent name="$PROJECT_DIR$/calculator" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/cross" />
       <recent name="$PROJECT_DIR$/baidu/img" />
       <recent name="$PROJECT_DIR$/baidu" />
       <recent name="$PROJECT_DIR$/table" />
       <recent name="$PROJECT_DIR$/position" />
-      <recent name="$PROJECT_DIR$/maxChar" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -381,12 +397,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1569496985976</updated>
-      <workItem from="1569496987447" duration="18246000" />
+      <workItem from="1569496987447" duration="20081000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18246000" />
+    <option name="totallyTimeSpent" value="20081000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -523,6 +539,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
           <caret line="16" column="29" lean-forward="true" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cross/cross.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cross/cross.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="36" column="25" lean-forward="false" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
           <folding />
         </state>
       </provider>
