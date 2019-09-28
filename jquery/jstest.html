@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript">
+
+    var MY_BUTTON;
+       $(function () {
+//            $('.test').click(function () {
+//                alert("aa");
+//            });
+//           $('.test').on('click',function () {
+//               alert("aa");
+//           });
+
+//           $('#btn').on('click',function () {
+//                $(this).hide();
+//           });
+
+//           $("#btn").mouseenter(function () {
+//               $(this).hide();
+//
+//           });
+           $('.test').on('click',function () {
+                console.log("====aaaabbbb");
+                $('#myp').text= 'aaa';
+           });
+
+           MY_BUTTON = $('#btn');
+           MY_BUTTON.click(function () {
+              alert('text='+$("#aid").attr("href"));
+           });
+//
+//           MY_BUTTON.bind("myevent",function (event) {
+//                console.log(event);
+//           });
+
+           $('#btn1').click(function () {
+               $('#p1').text(function (i,ot) {
+                   return "old:"+ot+"new  新的内容";
+               });
+           });
+       });
+    </script>
+
+</head>
+
+<body>
+
+<div class="test" data-name="第一个">
+
+    <p id="myp">aaavvv</p>
+    <p><input type="text" id="it" value="pppp"></p>
+    <p><a href="http://www.baidu.com" id="aid">极客学院</a></p>
+</div>
+<input type="button" value="点我" id="btn">
+<br/>
+
+<p id="p1">this is p5</p>
+<input type="button" value="p5按钮" id="btn1">
+
+</body>
+<link rel="stylesheet" type="text/css" href="test.css">
+</html>
