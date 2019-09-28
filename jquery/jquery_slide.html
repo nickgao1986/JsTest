@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery</title>
+</head>
+<style type="text/css">
+    #flipshow,#content,#flipup{
+        padding:5px;
+        text-align:center;
+        background-color: #e3e5e7;
+        border:1px solid orange;
+    }
+    #content{
+        padding:50px;
+        display: none;
+    }
+</style>
+<body>
+
+
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript">
+//    $("#flipshow").on('click',function () {
+//        console.log("<<<<aaaa");
+//        $("#content").slideDown();
+//    });
+        console.log("<<<<aaaa");
+        $(document).ready(function () {
+            var flipshow = $('#flipshow');
+            $("#flipshow").on('click',function () {
+                 console.log("<<<<aaaa");
+                 $("#content").slideDown();
+            });
+            $("#flipup").on('click',function () {
+                console.log("<<<<bbbb");
+                $("#content").slideUp();
+            });
+        });
+</script>
+
+<div id="flipshow">点击</div>
+<div id="flipup">隐藏</div>
+<div id="content">Hello World</div>
+
+</body>
+</html>
