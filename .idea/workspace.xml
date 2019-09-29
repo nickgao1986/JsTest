@@ -15,16 +15,6 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="jquery_slide.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jquery/jquery_slide.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="30" column="14" lean-forward="false" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="jquery_find.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jquery/jquery_find.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -75,11 +65,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hori-menu.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="hori-menu.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/menu/hori-menu.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="25" column="26" lean-forward="true" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+            <state relative-caret-position="384">
+              <caret line="31" column="6" lean-forward="true" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mix.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mix/mix.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="269">
+              <caret line="62" column="22" lean-forward="false" selection-start-line="62" selection-start-column="22" selection-end-line="62" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -162,6 +162,7 @@
         <option value="$PROJECT_DIR$/jquery/img/navtest.html" />
         <option value="$PROJECT_DIR$/menu/menu.html" />
         <option value="$PROJECT_DIR$/menu/hori-menu.html" />
+        <option value="$PROJECT_DIR$/mix/mix.html" />
       </list>
     </option>
   </component>
@@ -355,11 +356,11 @@
       <recent name="$PROJECT_DIR$/calculator" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/mix" />
       <recent name="$PROJECT_DIR$/menu" />
       <recent name="$PROJECT_DIR$/jquery/img" />
       <recent name="$PROJECT_DIR$/jquery" />
       <recent name="$PROJECT_DIR$/cross" />
-      <recent name="$PROJECT_DIR$/baidu/img" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -446,12 +447,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1569496985976</updated>
-      <workItem from="1569496987447" duration="31478000" />
+      <workItem from="1569496987447" duration="32345000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31478000" />
+    <option name="totallyTimeSpent" value="32345000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -703,8 +704,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/menu/hori-menu.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="25" column="26" lean-forward="true" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+        <state relative-caret-position="384">
+          <caret line="31" column="6" lean-forward="true" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mix/mix.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="62" column="22" lean-forward="false" selection-start-line="62" selection-start-column="22" selection-end-line="62" selection-end-column="22" />
           <folding />
         </state>
       </provider>
