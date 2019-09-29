@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery</title>
+</head>
+<style type="text/css">
+  div{
+      width:100%;
+      height:100px;
+      margin-top:10px;
+  }
+</style>
+<body>
+
+
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript">
+        $(document).ready(function () {
+//            console.log($("#div1").children());
+//           $("#div1").find("p").css({
+//               border:"3px solid #FF0000"
+//           })
+           $('div p').not('pclass').css("background-color","red");
+           // $('div p').eq(0).css("background-color","red");
+        });
+</script>
+
+<div id="div1">
+    <p>div1</p>
+</div>
+
+<div class="pid">
+    <p>div2</p>
+</div>
+
+<div class="pclass">
+    <p>div3</p>
+</div>
+
+<div>
+    <p>div4</p>
+</div>
+
+</body>
+</html>

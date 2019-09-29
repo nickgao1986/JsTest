@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery</title>
+</head>
+<style type="text/css">
+   #div1{
+       width:500px;
+       height:300px;
+       border:3px solid darkblue;
+   }
+
+   #div2{
+       width:400px;
+       height:150px;
+       margin-top: 10px;
+       margin-left:10px;
+       border:3px solid darkblue;
+   }
+
+    p{
+        margin-left: 10px;
+        margin-top:  10px;
+        width:150px;
+        height:80px;
+        border:3px solid darkblue;
+    }
+</style>
+<body>
+
+
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript">
+        $(document).ready(function () {
+            console.log($("#div1").children());
+           $("#div1").find("p").css({
+               border:"3px solid #FF0000"
+           })
+        });
+</script>
+
+<div id="div1">
+    <div id="div2">
+        <p>
+            <a>Hello</a>
+        </p>
+    </div>
+</div>
+
+</body>
+</html>
