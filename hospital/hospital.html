@@ -4,24 +4,158 @@
     <meta charset="UTF-8">
     <title>复旦大学中山医院</title>
     <style type="text/css">
-        body{
-            font:12px Arial;
+        body {
+            width: 100%;
+            min-width: 1100px;
         }
-        *{
-            margin:0;
-            padding:0;
+        body, input, textarea {
+            color: #666;
+            font: 14px/2 "Microsoft YaHei", Verdana, Arial, sans-serif;
         }
+
+        a, blockquote, body, button, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, img, pre, form, fieldset, input, textarea, p, th, td {
+            margin: 0;
+            padding: 0;
+            border: none;
+            outline: none;
+        }
+
+        a {
+            color: #224f8b;
+            text-decoration: none;
+        }
+
+        article, aside, figure, footer, header, main, nav, section {
+            display: block;
+        }
+
+        p{
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+        }
+
+        #globalLayout {
+            margin: 0 auto;
+        }
+
+        #globalHeader {
+            background: url(http://www.zsxmhospital.com/xm/images/bg-header.gif) left 32px repeat-x;
+        }
+
+        .globalHeader-top {
+            height: 32px;
+            background-color: #fff;
+        }
+
+        #globalHeader-top-main {
+            width: 1100px;
+            margin: 0 auto;
+            color: #999;
+            font-size: 12px;
+            line-height: 30px;
+        }
+
+        .globalHeader-top p {
+            float: left;
+            margin: 0 0 0 14px;
+        }
+
+        .globalHeader-top a {
+            float: right;
+            margin-right: 14px;
+            color: inherit;
+        }
+
+        /**
+            globalHeader-main,banner部分
+         */
+        .globalHeader-main {
+            position: relative;
+            width: 1100px;
+            height: 178px;
+            margin: 0 auto;
+        }
+
+        .globalHeader-main h1 {
+            float: left;
+            width: 636px;
+            height: 146px;
+            margin: 16px 0;
+            background: url(http://www.zsxmhospital.com/xm/images/h1.png) no-repeat;
+        }
+
+        .seo-text {
+            overflow: hidden;
+            text-indent: -10000px;
+        }
+
+        .globalHeader-main .tool {
+            float: left;
+            width: 200px;
+            padding: 0 32px;
+        }
+
+        /* 搜索框*/
+        .globalHeader-main .tool-search {
+            overflow: hidden;
+            position: relative;
+            height: 28px;
+            margin-top: 53px;
+            border: solid 2px #ccc;
+            background-color: #fff;
+            border-radius: 14px;
+        }
+
+        .globalHeader-main .QRCode {
+            float: right;
+            width: 90px;
+            margin-top: 40px;
+            color: #b2bfd4;
+            font-size: 12px;
+            line-height: 22px;
+            text-align: center;
+            margin-right: 8px;
+        }
+
     </style>
 </head>
 <body>
     <div id="globalLayout">
-        <div id="globalHeader">
+        <header id="globalHeader">
+
+
+        <div class="globalHeader-top">
 
             <div id="globalHeader-top-main">
                 <p>复旦大学附属中山医院厦门医院欢迎您！</p>
                 <a href="http://www.zs-hospital.sh.cn" target="_blank">中山医院</a>
             </div>
         </div>
+
+            <div class="globalHeader-main">
+                <h1 class="seo-text">复旦大学附属中山医院厦门医院 Xiamen Branch, Zhongshan hospital, Fudan University</h1>
+                <div class="tool">
+                    <div class="tool-search">
+                        <form action="http://searchgov4.eastday.com/searchxmyy/search" target="_blank">
+                            <input type="text" name="q">
+                            <input type="hidden" name="sort" value="2">
+                            <input type="submit" class="btn btn-search seo-text">
+                        </form>
+                    </div>
+                </div>
+                <div class="QRCode" style="margin-right:0px;">
+                    <img src="http://www.zsxmhospital.com/xm/images/wx.jpg" width="90" height="90" alt="">微博二维码
+                </div>
+                <div class="QRCode" style="margin-right:15px;">
+                    <img src="http://www.zsxmhospital.com/xm/images/wb.png" width="90" height="90" alt="">微信二维码
+                </div>
+            </div>
+
+
+        </header>
     </div>
 </body>
 </html>
