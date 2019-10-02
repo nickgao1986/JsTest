@@ -392,6 +392,113 @@
         .globalFooter-right li a {
             color: #fff;
         }
+
+
+        <!-- sub model -->
+        .sub-nav {
+            height: 350px;
+            border-top: solid 10px #2f5492;
+            background-color: #fff;
+            font-size: 0;
+            text-align: center;
+            transition: all ease-in-out 0.3s;
+        }
+
+        #sub-nav-clinic {
+            background-color: #c5948f;
+        }
+
+        .sub-nav ul {
+            width: 1100px;
+            height: 100%;
+            margin: 0 auto;
+        }
+
+        .sub-nav li {
+           display: inline-block;
+        }
+
+        .sub-nav .btn {
+            display: block;
+            position: relative;
+            width: 250px;
+            height: 250px;
+            margin: 50px;
+            border-radius: 125px;
+            transition: all ease-in-out 0.3s;
+        }
+
+        .sub-nav .btn-bg {
+            display: block;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            font-size: 0;
+            border-radius: 125px;
+        }
+
+        .sub-nav .btn-bg img {
+            width: 100%;
+            height: 100%;
+            margin-top: -18px;
+            transition: all ease-in-out 0.3s;
+        }
+
+        .sub-nav .btn-txt {
+            position: absolute;
+            width: 100%;
+            height: 34px;
+            margin-top: 180px;
+            left: 0;
+            top: 0;
+            color: #fff;
+            font-size: 32px;
+            line-height: 34px;
+            *line-height: 36px;
+            text-align: center;
+            vertical-align: top;
+            text-decoration: none;
+        }
+
+        .sub-nav .btn-reflection {
+            position: absolute;
+            *display: none;
+            width: 250px;
+            height: 100px;
+            left: 0;
+            top: 253px;
+            background: url(http://www.zsxmhospital.com/xm/images/reflection-sub-nav-btn.png) no-repeat;
+        }
+
+        .sub-tab {
+            overflow: hidden;
+            position: relative;
+            z-index: 3;
+            height: 0;
+            transition: all ease-in-out 0.3s;
+        }
+
+        #sub-nav-nursing {
+            background-color: #9dacd5;
+        }
+
+        #sub-nav-hospital {
+            background-color: #5ca697;
+        }
+
+        .sub-close {
+            display: none;
+            width: 160px;
+            height: 34px;
+            padding-top: 26px;
+            margin: 0 auto;
+            color: #fff;
+            background: url(http://www.zsxmhospital.com/xm/images/shape-triangle.png) center 12px no-repeat #474e64;
+            font-size: 16px;
+            text-align: center;
+            border-radius: 30px;
+            transition: all ease-in-out 0.3s;
+        }
     </style>
 </head>
 <body>
@@ -532,7 +639,2328 @@
 
         </div>
 
+        <!-- sub model -->
+        <section id="sub">
+            <nav class="sub-nav">
+                <ul>
+                    <li>
+                        <a class="btn" id="sub-nav-clinic" href="#sub-sheet-clinic">
+                            <span class="btn-bg"><img src="http://www.zsxmhospital.com/xm/images/icon-sub-clinic.png" alt=""></span>
+                            <span class="btn-txt">就医通道</span>
+                            <span class="btn-reflection"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="btn" id="sub-nav-nursing" href="#sub-sheet-nursing">
+                            <span class="btn-bg"><img src="http://www.zsxmhospital.com/xm/images/icon-sub-nursing.png" alt=""></span>
+                            <span class="btn-txt">医护通道</span>
+                            <span class="btn-reflection"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="btn" id="sub-nav-hospital" href="#sub-sheet-hospital">
+                            <span class="btn-bg"><img src="http://www.zsxmhospital.com/xm/images/icon-sub-hospital.png" alt=""></span>
+                            <span class="btn-txt">医院信息</span>
+                            <span class="btn-reflection"></span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
 
+            <div class="sub-tab">
+                <section class="sub-tab-sheet" id="sub-sheet-clinic">
+                    <h2><span>就医通道</span></h2>
+
+                    <div class="row row-maps clearfix">
+                        <div class="col col-2 col-port" id="col-location">
+                            <h3><a href="#dialog-location"><span>交通导航</span></a></h3>
+                            <div class="caption">交通导航点击大图<a class="more" href="/xm-hospital/n6/n9/index.html">阅读更多</a></div>
+                        </div>
+
+                        <div class="col col-2 col-port" id="col-map">
+                            <h3><a href="#dialog-map"><span>医院平面图</span></a></h3>
+                            <div class="caption">医院平面图点击大图<a class="more" href="/xm-hospital/n6/n10/index.html">阅读更多</a></div>
+                        </div>
+                    </div>
+
+                    <div class="row clearfix">
+                        <div class="col col-3" id="col-reservation">
+                            <h3><a href="javascript:return false;"><span>门诊预约平台</span></a></h3>
+                            <a class="banner seo-text" href="http://www.xmsmjk.com/UrpOnline/Home/Index/100170_____1" target="_blank">点击进入</a>
+                            <div class="col-sub clearfix">
+                                <div class="col-sub-port">
+                                    <h4>出诊信息</h4>
+                                    <a href="/xm-hospital/n6/n11/index.html" class="link"><img src="/xm/images/icon-port-clinicInfo.jpg" width="64" height="64" alt=""></a><br>
+                                    <a href="/xm-hospital/n6/n11/index.html" class="more">阅读更多</a>
+                                </div>
+                                <div class="col-sub-port">
+                                    <h4>就医流程</h4>
+                                    <a href="/xm-hospital/n6/n12/index.html" class="link"><img src="/xm/images/icon-port-clinicProcess.jpg" width="64" height="64" alt=""></a><br>
+                                    <a href="/xm-hospital/n6/n12/index.html" class="more">阅读更多</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col col-3 col-port" id="col-department">
+                            <h3><a href="/xm-hospital/n6/n13/index.html"><span>特色科室</span></a><a href="/xm-hospital/n6/n13/index.html" class="more">阅读更多</a></h3>
+                            <div class="scroll">
+                                <div class="window">
+                                    <ul style="width: 2586px;">
+
+                                        <li><a href="/xm-hospital/n6/n13/u1ai35.html">骨科</a></li>
+
+                                        <li><a href="/xm-hospital/n6/n13/u1ai28.html">呼吸内科</a></li>
+
+                                        <li><a href="/xm-hospital/n6/n13/u1ai42.html">全科</a></li>
+
+                                        <li><a href="/xm-hospital/n6/n13/u1ai72.html">耳鼻喉科</a></li>
+
+                                        <li><a href="/xm-hospital/n6/n13/u1ai34.html">普外科</a></li>
+
+                                        <li><a href="/xm-hospital/n6/n13/u1ai173.html">皮肤科</a></li>
+
+                                        <li><a href="/xm-hospital/n6/n13/u1ai41.html">眼科</a></li>
+
+                                        <li><a href="/xm-hospital/n6/n13/u1ai27.html">心内科</a></li>
+
+                                        <li><a href="/xm-hospital/n6/n13/u1ai31.html">肾脏病科</a></li>
+
+                                        <li><a href="/xm-hospital/n6/n13/u1ai101.html">消化科</a></li>
+
+                                        <li><a href="/xm-hospital/n6/n13/u1ai29.html">神经内科</a></li>
+
+                                        <li><a href="/xm-hospital/n6/n13/u1ai40.html">妇科</a></li>
+
+                                        <li><a href="/xm-hospital/n6/n13/u1ai39.html">泌尿外科</a></li>
+
+                                        <li><a href="/xm-hospital/n6/n13/u1ai103.html">内分泌科</a></li>
+
+                                        <li><a href="/xm-hospital/n6/n13/u1ai33.html">内镜中心</a></li>
+
+                                        <li><a href="/xm-hospital/n6/n13/u1ai174.html">血管外科</a></li>
+
+                                        <li><a href="/xm-hospital/n6/n13/u1ai30.html">老年科</a></li>
+
+                                        <li><a href="/xm-hospital/n6/n13/u1ai292.html">肝外科</a></li>
+
+                                        <li><a href="/xm-hospital/n6/n13/u1ai23.html">肝肿瘤内科</a></li>
+
+                                        <li><a href="/xm-hospital/n6/n13/u1ai25.html">整形外科</a></li>
+
+                                        <li><a href="/xm-hospital/n6/n13/u1ai169.html">心理医学科</a></li>
+
+                                        <li><a href="/xm-hospital/n6/n13/u1ai571.html">口腔科</a></li>
+
+                                        <li><a href="/xm-hospital/n6/n13/u1ai156.html">肿瘤内科</a></li>
+
+                                        <li><a href="/xm-hospital/n6/n13/u1ai37.html">胸外科</a></li>
+
+                                        <li><a href="/xm-hospital/n6/n13/u1ai32.html">血液科</a></li>
+
+                                        <li><a href="/xm-hospital/n6/n13/u1ai36.html">神经外科</a></li>
+
+                                        <li><a href="/xm-hospital/n6/n13/u1ai175.html">中西医结合科</a></li>
+
+                                        <li><a href="/xm-hospital/n6/n13/u1ai38.html">心外科</a></li>
+
+                                        <li><a href="/xm-hospital/n6/n13/u1ai206.html">介入治疗科</a></li>
+
+                                        <li><a href="/xm-hospital/n6/n13/u1ai240.html">风湿免疫科</a></li>
+
+                                        <li><a href="/xm-hospital/n6/n13/u1ai110.html">病理科</a></li>
+
+                                        <li><a href="/xm-hospital/n6/n13/u1ai108.html">超声科</a></li>
+
+                                        <li><a href="/xm-hospital/n6/n13/u1ai26.html">放射科</a></li>
+
+                                        <li><a href="/xm-hospital/n6/n13/u1ai106.html">心超室</a></li>
+
+                                        <li><a href="/xm-hospital/n6/n13/u1ai102.html">放疗科</a></li>
+
+                                        <li><a href="/xm-hospital/n6/n13/u1ai105.html">心电图科</a></li>
+
+                                        <li><a href="/xm-hospital/n6/n13/u1ai104.html">康复科</a></li>
+
+                                        <li><a href="/xm-hospital/n6/n13/u1ai107.html">输血科</a></li>
+
+                                        <li><a href="/xm-hospital/n6/n13/u1ai109.html">检验科</a></li>
+
+                                        <li><a href="/xm-hospital/n6/n13/u1ai154.html">麻醉科</a></li>
+
+
+                                    </ul>
+                                </div>
+                                <a class="btn btn-next seo-text">后</a>
+                                <a class="btn btn-prev seo-text">前</a>
+                            </div>
+                        </div>
+
+                        <div class="col col-3" id="col-specialist">
+                            <h3><a href="/xm-hospital/n6/n14/index.html"><span>专家介绍</span></a></h3>
+                            <nav>
+                                <div class="selectBox">
+                                    <span>骨科</span>
+                                    <ul style="display: none;"><li>骨科</li><li>呼吸内科</li><li>全科</li><li>耳鼻喉科</li><li>普外科</li><li>皮肤科</li><li>眼科</li><li>心内科</li><li>肾脏内科</li><li>消化科</li><li>神经内科</li><li>妇科</li><li>泌尿外科</li><li>内分泌科</li><li>内镜中心</li><li>血管外科</li><li>老年科</li><li>肝肿瘤内科</li><li>肝外科</li><li>整形外科</li><li>心理医学科</li><li>肿瘤内科</li><li>胸外科</li><li>血液科</li><li>神经外科</li><li>中西医结合科</li><li>心外科</li><li>介入治疗科</li><li>风湿免疫科</li><li>口腔科</li><li>病理科</li><li>超声科</li><li>放射科</li><li>心超室科</li><li>放疗科</li><li>心电图科</li><li>康复科</li><li>输血科</li><li>检验科</li><li>麻醉科</li></ul>
+                                </div>
+                                <a href="/xm-hospital/n6/n14/index.html" class="more">阅读更多</a>
+                            </nav>
+
+
+                            <section class="scroll" id="specialistSheet-0">
+                                <h4>骨科</h4>
+                                <div class="caroufredsel_wrapper" style="display: block; text-align: start; float: none; position: absolute; top: 0px; right: 23px; bottom: 0px; left: 23px; z-index: auto; width: 284px; height: 212px; margin: 0px; overflow: hidden;"><ul style="text-align: left; float: none; position: absolute; top: 0px; right: auto; bottom: auto; left: 0px; margin: 0px; width: 5112px; height: 212px;">
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n47/u1ai402.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1812/201812110510434763.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n47/u1ai402.html" target="_blank">陈中伟 中国科学院院士</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n47/u1ai151.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1712/201712080925047171.png" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n47/u1ai151.html" target="_blank">董健 教授</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n47/u1ai460.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1903/20190305082942277.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n47/u1ai460.html" target="_blank">阎作勤 教授</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n47/u1ai208.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1804/201804040159538948.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n47/u1ai208.html" target="_blank">夏庆 主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n47/u1ai243.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1806/201806190252556880.png" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n47/u1ai243.html" target="_blank">姜晓幸 主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n47/u1ai375.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1811/201811050459513575.png" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n47/u1ai375.html" target="_blank">张键 主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n47/u1ai361.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1810/201810120934096415.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n47/u1ai361.html" target="_blank">费琴明 主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n47/u1ai527.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1905/201905270336418907.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n47/u1ai527.html" target="_blank">王毅超 主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n47/u1ai528.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1905/201905270340545701.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n47/u1ai528.html" target="_blank">龙作林 主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n47/u1ai529.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1905/201905270345502486.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n47/u1ai529.html" target="_blank">施德源 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n47/u1ai530.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1905/201905270346439023.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n47/u1ai530.html" target="_blank">林建平 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n47/u1ai531.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1906/20190614114048385.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n47/u1ai531.html" target="_blank">周建平 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n47/u1ai532.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1905/201905270349066216.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n47/u1ai532.html" target="_blank">冯振洲 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n47/u1ai533.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1905/201905270350514530.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n47/u1ai533.html" target="_blank">王晓峰 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n47/u1ai534.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1905/201905270351494330.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n47/u1ai534.html" target="_blank">李熙雷 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n47/u1ai368.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1810/201810241057301490.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n47/u1ai368.html" target="_blank">沈文晖  副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n47/u1ai150.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1905/201905270343261523.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n47/u1ai150.html" target="_blank">周晓岗 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                </ul></div>
+                                <a href="" class="btn btn-prev seo-text" style="display: block;">前</a>
+                                <a href="" class="btn btn-next seo-text" style="display: block;">后</a>
+                            </section>
+
+                            <section class="scroll" id="specialistSheet-1">
+                                <h4>呼吸内科</h4>
+                                <div class="caroufredsel_wrapper" style="display: block; text-align: start; float: none; position: absolute; top: 0px; right: 23px; bottom: 0px; left: 23px; z-index: auto; width: 284px; height: 212px; margin: 0px; overflow: hidden;"><ul style="text-align: left; float: none; position: absolute; top: 0px; right: auto; bottom: auto; left: 0px; margin: 0px; width: 1420px; height: 212px;">
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n40/u1ai280.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1807/201807170858316274.png" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n40/u1ai280.html" target="_blank">宋元林 教授</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n40/u1ai94.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1712/201712040832207262.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n40/u1ai94.html" target="_blank">顾宇彤 主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n40/u1ai82.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1712/201712040736457063.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n40/u1ai82.html" target="_blank">邵长周 主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n40/u1ai583.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1907/20190717095942559.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n40/u1ai583.html" target="_blank">张辉军 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                </ul></div>
+                                <a href="" class="btn btn-prev seo-text" style="display: block;">前</a>
+                                <a href="" class="btn btn-next seo-text" style="display: block;">后</a>
+                            </section>
+
+                            <section class="scroll" id="specialistSheet-2">
+                                <h4>全科</h4>
+                                <div class="caroufredsel_wrapper" style="display: block; text-align: start; float: none; position: absolute; top: 0px; right: 23px; bottom: 0px; left: 23px; z-index: auto; width: 284px; height: 212px; margin: 0px; overflow: hidden;"><ul style="text-align: left; float: none; position: absolute; top: 0px; right: auto; bottom: auto; left: 0px; margin: 0px; width: 1420px; height: 212px;">
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n54/u1ai244.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1806/201806190300318126.png" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n54/u1ai244.html" target="_blank">潘志刚 主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n54/u1ai139.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1712/201712080839285660.png" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n54/u1ai139.html" target="_blank">寿涓 主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n54/u1ai155.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1907/201907171024079987.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n54/u1ai155.html" target="_blank">杨华 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n54/u1ai78.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1712/201712040726184330.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n54/u1ai78.html" target="_blank">刘瑶 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                </ul></div>
+                                <a href="" class="btn btn-prev seo-text" style="display: block;">前</a>
+                                <a href="" class="btn btn-next seo-text" style="display: block;">后</a>
+                            </section>
+
+                            <section class="scroll" id="specialistSheet-3">
+                                <h4>耳鼻喉科</h4>
+                                <div class="caroufredsel_wrapper" style="display: block; text-align: start; float: none; position: absolute; top: 0px; right: 23px; bottom: 0px; left: 23px; z-index: auto; width: 284px; height: 212px; margin: 0px; overflow: hidden;"><ul style="text-align: left; float: none; position: absolute; top: 0px; right: auto; bottom: auto; left: 0px; margin: 0px; width: 1420px; height: 212px;">
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n59/u1ai245.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1806/201806190303239646.png" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n59/u1ai245.html" target="_blank">黄新生 主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n59/u1ai113.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1804/201804030455561814.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n59/u1ai113.html" target="_blank">王建中 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n59/u1ai429.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1901/201901080940032852.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n59/u1ai429.html" target="_blank">周莉 主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n59/u1ai327.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1809/201809180853404347.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n59/u1ai327.html" target="_blank">沈纳 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                </ul></div>
+                                <a href="" class="btn btn-prev seo-text" style="display: block;">前</a>
+                                <a href="" class="btn btn-next seo-text" style="display: block;">后</a>
+                            </section>
+
+                            <section class="scroll" id="specialistSheet-4">
+                                <h4>普外科</h4>
+                                <div class="caroufredsel_wrapper" style="display: block; text-align: start; float: none; position: absolute; top: 0px; right: 23px; bottom: 0px; left: 23px; z-index: auto; width: 284px; height: 180px; margin: 0px; overflow: hidden;"><ul style="text-align: left; float: none; position: absolute; top: 0px; right: auto; bottom: auto; left: 0px; margin: 0px; width: 5396px; height: 212px;">
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n46/u1ai302.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1808/20180824044537792.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n46/u1ai302.html" target="_blank">孙益红 教授</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n46/u1ai493.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1904/201904191145022337.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n46/u1ai493.html" target="_blank">许剑民 教授</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n46/u1ai491.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1904/201904191141309829.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n46/u1ai491.html" target="_blank">张宏伟 教授</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n46/u1ai492.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1904/201904191143378882.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n46/u1ai492.html" target="_blank">楼文晖 教授</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n46/u1ai91.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1712/201712040823196955.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n46/u1ai91.html" target="_blank">胡国华 主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n46/u1ai90.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1712/201712040807143209.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n46/u1ai90.html" target="_blank">吴海福 主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n46/u1ai89.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1712/201712040804351905.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n46/u1ai89.html" target="_blank">江颖 主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n46/u1ai494.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1904/201904190440217868.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n46/u1ai494.html" target="_blank">沈坤堂 主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n46/u1ai246.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1806/201806190316227013.png" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n46/u1ai246.html" target="_blank">艾志龙 主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n46/u1ai479.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1904/201904111119027769.png" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n46/u1ai479.html" target="_blank">刘厚宝 主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n46/u1ai495.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1904/201904190442247279.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n46/u1ai495.html" target="_blank">王单松 主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n46/u1ai496.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1904/201904190445358018.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n46/u1ai496.html" target="_blank">韦烨 主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n46/u1ai497.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1904/201904190447255775.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n46/u1ai497.html" target="_blank">吴国豪 主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n46/u1ai498.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1904/201904190449124513.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n46/u1ai498.html" target="_blank">高卫东 主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n46/u1ai84.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1712/20171204074530236.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n46/u1ai84.html" target="_blank">邵叶波 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n46/u1ai499.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1904/201904190451014505.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n46/u1ai499.html" target="_blank">杨子昂 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n46/u1ai538.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1905/201905270402101348.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n46/u1ai538.html" target="_blank">任黎 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n46/u1ai539.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1905/20190527040253684.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n46/u1ai539.html" target="_blank">何国栋 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                </ul></div>
+                                <a href="" class="btn btn-prev seo-text" style="display: block;">前</a>
+                                <a href="" class="btn btn-next seo-text" style="display: block;">后</a>
+                            </section>
+
+                            <section class="scroll" id="specialistSheet-5">
+                                <h4>皮肤科</h4>
+                                <div class="caroufredsel_wrapper" style="display: block; text-align: start; float: none; position: absolute; top: 0px; right: 23px; bottom: 0px; left: 23px; z-index: auto; width: 284px; height: 212px; margin: 0px; overflow: hidden;"><ul style="text-align: left; float: none; position: absolute; top: 0px; right: auto; bottom: auto; left: 0px; margin: 0px; width: 1136px; height: 212px;">
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n75/u1ai211.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1804/201804040215422428.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n75/u1ai211.html" target="_blank">李明 教授</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n75/u1ai475.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1903/201903271132582769.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n75/u1ai475.html" target="_blank">高露娟 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n75/u1ai372.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1810/201810250841532428.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n75/u1ai372.html" target="_blank">隗祎 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                </ul></div>
+                                <a href="" class="btn btn-prev seo-text" style="display: block;">前</a>
+                                <a href="" class="btn btn-next seo-text" style="display: block;">后</a>
+                            </section>
+
+                            <section class="scroll" id="specialistSheet-6">
+                                <h4>眼科</h4>
+                                <div class="caroufredsel_wrapper" style="display: block; text-align: start; float: none; position: absolute; top: 0px; right: 23px; bottom: 0px; left: 23px; z-index: auto; width: 284px; height: 212px; margin: 0px; overflow: hidden;"><ul style="text-align: left; float: none; position: absolute; top: 0px; right: auto; bottom: auto; left: 0px; margin: 0px; width: 1136px; height: 212px;">
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n53/u1ai247.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1806/201806190319412295.png" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n53/u1ai247.html" target="_blank">袁非 教授</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n53/u1ai86.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1712/201712040755581033.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n53/u1ai86.html" target="_blank">马晓萍 主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n53/u1ai75.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1806/201806200920181781.png" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n53/u1ai75.html" target="_blank">梅淑萍 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                </ul></div>
+                                <a href="" class="btn btn-prev seo-text" style="display: block;">前</a>
+                                <a href="" class="btn btn-next seo-text" style="display: block;">后</a>
+                            </section>
+
+                            <section class="scroll" id="specialistSheet-7">
+                                <h4>心内科</h4>
+                                <div class="caroufredsel_wrapper" style="display: block; text-align: start; float: none; position: absolute; top: 0px; right: 23px; bottom: 0px; left: 23px; z-index: auto; width: 284px; height: 212px; margin: 0px; overflow: hidden;"><ul style="text-align: left; float: none; position: absolute; top: 0px; right: auto; bottom: auto; left: 0px; margin: 0px; width: 3124px; height: 212px;">
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n33/u1ai249.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1806/201806190342177379.png" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n33/u1ai249.html" target="_blank">葛均波 中国科学院院士</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n33/u1ai401.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1812/201812110507142644.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n33/u1ai401.html" target="_blank">陈灏珠 中国科学院院士</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n33/u1ai248.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1806/201806190340089148.png" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n33/u1ai248.html" target="_blank">舒先红 教授</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n33/u1ai339.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1809/20180918100541717.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n33/u1ai339.html" target="_blank">钱菊英 教授</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n33/u1ai555.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1906/201906121010365252.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n33/u1ai555.html" target="_blank">周达新 教授</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n33/u1ai556.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1906/201906121011528234.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n33/u1ai556.html" target="_blank">朱文青 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n33/u1ai581.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1907/201907170944278035.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n33/u1ai581.html" target="_blank">姚康 主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n33/u1ai96.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1806/201806200922371556.png" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n33/u1ai96.html" target="_blank">樊冰 主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n33/u1ai582.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1907/201907170945596507.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n33/u1ai582.html" target="_blank">王翔飞 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n33/u1ai76.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1712/201712040720054497.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n33/u1ai76.html" target="_blank">林佳雄 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                </ul></div>
+                                <a href="" class="btn btn-prev seo-text" style="display: block;">前</a>
+                                <a href="" class="btn btn-next seo-text" style="display: block;">后</a>
+                            </section>
+
+                            <section class="scroll" id="specialistSheet-8">
+                                <h4>肾脏内科</h4>
+                                <div class="caroufredsel_wrapper" style="display: block; text-align: start; float: none; position: absolute; top: 0px; right: 23px; bottom: 0px; left: 23px; z-index: auto; width: 284px; height: 180px; margin: 0px; overflow: hidden;"><ul style="text-align: left; float: none; position: absolute; top: 0px; right: auto; bottom: auto; left: 0px; margin: 0px; width: 2272px; height: 212px;">
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n43/u1ai250.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1806/201806190405563259.png" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n43/u1ai250.html" target="_blank">丁小强 教授</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n43/u1ai85.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1712/201712040751044197.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n43/u1ai85.html" target="_blank">腾杰 主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n43/u1ai560.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1906/201906180518152129.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n43/u1ai560.html" target="_blank">方艺 主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n43/u1ai270.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1806/201806291021352852.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n43/u1ai270.html" target="_blank">朱加明 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n43/u1ai535.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1905/20190527035718385.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n43/u1ai535.html" target="_blank">吉俊 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n43/u1ai536.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1905/20190527035916942.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n43/u1ai536.html" target="_blank">邹建洲 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n43/u1ai537.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1905/201905270359515402.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n43/u1ai537.html" target="_blank">章晓燕 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                </ul></div>
+                                <a href="" class="btn btn-prev seo-text" style="display: block;">前</a>
+                                <a href="" class="btn btn-next seo-text" style="display: block;">后</a>
+                            </section>
+
+                            <section class="scroll" id="specialistSheet-9">
+                                <h4>消化科</h4>
+                                <div class="caroufredsel_wrapper" style="display: block; text-align: start; float: none; position: absolute; top: 0px; right: 23px; bottom: 0px; left: 23px; z-index: auto; width: 284px; height: 180px; margin: 0px; overflow: hidden;"><ul style="text-align: left; float: none; position: absolute; top: 0px; right: auto; bottom: auto; left: 0px; margin: 0px; width: 2556px; height: 212px;">
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n60/u1ai148.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1712/201712080910591125.png" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n60/u1ai148.html" target="_blank">沈锡中 教授</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n60/u1ai338.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1809/201809180956095975.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n60/u1ai338.html" target="_blank">王吉耀 教授</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n60/u1ai314.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1809/201809121048538026.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n60/u1ai314.html" target="_blank">陈世耀 教授</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n60/u1ai315.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1809/201809121052175684.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n60/u1ai315.html" target="_blank">董玲 主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n60/u1ai423.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1812/201812260550448666.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n60/u1ai423.html" target="_blank">蒋炜 主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n60/u1ai445.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1902/201902010925567769.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n60/u1ai445.html" target="_blank">周朝晖 主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n60/u1ai147.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1712/201712080909466465.png" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n60/u1ai147.html" target="_blank">石虹 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n60/u1ai627.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1909/201909170930304089.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n60/u1ai627.html" target="_blank">王剑 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                </ul></div>
+                                <a href="" class="btn btn-prev seo-text" style="display: block;">前</a>
+                                <a href="" class="btn btn-next seo-text" style="display: block;">后</a>
+                            </section>
+
+                            <section class="scroll" id="specialistSheet-10">
+                                <h4>神经内科</h4>
+                                <div class="caroufredsel_wrapper" style="display: block; text-align: start; float: none; position: absolute; top: 0px; right: 23px; bottom: 0px; left: 23px; z-index: auto; width: 284px; height: 212px; margin: 0px; overflow: hidden;"><ul style="text-align: left; float: none; position: absolute; top: 0px; right: auto; bottom: auto; left: 0px; margin: 0px; width: 1704px; height: 212px;">
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n41/u1ai405.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1812/201812110529047943.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n41/u1ai405.html" target="_blank">汪昕 教授</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n41/u1ai77.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1806/201806200932588093.png" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n41/u1ai77.html" target="_blank">费国强 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n41/u1ai355.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1907/201907171039118607.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n41/u1ai355.html" target="_blank">丁晶 主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n41/u1ai278.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1807/20180712075533967.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n41/u1ai278.html" target="_blank">彭伟锋 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n41/u1ai356.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1810/201810090929538824.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n41/u1ai356.html" target="_blank">董继宏 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                </ul></div>
+                                <a href="" class="btn btn-prev seo-text" style="display: block;">前</a>
+                                <a href="" class="btn btn-next seo-text" style="display: block;">后</a>
+                            </section>
+
+                            <section class="scroll" id="specialistSheet-11">
+                                <h4>妇科</h4>
+                                <div class="caroufredsel_wrapper" style="display: block; text-align: start; float: none; position: absolute; top: 0px; right: 23px; bottom: 0px; left: 23px; z-index: auto; width: 284px; height: 212px; margin: 0px; overflow: hidden;"><ul style="text-align: left; float: none; position: absolute; top: 0px; right: auto; bottom: auto; left: 0px; margin: 0px; width: 1136px; height: 212px;">
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n52/u1ai242.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1806/201806191115168026.png" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n52/u1ai242.html" target="_blank">臧荣余 教授</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n52/u1ai87.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1712/201712040759027902.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n52/u1ai87.html" target="_blank">屠蕊沁 主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n52/u1ai438.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1901/201901240819328026.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n52/u1ai438.html" target="_blank">马永萍 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                </ul></div>
+                                <a href="" class="btn btn-prev seo-text" style="display: block;">前</a>
+                                <a href="" class="btn btn-next seo-text" style="display: block;">后</a>
+                            </section>
+
+                            <section class="scroll" id="specialistSheet-12">
+                                <h4>泌尿外科</h4>
+                                <div class="caroufredsel_wrapper" style="display: block; text-align: start; float: none; position: absolute; top: 0px; right: 23px; bottom: 0px; left: 23px; z-index: auto; width: 284px; height: 180px; margin: 0px; overflow: hidden;"><ul style="text-align: left; float: none; position: absolute; top: 0px; right: auto; bottom: auto; left: 0px; margin: 0px; width: 1420px; height: 212px;">
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n51/u1ai276.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1807/201807020349156108.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n51/u1ai276.html" target="_blank">郭剑明 教授</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n51/u1ai95.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1712/201712040834383209.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n51/u1ai95.html" target="_blank">张立 主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n51/u1ai584.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1907/201907171030518973.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n51/u1ai584.html" target="_blank">刘宇军 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n51/u1ai80.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1712/201712040730587852.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n51/u1ai80.html" target="_blank">张建平 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                </ul></div>
+                                <a href="" class="btn btn-prev seo-text" style="display: block;">前</a>
+                                <a href="" class="btn btn-next seo-text" style="display: block;">后</a>
+                            </section>
+
+                            <section class="scroll" id="specialistSheet-13">
+                                <h4>内分泌科</h4>
+                                <div class="caroufredsel_wrapper" style="display: block; text-align: start; float: none; position: absolute; top: 0px; right: 23px; bottom: 0px; left: 23px; z-index: auto; width: 284px; height: 180px; margin: 0px; overflow: hidden;"><ul style="text-align: left; float: none; position: absolute; top: 0px; right: auto; bottom: auto; left: 0px; margin: 0px; width: 1704px; height: 212px;">
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n62/u1ai210.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1806/201806200940569264.png" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n62/u1ai210.html" target="_blank">李小英 教授</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n62/u1ai466.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1903/20190305114635186.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n62/u1ai466.html" target="_blank">高鑫 教授</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n62/u1ai209.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1804/201804040208241332.png" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n62/u1ai209.html" target="_blank">林寰东 主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n62/u1ai376.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1903/201903111011595385.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n62/u1ai376.html" target="_blank">陈宁 主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n62/u1ai467.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1903/201903051147512096.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n62/u1ai467.html" target="_blank">颜红梅 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                </ul></div>
+                                <a href="" class="btn btn-prev seo-text" style="display: block;">前</a>
+                                <a href="" class="btn btn-next seo-text" style="display: block;">后</a>
+                            </section>
+
+                            <section class="scroll" id="specialistSheet-14">
+                                <h4>内镜中心</h4>
+                                <div class="caroufredsel_wrapper" style="display: block; text-align: start; float: none; position: absolute; top: 0px; right: 23px; bottom: 0px; left: 23px; z-index: auto; width: 284px; height: 180px; margin: 0px; overflow: hidden;"><ul style="text-align: left; float: none; position: absolute; top: 0px; right: auto; bottom: auto; left: 0px; margin: 0px; width: 2556px; height: 212px;">
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n45/u1ai93.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1712/201712040830091315.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n45/u1ai93.html" target="_blank">周平红 教授</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n45/u1ai92.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1712/201712040826096689.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n45/u1ai92.html" target="_blank">姚礼庆 教授</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n45/u1ai335.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1809/201809180938297412.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n45/u1ai335.html" target="_blank">钟芸诗 教授</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n45/u1ai316.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1809/201809121056556033.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n45/u1ai316.html" target="_blank">陈世耀 教授</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n45/u1ai334.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1809/201809180935407735.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n45/u1ai334.html" target="_blank">张轶群 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n45/u1ai336.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1809/20180918094259867.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n45/u1ai336.html" target="_blank">陈巍峰 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n45/u1ai337.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1809/201809180944019937.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n45/u1ai337.html" target="_blank">马丽黎 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n45/u1ai408.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1812/201812120943049529.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n45/u1ai408.html" target="_blank">林东 主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                </ul></div>
+                                <a href="" class="btn btn-prev seo-text" style="display: block;">前</a>
+                                <a href="" class="btn btn-next seo-text" style="display: block;">后</a>
+                            </section>
+
+                            <section class="scroll" id="specialistSheet-15">
+                                <h4>血管外科</h4>
+                                <div class="caroufredsel_wrapper" style="display: block; text-align: start; float: none; position: absolute; top: 0px; right: 23px; bottom: 0px; left: 23px; z-index: auto; width: 284px; height: 180px; margin: 0px; overflow: hidden;"><ul style="text-align: left; float: none; position: absolute; top: 0px; right: auto; bottom: auto; left: 0px; margin: 0px; width: 3976px; height: 212px;">
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n76/u1ai252.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1806/201806190416129845.png" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n76/u1ai252.html" target="_blank">符伟国 教授</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n76/u1ai441.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1902/201902010842064663.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n76/u1ai441.html" target="_blank">郭大乔 教授</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n76/u1ai546.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1906/201906040911157802.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n76/u1ai546.html" target="_blank">陈斌 主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n76/u1ai444.html" target="_blank">史振宇 主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n76/u1ai576.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1907/20190716093033476.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n76/u1ai576.html" target="_blank">董智慧  主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n76/u1ai577.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1907/201907160934066099.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n76/u1ai577.html" target="_blank">徐欣  主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n76/u1ai178.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1806/201806200948538932.png" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n76/u1ai178.html" target="_blank">王利新 主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n76/u1ai578.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1907/201907160944234131.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n76/u1ai578.html" target="_blank">杨珏  副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n76/u1ai579.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1907/201907160945491506.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n76/u1ai579.html" target="_blank">竺挺  副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n76/u1ai580.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1907/201907160946392869.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n76/u1ai580.html" target="_blank">蒋俊豪  副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n76/u1ai251.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1806/20180619041301186.png" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n76/u1ai251.html" target="_blank">卢伟锋 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n76/u1ai442.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1902/201902010845461456.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n76/u1ai442.html" target="_blank">司逸 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n76/u1ai443.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1902/201902010846523425.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n76/u1ai443.html" target="_blank">唐骁 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                </ul></div>
+                                <a href="" class="btn btn-prev seo-text" style="display: block;">前</a>
+                                <a href="" class="btn btn-next seo-text" style="display: block;">后</a>
+                            </section>
+
+                            <section class="scroll" id="specialistSheet-16">
+                                <h4>老年科</h4>
+                                <div class="caroufredsel_wrapper" style="display: block; text-align: start; float: none; position: absolute; top: 0px; right: 23px; bottom: 0px; left: 23px; z-index: auto; width: 284px; height: 212px; margin: 0px; overflow: hidden;"><ul style="text-align: left; float: none; position: absolute; top: 0px; right: auto; bottom: auto; left: 0px; margin: 0px; width: 1420px; height: 212px;">
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n42/u1ai205.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1804/201804030453255833.png" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n42/u1ai205.html" target="_blank">胡予 主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n42/u1ai332.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1809/20180918092352900.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n42/u1ai332.html" target="_blank">袁颖 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n42/u1ai204.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1804/201804030451059496.png" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n42/u1ai204.html" target="_blank">吴琳 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n42/u1ai79.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1712/201712040727546648.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n42/u1ai79.html" target="_blank">罗蔓 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                </ul></div>
+                                <a href="" class="btn btn-prev seo-text" style="display: block;">前</a>
+                                <a href="" class="btn btn-next seo-text" style="display: block;">后</a>
+                            </section>
+
+                            <section class="scroll" id="specialistSheet-17">
+                                <h4>肝肿瘤内科</h4>
+                                <div class="caroufredsel_wrapper" style="display: block; text-align: start; float: none; position: absolute; top: 0px; right: 23px; bottom: 0px; left: 23px; z-index: auto; width: 284px; height: 212px; margin: 0px; overflow: hidden;"><ul style="text-align: left; float: none; position: absolute; top: 0px; right: auto; bottom: auto; left: 0px; margin: 0px; width: 1136px; height: 212px;">
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n31/u1ai253.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1806/20180619041912269.png" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n31/u1ai253.html" target="_blank">任正刚 教授</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n31/u1ai98.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1712/201712040841547860.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n31/u1ai98.html" target="_blank">张博恒 主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n31/u1ai275.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1807/20180702031115992.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n31/u1ai275.html" target="_blank">谢晓莺 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                </ul></div>
+                                <a href="" class="btn btn-prev seo-text" style="display: block;">前</a>
+                                <a href="" class="btn btn-next seo-text" style="display: block;">后</a>
+                            </section>
+
+                            <section class="scroll" id="specialistSheet-18">
+                                <h4>肝外科</h4>
+                                <div class="caroufredsel_wrapper" style="display: block; text-align: start; float: none; position: absolute; top: 0px; right: 23px; bottom: 0px; left: 23px; z-index: auto; width: 284px; height: 212px; margin: 0px; overflow: hidden;"><ul style="text-align: left; float: none; position: absolute; top: 0px; right: auto; bottom: auto; left: 0px; margin: 0px; width: 2556px; height: 212px;">
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n81/u1ai400.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1812/201812110455438417.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n81/u1ai400.html" target="_blank">樊嘉 中国科学院院士</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n81/u1ai403.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1812/201812110519115385.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n81/u1ai403.html" target="_blank">汤钊猷 中国工程院院士</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n81/u1ai340.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1809/201809181133072088.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n81/u1ai340.html" target="_blank">周俭 教授</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n81/u1ai519.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1905/201905200449277960.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n81/u1ai519.html" target="_blank">黄晓武 主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n81/u1ai520.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1905/201905200451151930.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n81/u1ai520.html" target="_blank">史颖弘 主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n81/u1ai521.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1905/20190520045225228.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n81/u1ai521.html" target="_blank">王晓颖 主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n81/u1ai341.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1809/201809181103004355.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n81/u1ai341.html" target="_blank">陈培 主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n81/u1ai522.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1905/201905200454413234.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n81/u1ai522.html" target="_blank">杨欣荣 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                </ul></div>
+                                <a href="" class="btn btn-prev seo-text" style="display: block;">前</a>
+                                <a href="" class="btn btn-next seo-text" style="display: block;">后</a>
+                            </section>
+
+                            <section class="scroll" id="specialistSheet-19">
+                                <h4>整形外科</h4>
+                                <div class="caroufredsel_wrapper" style="display: block; text-align: start; float: none; position: absolute; top: 0px; right: 23px; bottom: 0px; left: 23px; z-index: auto; width: 284px; height: 212px; margin: 0px; overflow: hidden;"><ul style="text-align: left; float: none; position: absolute; top: 0px; right: auto; bottom: auto; left: 0px; margin: 0px; width: 1420px; height: 212px;">
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n38/u1ai144.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1907/201907171040079862.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n38/u1ai144.html" target="_blank">顾建英 主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n38/u1ai143.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1712/201712080900431415.png" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n38/u1ai143.html" target="_blank">亓发芝 教授</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n38/u1ai142.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1712/201712080858362611.png" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n38/u1ai142.html" target="_blank">冯自豪 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n38/u1ai478.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1904/201904111111542553.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n38/u1ai478.html" target="_blank">文卫东 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                </ul></div>
+                                <a href="" class="btn btn-prev seo-text" style="display: block;">前</a>
+                                <a href="" class="btn btn-next seo-text" style="display: block;">后</a>
+                            </section>
+
+                            <section class="scroll" id="specialistSheet-20">
+                                <h4>心理医学科</h4>
+                                <div class="caroufredsel_wrapper" style="display: block; text-align: start; float: none; position: absolute; top: 0px; right: 23px; bottom: 0px; left: 23px; z-index: auto; width: 284px; height: 212px; margin: 0px; overflow: hidden;"><ul style="text-align: left; float: none; position: absolute; top: 0px; right: auto; bottom: auto; left: 0px; margin: 0px; width: 852px; height: 212px;">
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n74/u1ai171.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1712/201712120910337512.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n74/u1ai171.html" target="_blank">季建林 教授</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n74/u1ai170.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1712/201712120907131914.png" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n74/u1ai170.html" target="_blank">黄啸 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                </ul></div>
+                                <a href="" class="btn btn-prev seo-text hidden" style="display: none;">前</a>
+                                <a href="" class="btn btn-next seo-text hidden" style="display: none;">后</a>
+                            </section>
+
+                            <section class="scroll" id="specialistSheet-21">
+                                <h4>肿瘤内科</h4>
+                                <div class="caroufredsel_wrapper" style="display: block; text-align: start; float: none; position: absolute; top: 0px; right: 23px; bottom: 0px; left: 23px; z-index: auto; width: 284px; height: 212px; margin: 0px; overflow: hidden;"><ul style="text-align: left; float: none; position: absolute; top: 0px; right: auto; bottom: auto; left: 0px; margin: 0px; width: 852px; height: 212px;">
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n73/u1ai159.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1712/201712081047405958.png" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n73/u1ai159.html" target="_blank">刘天舒 主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n73/u1ai158.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1712/201712081045473267.png" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n73/u1ai158.html" target="_blank">王志明 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                </ul></div>
+                                <a href="" class="btn btn-prev seo-text hidden" style="display: none;">前</a>
+                                <a href="" class="btn btn-next seo-text hidden" style="display: none;">后</a>
+                            </section>
+
+                            <section class="scroll" id="specialistSheet-22">
+                                <h4>胸外科</h4>
+                                <div class="caroufredsel_wrapper" style="display: block; text-align: start; float: none; position: absolute; top: 0px; right: 23px; bottom: 0px; left: 23px; z-index: auto; width: 284px; height: 212px; margin: 0px; overflow: hidden;"><ul style="text-align: left; float: none; position: absolute; top: 0px; right: auto; bottom: auto; left: 0px; margin: 0px; width: 2840px; height: 212px;">
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n49/u1ai461.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1904/201904080843031067.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n49/u1ai461.html" target="_blank">谭黎杰 主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n49/u1ai216.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1804/201804110444267627.png" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n49/u1ai216.html" target="_blank">王群 主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n49/u1ai500.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1907/201907250854013708.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n49/u1ai500.html" target="_blank">范虹 主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n49/u1ai152.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1712/201712080927325227.png" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n49/u1ai152.html" target="_blank">徐松涛 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n49/u1ai215.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1804/201804110441438035.png" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n49/u1ai215.html" target="_blank">逄旭光 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n49/u1ai501.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1904/201904220319088276.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n49/u1ai501.html" target="_blank">尹俊 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n49/u1ai502.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1904/201904220325122088.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n49/u1ai502.html" target="_blank">沈亚星 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n49/u1ai503.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1904/201904220327498549.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n49/u1ai503.html" target="_blank">郭卫刚 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n49/u1ai506.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1904/201904280309205502.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n49/u1ai506.html" target="_blank">林宗武 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                </ul></div>
+                                <a href="" class="btn btn-prev seo-text" style="display: block;">前</a>
+                                <a href="" class="btn btn-next seo-text" style="display: block;">后</a>
+                            </section>
+
+                            <section class="scroll" id="specialistSheet-23">
+                                <h4>血液科</h4>
+                                <div class="caroufredsel_wrapper" style="display: block; text-align: start; float: none; position: absolute; top: 0px; right: 23px; bottom: 0px; left: 23px; z-index: auto; width: 284px; height: 212px; margin: 0px; overflow: hidden;"><ul style="text-align: left; float: none; position: absolute; top: 0px; right: auto; bottom: auto; left: 0px; margin: 0px; width: 1136px; height: 212px;">
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n44/u1ai172.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1712/201712250953017196.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n44/u1ai172.html" target="_blank">刘澎 教授</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n44/u1ai180.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1801/201801230248053002.png" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n44/u1ai180.html" target="_blank">邹善华 主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n44/u1ai462.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1903/201903050903315244.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n44/u1ai462.html" target="_blank">王志梅 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                </ul></div>
+                                <a href="" class="btn btn-prev seo-text" style="display: block;">前</a>
+                                <a href="" class="btn btn-next seo-text" style="display: block;">后</a>
+                            </section>
+
+                            <section class="scroll" id="specialistSheet-24">
+                                <h4>神经外科</h4>
+                                <div class="caroufredsel_wrapper" style="display: block; text-align: start; float: none; position: absolute; top: 0px; right: 23px; bottom: 0px; left: 23px; z-index: auto; width: 284px; height: 180px; margin: 0px; overflow: hidden;"><ul style="text-align: left; float: none; position: absolute; top: 0px; right: auto; bottom: auto; left: 0px; margin: 0px; width: 2556px; height: 212px;">
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n48/u1ai138.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1712/201712080834225784.png" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n48/u1ai138.html" target="_blank">张晓彪  教授</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n48/u1ai264.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1907/201907250854418824.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n48/u1ai264.html" target="_blank">胡凡 主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n48/u1ai81.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1712/20171204073356717.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n48/u1ai81.html" target="_blank">李秋平 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n48/u1ai265.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1806/201806291006545169.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n48/u1ai265.html" target="_blank">杨志刚 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n48/u1ai266.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1806/201806291009581000.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n48/u1ai266.html" target="_blank">朱卫 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n48/u1ai267.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1806/201806291012186582.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n48/u1ai267.html" target="_blank">余勇 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n48/u1ai268.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1806/201806291016414887.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n48/u1ai268.html" target="_blank">顾晔 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n48/u1ai269.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1806/201806291018189040.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n48/u1ai269.html" target="_blank">张煜 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                </ul></div>
+                                <a href="" class="btn btn-prev seo-text" style="display: block;">前</a>
+                                <a href="" class="btn btn-next seo-text" style="display: block;">后</a>
+                            </section>
+
+                            <section class="scroll" id="specialistSheet-25">
+                                <h4>中西医结合科</h4>
+                                <div class="caroufredsel_wrapper" style="display: block; text-align: start; float: none; position: absolute; top: 0px; right: 23px; bottom: 0px; left: 23px; z-index: auto; width: 284px; height: 212px; margin: 0px; overflow: hidden;"><ul style="text-align: left; float: none; position: absolute; top: 0px; right: auto; bottom: auto; left: 0px; margin: 0px; width: 852px; height: 212px;">
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n77/u1ai254.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1806/201806190432469970.png" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n77/u1ai254.html" target="_blank">蔡定芳 教授</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n77/u1ai288.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1808/201808061129293275.png" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n77/u1ai288.html" target="_blank">马骏 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                </ul></div>
+                                <a href="" class="btn btn-prev seo-text hidden" style="display: none;">前</a>
+                                <a href="" class="btn btn-next seo-text hidden" style="display: none;">后</a>
+                            </section>
+
+                            <section class="scroll" id="specialistSheet-26">
+                                <h4>心外科</h4>
+                                <div class="caroufredsel_wrapper" style="display: block; text-align: start; float: none; position: absolute; top: 0px; right: 23px; bottom: 0px; left: 23px; z-index: auto; width: 284px; height: 212px; margin: 0px; overflow: hidden;"><ul style="text-align: left; float: none; position: absolute; top: 0px; right: auto; bottom: auto; left: 0px; margin: 0px; width: 2840px; height: 212px;">
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n50/u1ai404.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1812/201812110525126971.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n50/u1ai404.html" target="_blank">王春生 教授</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n50/u1ai145.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1804/201804040202201614.JPG" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n50/u1ai145.html" target="_blank">夏利民 主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n50/u1ai549.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1906/201906120957286523.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n50/u1ai549.html" target="_blank">李军 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n50/u1ai550.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1906/201906120959063234.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n50/u1ai550.html" target="_blank">潘荪 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n50/u1ai551.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1906/201906121000169463.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n50/u1ai551.html" target="_blank">杨兆华 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n50/u1ai552.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1906/201906121002033375.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n50/u1ai552.html" target="_blank">过常发 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n50/u1ai589.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1907/201907240212264214.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n50/u1ai589.html" target="_blank">赖颢 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n50/u1ai83.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1712/201712040740333832.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n50/u1ai83.html" target="_blank">徐德民 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n50/u1ai320.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1809/201809140821225809.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n50/u1ai320.html" target="_blank">宋凯 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                </ul></div>
+                                <a href="" class="btn btn-prev seo-text" style="display: block;">前</a>
+                                <a href="" class="btn btn-next seo-text" style="display: block;">后</a>
+                            </section>
+
+                            <section class="scroll" id="specialistSheet-27">
+                                <h4>介入治疗科</h4>
+                                <div class="caroufredsel_wrapper" style="display: block; text-align: start; float: none; position: absolute; top: 0px; right: 23px; bottom: 0px; left: 23px; z-index: auto; width: 284px; height: 212px; margin: 0px; overflow: hidden;"><ul style="text-align: left; float: none; position: absolute; top: 0px; right: auto; bottom: auto; left: 0px; margin: 0px; width: 1704px; height: 212px;">
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n78/u1ai350.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1809/201809300452459571.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n78/u1ai350.html" target="_blank">王建华 教授</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n78/u1ai330.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1809/201809180918107005.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n78/u1ai330.html" target="_blank">颜志平 主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n78/u1ai585.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1907/201907171034394463.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n78/u1ai585.html" target="_blank">刘嵘 主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n78/u1ai331.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1809/201809180921038624.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n78/u1ai331.html" target="_blank">朱樑 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n78/u1ai207.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1804/201804040947031373.png" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n78/u1ai207.html" target="_blank">钱晟 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                </ul></div>
+                                <a href="" class="btn btn-prev seo-text" style="display: block;">前</a>
+                                <a href="" class="btn btn-next seo-text" style="display: block;">后</a>
+                            </section>
+
+                            <section class="scroll" id="specialistSheet-28">
+                                <h4>风湿免疫科</h4>
+                                <div class="caroufredsel_wrapper" style="display: block; text-align: start; float: none; position: absolute; top: 0px; right: 23px; bottom: 0px; left: 23px; z-index: auto; width: 284px; height: 212px; margin: 0px; overflow: hidden;"><ul style="text-align: left; float: none; position: absolute; top: 0px; right: auto; bottom: auto; left: 0px; margin: 0px; width: 852px; height: 212px;">
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n79/u1ai255.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1806/201806190437438442.png" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n79/u1ai255.html" target="_blank">姜林娣 主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n79/u1ai277.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1807/201807100856342345.png" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n79/u1ai277.html" target="_blank">陈慧勇 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                </ul></div>
+                                <a href="" class="btn btn-prev seo-text hidden" style="display: none;">前</a>
+                                <a href="" class="btn btn-next seo-text hidden" style="display: none;">后</a>
+                            </section>
+
+                            <section class="scroll" id="specialistSheet-29">
+                                <h4>口腔科</h4>
+                                <div class="caroufredsel_wrapper" style="display: block; text-align: start; float: none; position: absolute; top: 0px; right: 23px; bottom: 0px; left: 23px; z-index: auto; width: 284px; height: 212px; margin: 0px; overflow: hidden;"><ul style="text-align: left; float: none; position: absolute; top: 0px; right: auto; bottom: auto; left: 0px; margin: 0px; width: 852px; height: 212px;">
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n85/u1ai465.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1903/201903051122028259.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n85/u1ai465.html" target="_blank">余优成 教授</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n85/u1ai464.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1903/201903051122465527.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n85/u1ai464.html" target="_blank">毕玮 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                </ul></div>
+                                <a href="" class="btn btn-prev seo-text hidden" style="display: none;">前</a>
+                                <a href="" class="btn btn-next seo-text hidden" style="display: none;">后</a>
+                            </section>
+
+                            <section class="scroll" id="specialistSheet-30">
+                                <h4>病理科</h4>
+                                <div class="caroufredsel_wrapper" style="display: block; text-align: start; float: none; position: absolute; top: 0px; right: 23px; bottom: 0px; left: 23px; z-index: auto; width: 284px; height: 212px; margin: 0px; overflow: hidden;"><ul style="text-align: left; float: none; position: absolute; top: 0px; right: auto; bottom: auto; left: 0px; margin: 0px; width: 568px; height: 212px;">
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n69/u1ai112.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1712/201712051138133209.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n69/u1ai112.html" target="_blank">许建芳 主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                </ul></div>
+                                <a href="" class="btn btn-prev seo-text hidden" style="display: none;">前</a>
+                                <a href="" class="btn btn-next seo-text hidden" style="display: none;">后</a>
+                            </section>
+
+                            <section class="scroll" id="specialistSheet-31">
+                                <h4>超声科</h4>
+                                <div class="caroufredsel_wrapper" style="display: block; text-align: start; float: none; position: absolute; top: 0px; right: 23px; bottom: 0px; left: 23px; z-index: auto; width: 284px; height: 212px; margin: 0px; overflow: hidden;"><ul style="text-align: left; float: none; position: absolute; top: 0px; right: auto; bottom: auto; left: 0px; margin: 0px; width: 1420px; height: 212px;">
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n67/u1ai326.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1809/201809180845185643.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n67/u1ai326.html" target="_blank">王文平 教授</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n67/u1ai257.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1806/201806190443093791.png" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n67/u1ai257.html" target="_blank">黄备建 主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n67/u1ai256.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1806/201806190441132403.png" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n67/u1ai256.html" target="_blank">丁红 主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n67/u1ai111.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1712/201712051135022453.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n67/u1ai111.html" target="_blank">袁海霞 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                </ul></div>
+                                <a href="" class="btn btn-prev seo-text" style="display: block;">前</a>
+                                <a href="" class="btn btn-next seo-text" style="display: block;">后</a>
+                            </section>
+
+                            <section class="scroll" id="specialistSheet-32">
+                                <h4>放射科</h4>
+                                <div class="caroufredsel_wrapper" style="display: block; text-align: start; float: none; position: absolute; top: 0px; right: 23px; bottom: 0px; left: 23px; z-index: auto; width: 284px; height: 212px; margin: 0px; overflow: hidden;"><ul style="text-align: left; float: none; position: absolute; top: 0px; right: auto; bottom: auto; left: 0px; margin: 0px; width: 2840px; height: 212px;">
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n39/u1ai322.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1809/201809140310035775.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n39/u1ai322.html" target="_blank">曾蒙苏 教授</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n39/u1ai97.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1712/201712040839143591.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n39/u1ai97.html" target="_blank">周建军 主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n39/u1ai487.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1904/201904191104514555.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n39/u1ai487.html" target="_blank">林江 主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n39/u1ai281.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1807/201807180937294895.png" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n39/u1ai281.html" target="_blank">吴东 主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n39/u1ai328.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1809/201809180857232105.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n39/u1ai328.html" target="_blank">饶圣祥 主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n39/u1ai488.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1904/201904191111257760.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n39/u1ai488.html" target="_blank">金航 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n39/u1ai71.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1712/20171204044621518.png" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n39/u1ai71.html" target="_blank">杨姗 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n39/u1ai489.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1904/201904191115253849.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n39/u1ai489.html" target="_blank">张兴伟 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n39/u1ai490.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1904/201904191123398417.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n39/u1ai490.html" target="_blank">姚秀忠 副研究员</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                </ul></div>
+                                <a href="" class="btn btn-prev seo-text" style="display: block;">前</a>
+                                <a href="" class="btn btn-next seo-text" style="display: block;">后</a>
+                            </section>
+
+                            <section class="scroll" id="specialistSheet-33">
+                                <h4>心超室科</h4>
+                                <div class="caroufredsel_wrapper" style="display: block; text-align: start; float: none; position: absolute; top: 0px; right: 23px; bottom: 0px; left: 23px; z-index: auto; width: 284px; height: 180px; margin: 0px; overflow: hidden;"><ul style="text-align: left; float: none; position: absolute; top: 0px; right: auto; bottom: auto; left: 0px; margin: 0px; width: 568px; height: 180px;">
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n65/u1ai258.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1806/201806190447378724.png" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n65/u1ai258.html" target="_blank">舒先红 教授</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                </ul></div>
+                                <a href="" class="btn btn-prev seo-text hidden" style="display: none;">前</a>
+                                <a href="" class="btn btn-next seo-text hidden" style="display: none;">后</a>
+                            </section>
+
+                            <section class="scroll" id="specialistSheet-34">
+                                <h4>放疗科</h4>
+                                <div class="caroufredsel_wrapper" style="display: block; text-align: start; float: none; position: absolute; top: 0px; right: 23px; bottom: 0px; left: 23px; z-index: auto; width: 284px; height: 212px; margin: 0px; overflow: hidden;"><ul style="text-align: left; float: none; position: absolute; top: 0px; right: auto; bottom: auto; left: 0px; margin: 0px; width: 852px; height: 212px;">
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n61/u1ai141.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1712/201712080856264197.png" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n61/u1ai141.html" target="_blank">曾昭冲 教授</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n61/u1ai406.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1812/201812110531328159.jpg" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n61/u1ai406.html" target="_blank">张树民 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                </ul></div>
+                                <a href="" class="btn btn-prev seo-text hidden" style="display: none;">前</a>
+                                <a href="" class="btn btn-next seo-text hidden" style="display: none;">后</a>
+                            </section>
+
+                            <section class="scroll" id="specialistSheet-35">
+                                <h4>心电图科</h4>
+                                <div class="caroufredsel_wrapper" style="display: block; text-align: start; float: none; position: absolute; top: 0px; right: 23px; bottom: 0px; left: 23px; z-index: auto; width: 284px; height: 212px; margin: 0px; overflow: hidden;"><ul style="text-align: left; float: none; position: absolute; top: 0px; right: auto; bottom: auto; left: 0px; margin: 0px; width: 568px; height: 212px;">
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n64/u1ai157.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1712/201712081029229065.png" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n64/u1ai157.html" target="_blank">王惠歆 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                </ul></div>
+                                <a href="" class="btn btn-prev seo-text hidden" style="display: none;">前</a>
+                                <a href="" class="btn btn-next seo-text hidden" style="display: none;">后</a>
+                            </section>
+
+                            <section class="scroll" id="specialistSheet-36">
+                                <h4>康复科</h4>
+                                <div class="caroufredsel_wrapper" style="display: block; text-align: start; float: none; position: absolute; top: 0px; right: 23px; bottom: 0px; left: 23px; z-index: auto; width: 284px; height: 180px; margin: 0px; overflow: hidden;"><ul style="text-align: left; float: none; position: absolute; top: 0px; right: auto; bottom: auto; left: 0px; margin: 0px; width: 2556px; height: 212px;">
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n63/u1ai168.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1712/201712081136463217.png" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n63/u1ai168.html" target="_blank">姜立本 教授</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n63/u1ai167.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1712/201712081134578624.png" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n63/u1ai167.html" target="_blank">旺昕 教授</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n63/u1ai166.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1712/201712081132396407.png" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n63/u1ai166.html" target="_blank">李泽兵 主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n63/u1ai165.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1712/201712081120015975.png" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n63/u1ai165.html" target="_blank">张键 主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n63/u1ai164.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1712/201712081118243059.png" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n63/u1ai164.html" target="_blank">刘邦忠 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n63/u1ai163.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1712/20171208111631701.png" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n63/u1ai163.html" target="_blank">戚少华 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n63/u1ai162.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1712/20171208110732161.png" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n63/u1ai162.html" target="_blank">黄晓春 副主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n63/u1ai161.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1712/201712081103008990.png" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n63/u1ai161.html" target="_blank">陈君 副主任技师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                </ul></div>
+                                <a href="" class="btn btn-prev seo-text" style="display: block;">前</a>
+                                <a href="" class="btn btn-next seo-text" style="display: block;">后</a>
+                            </section>
+
+                            <section class="scroll" id="specialistSheet-37">
+                                <h4>输血科</h4>
+                                <div class="caroufredsel_wrapper" style="display: block; text-align: start; float: none; position: absolute; top: 0px; right: 23px; bottom: 0px; left: 23px; z-index: auto; width: 0px; height: 0px; margin: 0px; overflow: hidden;"><ul style="text-align: left; float: none; position: absolute; top: 0px; right: auto; bottom: auto; left: 0px; margin: 0px; width: 0px; height: 0px;">
+
+                                </ul></div>
+                                <a href="" class="btn btn-prev seo-text hidden" style="display: none;">前</a>
+                                <a href="" class="btn btn-next seo-text hidden" style="display: none;">后</a>
+                            </section>
+
+                            <section class="scroll" id="specialistSheet-38">
+                                <h4>检验科</h4>
+                                <div class="caroufredsel_wrapper" style="display: block; text-align: start; float: none; position: absolute; top: 0px; right: 23px; bottom: 0px; left: 23px; z-index: auto; width: 284px; height: 212px; margin: 0px; overflow: hidden;"><ul style="text-align: left; float: none; position: absolute; top: 0px; right: auto; bottom: auto; left: 0px; margin: 0px; width: 852px; height: 212px;">
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n68/u1ai223.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1805/201805031052433475.png" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n68/u1ai223.html" target="_blank">潘柏申 主任技师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n68/u1ai140.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1712/201712080852388384.png" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n68/u1ai140.html" target="_blank">张春燕 副主任技师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                </ul></div>
+                                <a href="" class="btn btn-prev seo-text hidden" style="display: none;">前</a>
+                                <a href="" class="btn btn-next seo-text hidden" style="display: none;">后</a>
+                            </section>
+
+                            <section class="scroll" id="specialistSheet-39">
+                                <h4>麻醉科</h4>
+                                <div class="caroufredsel_wrapper" style="display: block; text-align: start; float: none; position: absolute; top: 0px; right: 23px; bottom: 0px; left: 23px; z-index: auto; width: 284px; height: 180px; margin: 0px; overflow: hidden;"><ul style="text-align: left; float: none; position: absolute; top: 0px; right: auto; bottom: auto; left: 0px; margin: 0px; width: 568px; height: 180px;">
+
+                                    <li>
+
+                                        <a href="/xm-hospital/n6/n14/n72/u1ai160.html" target="_blank" class="photo"><img src="/images/thumbnailimg/month_1712/201712081053019845.png" width="104" height="130" alt=""></a>
+
+                                        <span class="name"><a href="/xm-hospital/n6/n14/n72/u1ai160.html" target="_blank">李敏 主任医师</a></span>
+                                        <span class="title"></span>
+                                    </li>
+
+                                </ul></div>
+                                <a href="" class="btn btn-prev seo-text hidden" style="display: none;">前</a>
+                                <a href="" class="btn btn-next seo-text hidden" style="display: none;">后</a>
+                            </section>
+
+                        </div>
+                    </div>
+                </section>
+
+                <section class="sub-tab-sheet" id="sub-sheet-nursing">
+                    <h2><span>医护通道</span></h2>
+                    <div class="row clearfix">
+                        <div class="col col-3 col-port" id="col-office">
+                            <h3><a href=""><span>办公平台</span></a></h3>
+                            <div class="caption"><a class="more" href="">阅读更多</a></div>
+                        </div>
+
+                        <div class="col col-3" id="col-education">
+                            <h3><a href="/xm-hospital/n7/n15/index.html"><span>教育科研</span></a></h3>
+                            <ul class="list">
+
+                                <li><a title="2019年最新SCI影响因子" target="_blank" href="/xm-hospital/n7/n15/u1ai588.html">2019年最新SCI影响因子</a></li>
+
+                            </ul>
+                            <div class="caption"><a class="more" href="/xm-hospital/n7/n15/index.html">阅读更多</a></div>
+                        </div>
+
+                        <div class="col col-3" id="col-speach">
+                            <h3><a href="/xm-hospital/n7/n16/index.html"><span>公开信息</span></a></h3>
+                            <ul class="list">
+
+                                <li><a title="病历复印须知" target="_blank" href="/xm-hospital/n7/n16/u1ai118.html">病历复印须知</a></li>
+
+                                <li><a title="复旦大学附属中山医院厦门医院领导团队简介" target="_blank" href="/xm-hospital/n7/n16/u1ai114.html">复旦大学附属中山医院厦门医院领导团队简介</a></li>
+
+                            </ul>
+                            <div class="caption"><a class="more" href="/xm-hospital/n7/n16/index.html">阅读更多</a></div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="sub-tab-sheet" id="sub-sheet-hospital">
+                    <h2><span>医院信息</span></h2>
+                    <div class="row clearfix">
+                        <div class="col col-3">
+                            <h3><a href="/xm-hospital/n8/n17/index.html"><span>党 建</span></a></h3>
+                            <div class="col-sub clearfix">
+                                <div class="col-sub-port">
+                                    <a href="/xm-hospital/n8/n17/index.html" class="link"><img src="/xm/images/icon-port-party.jpg" width="76" height="76" alt=""></a><br>
+                                    <a href="/xm-hospital/n8/n17/index.html" class="more">阅读更多</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col col-3">
+                            <h3><a href="/xm-hospital/n8/n18/index.html"><span>工 会</span></a></h3>
+                            <div class="col-sub clearfix">
+                                <div class="col-sub-port">
+                                    <a href="/xm-hospital/n8/n18/index.html" class="link"><img src="/xm/images/icon-port-union.jpg" width="76" height="76" alt=""></a><br>
+                                    <a href="/xm-hospital/n8/n18/index.html" class="more">阅读更多</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col col-3">
+                            <h3><a href="/xm-hospital/n8/n19/index.html"><span>团 委</span></a></h3>
+                            <div class="col-sub clearfix">
+                                <div class="col-sub-port">
+                                    <a href="/xm-hospital/n8/n19/index.html" class="link"><img src="/xm/images/icon-port-league.jpg" width="76" height="76" alt=""></a><br>
+                                    <a href="/xm-hospital/n8/n19/index.html" class="more">阅读更多</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row clearfix">
+                        <div class="col col-3" id="col-bidding">
+                            <h3><a href="/xm-hospital/n8/n20/index.html"><span>招标通知</span></a></h3>
+                            <ul class="list">
+
+                                <li><a title="信息系统等级测评服务比价公告" target="_blank" href="/xm-hospital/n8/n20/u1ai631.html">信息系统等级测评服务比价公告</a></li>
+
+                                <li><a title="关于延长职工生日蛋糕券采购比选报名时间的公告" target="_blank" href="/xm-hospital/n8/n20/u1ai417.html">关于延长职工生日蛋糕券采购比选报名时间...</a></li>
+
+                                <li><a title="复旦大学附属中山医院厦门医院职工生日蛋糕券采购比选公告" target="_blank" href="/xm-hospital/n8/n20/u1ai410.html">复旦大学附属中山医院厦门医院职工生日蛋...</a></li>
+
+                            </ul>
+                            <div class="caption"><a class="more" href="/xm-hospital/n8/n20/index.html">阅读更多</a></div>
+                        </div>
+
+                        <div class="col col-3" id="col-papers">
+                            <h3><a href="/xm-hospital/n8/n21/index.html"><span>院 报</span></a></h3>
+                            <div class="issue clearfix">
+                                <a href="/xm-hospital/n8/n21/index.html" class="btn issue-cover"><img src="/xm/images/paper-01.jpg" width="124" height="190" alt=""></a>
+                                <div class="issue-list">
+
+                                    <ul class="clearfix">
+
+                                        <li style="width:130px;"><a title="中山医院报399" target="_blank" href="/xm-hospital/n8/n21/u1ai124.html">中山医院报399</a></li>
+
+                                        <li style="width:130px;"><a title="中山医院报385" target="_blank" href="/xm-hospital/n8/n21/u1ai121.html">中山医院报385</a></li>
+
+                                    </ul>
+
+                                </div>
+                            </div>
+                            <div class="caption">
+
+                                <a class="more" href="/xm-hospital/n8/n21/index.html">阅读更多</a>
+                            </div>
+                        </div>
+
+                        <div class="col col-3" id="col-recruit">
+                            <h3><a href="/xm-hospital/n5/index.html"><span>人才招聘</span></a></h3>
+                            <ul class="list">
+
+                                <li><a title="复旦大学附属中山医院厦门医院人才派遣岗位公开招聘简章" target="_blank" href="/xm-hospital/n5/u1ai592.html">复旦大学附属中山医院厦门医院人才派遣岗...</a></li>
+
+                                <li><a title="2019年复旦大学附属中山医院厦门医院补充编外工作人员招聘启事(8月）" target="_blank" href="/xm-hospital/n5/u1ai606.html">2019年复旦大学附属中山医院厦门医院...</a></li>
+
+                                <li><a title="2019年复旦大学附属中山医院厦门医院补充编内工作人员招聘启事(8月）" target="_blank" href="/xm-hospital/n5/u1ai605.html">2019年复旦大学附属中山医院厦门医院...</a></li>
+
+                                <li><a title="2019年复旦大学附属中山医院厦门医院补充编外工作人员招聘启事(6月）" target="_blank" href="/xm-hospital/n5/u1ai545.html">2019年复旦大学附属中山医院厦门医院...</a></li>
+
+                                <li><a title="2019年复旦大学附属中山医院厦门医院补充编内工作人员招聘启事(6月-医师、医技、管理）" target="_blank" href="/xm-hospital/n5/u1ai544.html">2019年复旦大学附属中山医院厦门医院...</a></li>
+
+                                <li><a title="2019年复旦大学附属中山医院厦门医院补充编内工作人员招聘启事(6月-基地住培）" target="_blank" href="/xm-hospital/n5/u1ai543.html">2019年复旦大学附属中山医院厦门医院...</a></li>
+
+                            </ul>
+                            <div class="caption"><a class="more" href="/xm-hospital/n5/index.html">阅读更多</a></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <a href="" class="sub-close">收起</a>
+        </section>
+        <!-- footer -->
         <footer id="globalFooter">
             <div class="globalFooter-main clearfix">
                 <div class="globalFooter-left">
