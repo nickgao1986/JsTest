@@ -200,15 +200,21 @@
             margin-bottom: 16px;
         }
 
+        .col {
+            float: left;
+            padding: 0 20px;
+            background-color: #fff;
+        }
+
         .col-about {
             width: 360px;
             background-color: transparent;
         }
 
-        .col {
-            float: left;
-            padding: 0 20px;
-            background-color: #fff;
+        .col-about article {
+            padding: 10px 0;
+            font-size: 16px;
+            line-height: 24px;
         }
 
         .col h2 {
@@ -331,6 +337,14 @@
             float: left;
             width: 330px;
             margin-left: 20px;
+        }
+
+        .clearfix:after {
+            content: ".";
+            display: block;
+            clear: both;
+            visibility: hidden;
+            height: 0;
         }
 
         #sub {
@@ -661,6 +675,7 @@
 
         <!-- sub model -->
         <section id="sub">
+            <div style="background: #0f1c88;height:10px;width:100%"></div>
             <nav class="sub-nav">
                 <ul>
                     <li>
