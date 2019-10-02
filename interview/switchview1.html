@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <title>css3实现幻灯片效果</title>
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+    <style type="text/css">
+        .cb-slideshow{
+            width:400px;
+            height:400px;
+            margin:0 auto;
+            z-index:0;
+        }
+        .cb-slideshow li{
+            position:absolute;
+            width:800px;
+            height:600px;
+            background-size:cover;
+            background-repeat: none;
+            opacity:0;
+            z-index:0;
+            -webkit-animation: loops 16s linear infinite 0s;
+        }
+        .cb-slideshow li:nth-child(1){
+            background-image: url(images/1.jpg);
+        }
+        .cb-slideshow li:nth-child(2){
+            background-image: url(images/2.jpg);
+            -webkit-animation-delay: 6s;
+        }
+        .cb-slideshow li:nth-child(3){
+            background-image: url(images/3.jpg);
+            -webkit-animation-delay: 12s;
+        }
+        .cb-slideshow li:nth-child(4){
+            background-image: url(images/4.jpg);
+            -webkit-animation-delay: 18s;
+        }
+        .cb-slideshow li:nth-child(5){
+            background-image: url(images/1.jpg);
+            -webkit-animation-delay: 24s;
+        }
+        .cb-slideshow li:nth-child(6){
+            background-image: url(images/2.jpg);
+            -webkit-animation-delay: 30s;
+        }
+        @-webkit-keyframes "loops" {
+            0% {
+                opacity: 0;
+
+            }
+            8% {
+                opacity:1;
+            }
+            17% {
+                opacity:1;
+            }
+            25% {
+                opacity:0.5;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+<ul class="cb-slideshow">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+</body>
