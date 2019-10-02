@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <title>LYP 学院</title>
+    <!--加入关键词和网站描述，进行搜索引擎优化-->
+    <meta name="keywords" content="极客学院,IT职业教育,IT在线教育平台,IT在线教育,IT在线学习,it职业培训,android,ios,flash,java,python,html5,swift,cocos2dx">
+    <meta name="description" content="极客学院作为中国专业IT职业在线教育平台,拥有海量高清IT职业课程,涵盖30+个技术领域,如Android,iOS ,Flash,Java,Python,HTML5,Swift,Cocos2dx等视频教程.根据IT在线学习特点,极客学院推出IT学习知识体系图,IT职业学习实战路径图,帮助IT学习者从零基础起步,结合IT实战案例演练,系统学习,助你快速成为IT优秀技术人才！">
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+    <!--整个页面包裹层-->
+    <div id="wrapper">
+        <!-- 页面修饰层，补充页面颜色等信息-->
+        <div id="header_top_notice"></div>
+        <!-- 头部列表，包括logo、导航栏、搜索框、用户注册登录信息等-->
+        <div id="LYP-header">
+            <div class="header">
+                <!-- 页面logo展示-->
+                <h1>
+                    <a href="http://www.jikexueyuan.com/" class="logo"><img src="img/logo.png" alt="极客学院"></a>
+                </h1>
+                <!-- 头部导航栏-->
+                <nav>
+                    <ul>
+                        <!--头部导航栏第一个项目-->
+                        <li>
+                            <a href="http://www.jikexueyuan.com/">首页</a>
+                        </li>
+                        <!--头部导航栏第二个项目-->
+                        <li class="careerpath">
+                            <a href="http://www.jikexueyuan.com/zhiye/">职业</a>
+                            <!--倒三角小图标，鼠标移到上面旋转180度-->
+                            <i class="slide-icon"></i>
+                            <!--头部下拉菜单一，点击倒三角图标出现-->
+                            <div class="career-submenu slide-submenu">
+                                <!--头部下拉菜单一第一个项目组-->
+                                <strong>前端</strong>
+                                <!--头部下拉菜单一第一个项目组第一个内容-->
+                                <a href="https://www.jikexueyuan.com/zhiye/web">
+                                    <i class="web-icon"></i>
+                                    Web前端工程师 
+                                </a>
+                                <!--头部下拉菜单一第一个项目组第二个内容-->
+                                <a href="https://www.jikexueyuan.com/zhiye/wechatapp">
+                                    <i class="wx-icon"></i>
+                                    微信小程序
+                                </a>
+                                <!--头部下拉菜单一第二个项目组-->
+                                <strong>移动端</strong>
+                                <!--头部下拉菜单一第二个项目组第一个内容-->
+                                <a href="https://www.jikexueyuan.com/zhiye/android">
+                                    <i class="android-icon"></i>
+                                    Android工程师
+                                </a>
+                                <!--头部下拉菜单一第二个项目组第二个内容-->
+                                <a href="https://www.jikexueyuan.com/zhiye/ios">
+                                    <i class="ios-icon"></i>
+                                    ios工程师
+                                </a>
+                                <!--头部下拉菜单一第三个项目组-->
+                                <strong>后端</strong>
+                                <!--头部下拉菜单一第三个项目组第一个内容-->
+                                <a href="https://www.jikexueyuan.com/zhiye/python">
+                                    <i class="python-icon"></i>
+                                    Pyhon工程师
+                                </a>
+                                <!--头部下拉菜单一第三个项目组第二个内容-->
+                                <a href="https://www.jikexueyuan.com/zhiye/php">
+                                    <i class="php-icon"></i>
+                                    PHP工程师
+                                </a>
+                                <!--头部下拉菜单一第三个项目组第三个内容-->
+                                <a href="https://www.jikexueyuan.com/zhiye/go">
+                                    <i class="golang-icon"></i>
+                                    Golang工程师
+                                </a>
+                                <!--头部下拉菜单一第四个项目组-->
+                                <strong>大数据</strong>
+                                <!--头部下拉菜单一第四个项目组内容-->
+                                <a href="https://www.jikexueyuan.com/zhiye/bigdata">
+                                    <i class="data-icon"></i>
+                                    大数据平台研发工程师
+                                </a>
+                                <!--头部下拉菜单一第五个项目组-->
+                                <strong>人工智能</strong>
+                                <!--头部下拉菜单一第五个项目组内容-->
+                                <a href="https://www.jikexueyuan.com/zhiye/ml">
+                                    <i class="mlearning-icon"></i>
+                                    机器学习工程师
+                                </a>
+                            </div>
+                        </li>
+                        <!--头部导航栏第三个项目-->
+                        <li>
+                            <a href="http://www.jikexueyuan.com/course/">课程</a>
+                            <!--倒三角小图标，鼠标移到上面旋转180度-->
+                            <i class="slide-icon"></i>
+                            <!--头部下拉菜单二，点击倒三角图标出现,第二、四项内容底色为灰色-->
+                            <div class="slide-submenu">
+                                <a href="https://www.jikexueyuan.com/course/">课程库</a>
+                                <a href="https://ke.jikexueyuan.com/zhiye/">职业路径</a>
+                                <a href="https://www.jikexueyuan.com/path/">知识体系</a>
+                                <a href="https://ke.jikexueyuan.com/xilie/">系列课程</a>
+                            </div>
+                        </li>
+                        <!--头部导航栏第四个项目-->
+                        <li>
+                            <a href="http://www.jikexueyuan.com/partner">企业</a>
+                            <!--倒三角小图标，鼠标移到上面旋转180度-->
+                            <i class="slide-icon"></i>
+                            <!-- 头部导航栏下拉菜单三，第二、四个内容块底色为灰色，内容块包括小图标和链接-->
+                            <div class="slide-submenu qy-box">
+                                <a href="https://zt.jikexueyuan.com/microsoftai">
+                                    <i class="wr-icon"></i>
+                                    微软人工智能
+                                </a>
+                                <a href="https://zt.jikexueyuan.com/baiduai">
+                                    <i class="baidu-icon"></i>
+                                    百度AI图像技术课
+                                </a>
+                                <a href="https://zt.jikexueyuan.com/aws">
+                                    <i class="aws-icon"></i>
+                                    AWS云计算
+                                </a>
+                                <a href="https://zt.jikexueyuan.com/qcloud">
+                                    <i class="txy-icon"></i>
+                                    腾讯云课程专区
+                                </a>
+                                <a href="https://zt.jikexueyuan.com/qualcomm">
+                                    <i class="gt-icon"></i>
+                                    Qualcomm公开课
+                                </a>
+                            </div>
+                        </li>
+                       <!--头部导航栏第五个项目-->
+                        <li>
+                            <a href="http://wiki.jikexueyuan.com/">社区</a>
+                            <!--倒三角小图标，鼠标移到上面旋转180度-->
+                            <i class="slide-icon"></i>
+                            <!--头部导航下拉菜单四，第二、四项内容块底色为灰色-->
+                            <div class="slide-submenu">
+                                <a href="https://wiki.jikexueyuan.com/">Wiki</a>
+                                <a href="https://wenda.jikexueyuan.com/">技术问答</a>
+                                <a href="https://qun.jikexueyuan.com/">社群</a>
+                                <a href="https://download.jikexueyuan.com/">资料下载</a>
+                            </div>
+                        </li>
+                        <!--头部导航栏第六个项目-->
+                        <li>
+                            <a href="http://www.jikexueyuan.com/javascript%EF%BC%9Avoid(0);">线下课程</a>
+                            <!--倒三角小图标，鼠标移到上面旋转180度-->
+                            <i class="slide-icon"></i>
+                            <!--头部下拉菜单五，第二项内容块底色为灰色-->
+                            <div class="slide-submenu">
+                                <a href="http://daniu.jikexueyuan.com/web-offline/npx/?utm_source=jikexueyuan&utm_medium=www&utm_campaign=index&utm_content=header">Web前端</a>
+                                <a href="http://daniu.jikexueyuan.com/web-offline/py/?utm_source=jikexueyuan&utm_medium=www&utm_campaign=index&utm_content=header">Python+人工智能</a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- search开始-->
+                <div class="search">
+                    <input class="search-input" id="searchInput" placeholder="搜索课程、问答或wiki">
+                    <!--
+                        <div pseudo="-webkit-input-placeholder" id="placeholder" style="text-overflow: clip;
+                        display: block !important;">
+                            搜索课程、问答或wiki
+                        </div>
+                        <div id="inner-editor"></div>
+                    -->
+                    <span class="search-icon" id="search-bottom"></span>
+                    <div class="search-result"></div>
+                </div>
+                <!-- user开始-->
+                <div class="userInfo" id="userInfo">
+                    <div class="centerBox">
+                        <a href="http://xue.jikexueyuan.com/" class="learn-center" title="
+                        学习中心">
+                        </a>
+                    </div>
+                    <div class="centerBox">
+                        <a href="http://www.jikexueyuan.com/member/notifications/" class="message" id="message" title="
+                        消息中心">
+                            <i class="have" id="have" style="color: black;"></i>
+                        </a>
+                    </div>
+                    <span class="notLogin">
+                        <a href="http://passport.jikexueyuan.com/sso/login">登录</a>
+                        <i></i>
+                        <a href="http://passport.jikexueyuan.com/sso/reg_phone">注册</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <!--pager开始-->
+        <div id="pager">
+            <!--cf卡斯和-->
+            <div class="cf">
+                <div class="LYP-banner">
+                    <!--
+                    <div class="banner-container" style="cursor: -webkit-grab;">
+                        <span id="banner-arrow-left" class="banner-arrow-left"></span>
+                        <span id="banner-arrow-right" class="banner-arrow-right"></span>
+                        <div class="swiper-wrapper"></div>
+                        <div class="banner-pagination"></div>
+                    </div>
+                -->
+                </div>
+                <div class="subscription-container">
+                    <h3>极客头条</h3>
+                    <ul class="subscription-list">
+                        <li>
+                            <img src="http://jiuye-res.jikexueyuan.com/others/20170724/bc5087ba-9bd9-422e-9084-39a492830d7e.png" alt="线下面授|零基础Python实战课程，120天挑战月薪8000起">
+                            <p>
+                                <a href="http://daniu.jikexueyuan.com/web-offline/py/?utm_source=jikexueyuan&utm_medium=www&utm_campaign=index&utm_content=banner&utm_term=right_news" target="_blank">线下面授 | 零基础Python实战课程，120天挑战月薪8000起</a>
+                            </p>
+                        </li>
+                        <li>
+                            <img src="http://jiuye-res.jikexueyuan.com/others/20170724/bc5087ba-9bd9-422e-9084-39a492830d7e.png" alt="推荐|Android热更新技术原理及方案详解">
+                            <p>
+                                <a href="http://www.jikexueyuan.com/zhiye/course/133.html?type=18">推荐 | Android热更新技术原理及方案详解</a>
+                            </p>
+                        </li>
+                        <li>
+                            <img src="http://jiuye-res.jikexueyuan.com/others/20170724/84f89bf6-466a-4044-bc68-15c4a1eca66b.png" alt="极客社群|百度AI技术Q群（664176161）诚邀加入">
+                            <p>
+                                <a href="http://zt.jikexueyuan.com/baiduai">极客社群 | 百度 AI技术Q群（664176161）诚邀加入</a>
+                            </p>
+                        </li>
+                        <li>
+                            <img src="http://jiuye-res.jikexueyuan.com/others/20170724/bc5087ba-9bd9-422e-9084-39a492830d7e.png" alt="仅需1元！轻松掌握机器学习工程师职业规划">
+                            <p>
+                                <a href="#">仅需1元！轻松掌握机器学习工程师职业规划</a>
+                            </p>
+                        </li>
+                        <li>
+                            <img src="http://jiuye-res.jikexueyuan.com/others/20170724/bc5087ba-9bd9-422e-9084-39a492830d7e.png" alt="学习 Vue 你需要知道的webpack 知识！">
+                            <p>
+                                <a href="#">学习 Vue 你需要知道的webpack 知识！</a>
+                            </p>
+                        </li>
+                    </ul>
+                    <form class="subscription-sub">
+                        <div class="form-container">
+                            <input type="text" id="subscription-email" name="email" placeholder="请输入您的邮件地址">
+                            <a href="javascript:;" class="subscription-btn" id="subscription-sub">订阅</a>
+                        </div>
+                    </form>
+                </div>
+                <div class="aside-allCategry">
+                    <div class="bd">
+                        <ul class="aside-CList">
+                            <li>
+                                <div>
+                                    <a href="http://www.jikexueyuan.com/course/web/">前端开发</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <a href="http://www.jikexueyuan.com/course/mobile/">开发移动</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <a href="http://www.jikexueyuan.com/course/dev/">后端开发</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <a href="http://www.jikexueyuan.com/course/ai/">人工智能</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <a href="http://www.jikexueyuan.com/course/intellegence/">智能硬件/物联网</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <a href="http://www.jikexueyuan.com/course/productdesign/">设计/产品/测试</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <a href="http://www.jikexueyuan.com/course/clouddata/">云计算/大数据</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <a href="http://www.jikexueyuan.com/course/base/">技术支撑</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--minbanner开始-->
+            <div class="minbanner">
+                <div class="ad-container"><a href="http://ad.jikexueyuan.com/v1/code_slot/9/creative/86/redirect?delivery_ad_id=77&_t=1512180126" class="ad-items" target="_blank"><img src="img/c11.jpg"></a></div>
+                <div class="ad-container">
+                    <a href="http://ad.jikexueyuan.com/v1/code_slot/10/creative/50/redirect?delivery_ad_id=15&_t=1512180126" class="ad-items" target="_blank"><img src="img/c12.jpg"></a></div>
+                <div class="ad-container"><a href="http://ad.jikexueyuan.com/v1/code_slot/11/creative/41/redirect?delivery_ad_id=17&_t=1512180126" class="ad-items" target="_blank"><img src="img/c13.jpg" alt=""></a></div>
+            </div>
+            <!--最新课程开始-->
+            <div class="LYP-uptodate">
+                <h2>最新课程</h2>
+                <ul>
+                    <li class="uptodate">
+                        <a href="#"><img src="img/c21.jpg"></a>
+                        <p class="title">keras 框架入门实践</p>
+                        <p class="uptodate-Info">初级 | 4门课</p>
+                    </li>
+                    <li class="uptodate">
+                        <a href="#"><img src="img/c22.jpg"></a>
+                        <p class="title">【实战】Python与消息中间件</p>
+                        <p class="uptodate-Info">中级 | 4门课</p>
+                    </li>
+                    <li class="uptodate">
+                        <a href="#"><img src="img/c23.jpg"></a>
+                        <p class="title">深入浅出 —— 自然语言处理</p>
+                        <p class="uptodate-Info">初级 | 8门课</p>
+                    </li>
+                    <li class="uptodate">
+                        <a href="#"><img src="img/c24.jpg"></a>
+                        <p class="title">MVC与MVVM框架设计</p>
+                        <p class="uptodate-Info">中级 | 4门课 | 4个实战项目</p>
+                    </li>
+                </ul>
+            </div>
+            <!--职业方向开始-->
+            <div class="career">
+                <h2>职业方向</h2>
+                <a href="#">更多职业方向&nbsp;>></a>
+                <div class="status-container">
+                    <div class="status">
+                        <a href="#" class="card"><img src="img/c31.png"></a>
+                        <h3>Android 工程师</h3>
+                    </div>
+                    <div class="status">
+                        <a href="#" class="card"><img src="img/c32.png"></a>
+                        <h3>Android 工程师</h3>
+                    </div>
+                    <div class="status">
+                        <a href="#" class="card"><img src="img/c33.png"></a>
+                        <h3>Android 工程师</h3>
+                    </div>
+                    <div class="status">
+                        <a href="#" class="card"><img src="img/c34.png"></a>
+                        <h3>Android 工程师</h3>
+                    </div>
+                    <div class="status">
+                        <a href="#" class="card"><img src="img/c35.png"></a>
+                        <h3>Android 工程师</h3>
+                    </div>
+                    <div class="status">
+                        <a href="#" class="card"><img src="img/c36.png"></a>
+                        <h3>Android 工程师</h3>
+                    </div>
+                    <div class="status">
+                        <a href="#" class="card"><img src="img/c37.png"></a>
+                        <h3>Android 工程师</h3>
+                    </div>
+                    <div class="status">
+                        <a href="#" class="card"><img src="img/c38.png"></a>
+                        <h3>Android 工程师</h3>
+                    </div>
+                    <div class="status">
+                        <a href="#" class="card"><img src="img/c39.png"></a>
+                        <h3>Android 工程师</h3>
+                    </div>
+                    <div class="status">
+                        <a href="#" class="card"><img src="img/c391.png"></a>
+                        <h3>Android 工程师</h3>
+                    </div>
+                </div>
+            </div>
+            <!--知识体系-->
+            <div class="vip">
+                <h2>知识体系</h2>
+                <a href="#">更多知识体系&nbsp;>></a>
+                <div class="list-style">
+                    <a href="#" class="list-item"><img src="img/c40.png"></a>
+                    <h3>html5 开发</h3>
+                    <span>116门课程</span>
+                </div>
+                <div class="list-style">
+                    <a href="#" class="list-item"><img src="img/c41.png"></a>
+                    <h3>html5 开发</h3>
+                    <span>116门课程</span>
+                </div>
+                <div class="list-style">
+                    <a href="#" class="list-item"><img src="img/c42.png"></a>
+                    <h3>html5 开发</h3>
+                    <span>116门课程</span>
+                </div>
+                <div class="list-style">
+                    <a href="#" class="list-item"><img src="img/c43.png"></a>
+                    <h3>html5 开发</h3>
+                    <span>116门课程</span>
+                </div>
+                <div class="list-style">
+                    <a href="#" class="list-item"><img src="img/c44.png"></a>
+                    <h3>html5 开发</h3>
+                    <span>116门课程</span>
+                </div>
+                <div class="list-style">
+                    <a href="#" class="list-item"><img src="img/c45.png"></a>
+                    <h3>html5 开发</h3>
+                    <span>116门课程</span>
+                </div>
+                <div class="list-style">
+                    <a href="#" class="list-item"><img src="img/c46.png"></a>
+                    <h3>html5 开发</h3>
+                    <span>116门课程</span>
+                </div>
+                <div class="list-style">
+                    <a href="#" class="list-item"><img src="img/c47.png"></a>
+                    <h3>html5 开发</h3>
+                    <span>116门课程</span>
+                </div>
+                <div class="list-style">
+                    <a href="#" class="list-item"><img src="img/c48.png"></a>
+                    <h3>html5 开发</h3>
+                    <span>116门课程</span>
+                </div>
+                <div class="list-style">
+                    <a href="#" class="list-item"><img src="img/c49.png"></a>
+                    <p>116门课程</p>
+                </div>
+                <div class="list-style">
+                    <a href="#" class="list-item"><img src="img/c491.png"></a>
+                    <h3>html5 开发</h3>
+                    <span>116门课程</span>
+                </div>
+                <div class="list-style">
+                    <a href="#" class="list-item"><img src="img/c492.png"></a>
+                    <h3>html5 开发</h3>
+                    <span>116门课程</span>
+                </div>
+                <div class="list-style">
+                    <a href="#" class="list-item"><img src="img/c493.png"></a>
+                    <h3>html5 开发</h3>
+                    <span>116门课程</span>
+                </div>
+                <div class="list-style">
+                    <a href="#" class="list-item"><img src="img/c494.png"></a>
+                    <h3>html5 开发</h3>
+                    <span>116门课程</span>
+                </div>
+                <div class="list-style">
+                    <a href="#" class="list-item"><img src="img/c495.png"></a>
+                    <h3>html5 开发</h3>
+                    <span>116门课程</span>
+                </div>
+                <div class="list-style">
+                    <a href="#" class="list-item"><img src="img/c496.png"></a>
+                    <h3>html5 开发</h3>
+                    <span>116门课程</span>
+                </div>
+                <div class="list-style">
+                    <a href="#" class="list-item"><img src="img/c497.png"></a>
+                    <h3>html5 开发</h3>
+                    <span>116门课程</span>
+                </div>
+                <div class="list-style">
+                    <a href="#" class="list-item"><img src="img/c498.png"></a>
+                    <h3>html5 开发</h3>
+                    <span>116门课程</span>
+                </div>
+                <div class="list-style">
+                    <a href="#" class="list-item"><img src="img/c499.png"></a>
+                    <h3>html5 开发</h3>
+                    <span>116门课程</span>
+                </div>
+                <div class="list-style">
+                    <a href="#" class="list-item"><img src="img/c4991.png"></a>
+                    <h3>html5 开发</h3>
+                    <span>116门课程</span>
+                </div>
+                <div class="list-style">
+                    <a href="#" class="list-item"><img src="img/c4992.png"></a>
+                    <h3>html5 开发</h3>
+                    <span>116门课程</span>
+                </div>
+            </div>
+            <!--极客服务开始-->
+            <div class="service">
+                <h2>极客服务</h2>
+                <ul class="service-card">
+                    <li>
+                        <i>就业培训</i>
+                        <h3 class="title">大牛程序员</h3>
+                        <p class="sub">线下面授教学，不就业不付款</p>
+                        <p class="ct">
+                            4个月小白变大牛，月薪8000起
+                            <br> 门槛低？就业难？老师坑？？学不会
+                        </p>
+                        <div class="btn-container">
+                            <a href="#">了解更多</a>
+                            <a href="#" class="apply">免费试听</a>
+                        </div>
+                    </li>
+                    <li>
+                        <i>就业培训</i>
+                        <br>
+                        <h3 class="title">大牛程序员</h3>
+                        <p class="sub">线下面授教学，不就业不付款</p>
+                        <p class="ct">
+                            4个月小白变大牛，月薪8000起
+                            <br> 门槛低？就业难？老师坑？？学不会
+                        </p>
+                        <div class="btn-container">
+                            <a href="#">了解更多</a>
+                            <a href="#" class="apply">免费试听</a>
+                        </div>
+                    </li>
+                    <li>
+                        <i>就业培训</i>
+                        <br>
+                        <h3 class="title">大牛程序员</h3>
+                        <p class="sub">线下面授教学，不就业不付款</p>
+                        <p class="ct">
+                            4个月小白变大牛，月薪8000起
+                            <br> 门槛低？就业难？老师坑？？学不会
+                        </p>
+                        <div class="btn-container">
+                            <a href="#">了解更多</a>
+                            <a href="#" class="apply">免费试听</a>
+                        </div>
+                    </li>
+                    <li>
+                        <i>就业培训</i>
+                        <br>
+                        <h3 class="title">大牛程序员</h3>
+                        <p class="sub">线下面授教学，不就业不付款</p>
+                        <p class="ct">
+                            4个月小白变大牛，月薪8000起
+                            <br> 门槛低？就业难？老师坑？？学不会
+                        </p>
+                        <div class="btn-container">
+                            <a href="#">了解更多</a>
+                            <a href="#" class="apply">免费试听</a>
+                        </div>
+                    </li>
+                    <li>
+                        <i>就业培训</i>
+                        <br>
+                        <h3 class="title">大牛程序员</h3>
+                        <p class="sub">线下面授教学，不就业不付款</p>
+                        <p class="ct">
+                            4个月小白变大牛，月薪8000起
+                            <br> 门槛低？就业难？老师坑？？学不会
+                        </p>
+                        <div class="btn-container">
+                            <a href="#">了解更多</a>
+                            <a href="#" class="apply">免费试听</a>
+                        </div>
+                    </li>
+                    <li>
+                        <i>就业培训</i>
+                        <br>
+                        <h3 class="title">大牛程序员</h3>
+                        <p class="sub">线下面授教学，不就业不付款</p>
+                        <p class="ct">
+                            4个月小白变大牛，月薪8000起
+                            <br> 门槛低？就业难？老师坑？？学不会
+                        </p>
+                        <div class="btn-container">
+                            <a href="#">了解更多</a>
+                            <a href="#" class="apply">免费试听</a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="service-list">
+                    <div class="quest">
+                        <h2>有问必答</h2>
+                        <a href="http://wenda.jikexueyuan.com" target="_blank">更多问题&nbsp;>></a>
+                        <ul>
+                            <li>
+                                <a href="http://wenda.jikexueyuan.com/question/26076" target="_blank">
+                                        <img src="https://a1.jikexueyuan.com/home/201604/29/8ccb/57231d532b9a5.png" alt="【问答技巧】怎样提问才能让我的问题更快速被解答？">
+                                        <span class="text"> 【问答技巧】怎样提问才能让我的问题更快速被解答？</span>
+                                        <span class="num">69/29014</span>
+                                    </a>
+                            </li>
+                            <li>
+                                <a href="http://wenda.jikexueyuan.com/question/27538" target="_blank">
+                                        <img src="https://a1.jikexueyuan.com/home/201604/29/4ad3/57231d0e06972.png" alt="Boostrap 最新版 V4 中文文档">
+                                        <span class="text"> Boostrap 最新版 V4 中文文档</span>
+                                        <span class="num">23/17730</span>
+                                    </a>
+                            </li>
+                            <li>
+                                <a href="http://wenda.jikexueyuan.com/question/26076" target="_blank">
+                                        <img src="https://wirrorcdn.jikexueyuan.com/category/devbase.png" alt="【老师分享】对LPS的Manacher算法感兴趣的同学请参考以下解法。">
+                                        <span class="text"> 【老师分享】对LPS的Manacher算法感兴趣的同学请参考以下解法。</span>
+                                        <span class="num">1/7014</span>
+                                    </a>
+                            </li>
+                            <li>
+                                <a href="http://wenda.jikexueyuan.com/question/26076" target="_blank">
+                                        <img src="https://a1.jikexueyuan.com/home/201604/29/8ccb/57231d532b9a5.png" alt="【问答技巧】怎样提问才能让我的问题更快速被解答？">
+                                        <span class="text"> 【问答技巧】怎样提问才能让我的问题更快速被解答？</span>
+                                        <span class="num">69/29014</span>
+                                    </a>
+                            </li>
+                            <li>
+                                <a href="http://wenda.jikexueyuan.com/question/26076" target="_blank">
+                                        <img src="https://a1.jikexueyuan.com/home/201604/29/8ccb/57231d532b9a5.png" alt="【问答技巧】怎样提问才能让我的问题更快速被解答？">
+                                        <span class="text"> 【问答技巧】怎样提问才能让我的问题更快速被解答？</span>
+                                        <span class="num">69/29014</span>
+                                    </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="teach">
+                        <h2>Wiki</h2>
+                        <a href="#" target="_blank">更多教程&nbsp;>></a>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                        <img src="https://wikicdn.jikexueyuan.com/cover/recommend/527650deffc1454f88f9f07886cba623.jpg" alt="TensorFlow 官方文档中文版">
+                                        <span class="text">TensorFlow 官方文档中文版</span>
+                                        <span class="num">30章</span>
+                                    </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                        <img src="https://wikicdn.jikexueyuan.com/cover/recommend/527650deffc1454f88f9f07886cba623.jpg" alt="TensorFlow 官方文档中文版">
+                                        <span class="text">TensorFlow 官方文档中文版</span>
+                                        <span class="num">30章</span>
+                                    </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                        <img src="https://wikicdn.jikexueyuan.com/cover/recommend/527650deffc1454f88f9f07886cba623.jpg" alt="TensorFlow 官方文档中文版">
+                                        <span class="text">TensorFlow 官方文档中文版</span>
+                                        <span class="num">30章</span>
+                                    </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                        <img src="https://wikicdn.jikexueyuan.com/cover/recommend/527650deffc1454f88f9f07886cba623.jpg" alt="TensorFlow 官方文档中文版">
+                                        <span class="text">TensorFlow 官方文档中文版</span>
+                                        <span class="num">30章</span>
+                                    </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                        <img src="https://wikicdn.jikexueyuan.com/cover/recommend/527650deffc1454f88f9f07886cba623.jpg" alt="TensorFlow 官方文档中文版">
+                                        <span class="text">TensorFlow 官方文档中文版</span>
+                                        <span class="num">30章</span>
+                                    </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--极客故事开始-->
+            <div class="LYP-story"></div>
+            <!--合作伙伴开始-->
+            <div class="LYP-partner"></div>
+        </div>
+        <!--footer开始-->
+        <div id="footer"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,1091 @@
+/* 总体样式 */
+*{
+    margin:0;
+    padding: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+    font-family: PingFangSC-Light, 'STHeiti Light', 'helvetica neue', 'hiragino sans gb', arial, 'microsoft yahei ui', 'microsoft yahei', simsun, sans-serif;
+}
+
+img{
+    border:0;
+}
+
+a{
+    text-decoration: none;
+}
+
+ol,ul{
+    list-style: none;
+}
+
+blockquote, body, button, dd, dl, dt, fieldset, figure, form, h1, h2, h3, h4, h5, h6, input, legend, li, ol, p, pre, select, td, textarea, th, ul{
+    font-family: PingFangSC-Light,'STHeiti Light','helvetica neue','hiragino sans gb',arial,'microsoft yahei ui','microsoft yahei',simsun,sans-serif;
+}
+
+a, dd,div, dl, i, img, input, li, p, span, ul{
+    box-sizing: border-box;
+    -webkit-font-smoothing:antialiased;
+    -moz-box-sizing:border box;
+}
+
+img, input, label, select{
+    vertical-align: middle;
+}
+
+button, h1, h2, h3, h4, h5, h6, input, select, textarea{
+    font-size: 100%;
+    font-weight: 400;
+    -webkit-font-smoothing:antialiased;
+}
+
+/* 外层样式 */
+#footer{
+    margin-top: 70px;
+    position: relative;
+    font-size: 12px;
+    background: #fff;
+    box-sizing: border-box;
+    padding-bottom: 20px;
+    border-top: 1px solid #e4e4e4;
+}
+
+#pager{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 头部样式*/
+/*对页面背景进行补色*/
+#header_top_notice{
+    display: none;
+    background-color:#ff8530;
+}
+
+#LYP-header{
+    width: 100%;
+    background: #fff;
+    height: 70px;
+    line-height: 70px;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+#LYP-header a, #LYP-header a:link, #LYP-header a:visited{
+    color:#555555;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+/* 头部logo包裹样式*/
+
+#LYP-header .header{
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    margin:0 auto;
+}
+
+#LYP-header .header:last-child{
+    right: 0;
+}
+
+#LYP-header .header h1{
+    display: inline;
+}
+
+#LYP-header .header .logo{
+    width: 100px;
+    height: 37px;
+    margin-top: 15px;
+    float: left;
+    margin-right: 45px;
+}
+
+#LYP-header .header .logo img{
+    display: block;
+    width: 100px;
+}
+
+/* 头部导航样式*/
+#LYP-header .header nav{
+    height: 69px;
+    display: inline-block;
+    float: left;
+}
+
+#LYP-header .header nav ul{
+    display: flex;
+    justify-content: space-between;
+    font-size: 0;
+}
+
+#LYP-header .header nav li{
+    color: #555;
+    list-style: none;
+    line-height: 69px;
+    padding-right: 32px;
+    text-decoration: none;
+    font-size: 15px;
+    float: left;
+    cursor: pointer;
+    position: relative;
+}
+
+#LYP-header .header nav li:hover{
+    color: #35b558;
+}
+
+#LYP-header .header nav li:hover i.slide-icon{
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+}
+
+#LYP-header .header nav li:hover .slide-submenu{
+    display: block;
+}
+
+#LYP-header .header nav li i.slide-icon{
+    background: url(https://e.jikexueyuan.com/headerandfooter/images/icon.png);
+    background-position: 0px -47px;
+    display: inline-block;
+    width: 11px;
+    margin-left: 5px;
+    height: 7px;
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+}
+
+#LYP-header .header .slide-submenu{
+    position: absolute;
+    left: 0;
+    top: 69px;
+    z-index: 1000;
+    width: 200px;
+    padding: 5px 0;
+    background: #fff;
+    border-top: 1px solid #E4E4E4;
+    box-shadow: -1px 3px 5px rgba(000, 000, 000, 0.3);
+    display: none;
+}
+
+#LYP-header .header .slide-submenu strong{
+    display: block;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: normal;
+    padding: 0px 15px;
+    color: #b9b9b9;
+    background: #fafafa;
+}
+
+#LYP-header .careerpath .slide-submenu a:nth-child(2n){
+    background: #fff;
+}
+
+#LYP-header .slide-submenu a:nth-child(2n){
+    background: #FAFAFA;
+}
+
+#LYP-header .careerpath .slide-submenu a{
+    line-height: 30px;
+}
+
+#LYP-header .slide-submenu a{
+    display: block;
+    font-size: 12px;
+    line-height: 35px;
+    padding: 0px 15px;
+}
+
+#LYP-header .career-submenu a i{
+    display: inline-block;
+    float: left;
+    width: 14px;
+    height: 14px;
+    margin-top: 8px;
+    margin-right: 10px;
+    background: url(https://e.jikexueyuan.com/headerandfooter/images/icon.png);
+}
+
+#LYP-header .career-submenu a i.web-icon{
+    background-position: -94px -23px;
+}
+
+#LYP-header .career-submenu a i.wx-icon{
+    background-position: -99px 0px;
+    margin-top: 7px;
+}
+
+#LYP-header .career-submenu a i.android-icon{
+    background-position: 0px -26px;
+}
+
+#LYP-header .career-submenu a i.ios-icon{
+    background-position: -48px -19px;
+    margin-top: 6px;
+}
+
+#LYP-header .career-submenu a i.python-icon{
+    background-position: -76px 0px;
+    margin-top: 8px;
+}
+
+#LYP-header .career-submenu a i.php-icon{
+    background-position: -48px 0px;
+    width: 20px;
+    margin-left: -4px
+    margin-top: 9px;
+}
+
+#LYP-header .career-submenu a i.data-icon{
+    background: url(https://e.jikexueyuan.com/headerandfooter/images/data.png) 0 0 no-repeat;
+    background-size: 20px;
+    width: 20px;
+    height: 20px;
+    margin-left: -4px;
+    margin-top: 3px;
+    margin-right: 8px;
+}
+
+#LYP-header .career-submenu a i.mlearning-icon{
+    background: url(https://e.jikexueyuan.com/headerandfooter/images/ml.png) 0 0 no-repeat;
+    background-size: 20px;
+    width: 20px 20px;
+    height: 20px;
+    margin-left: -4px;
+    margin-top: 3px;
+    margin-right: 8px;
+}
+
+#LYP-header .qy-box i{
+    display: inline-block;
+    float: left;
+    width: 14px;
+    height: 14px;
+    margin-top: 8px;
+    margin-right: 5px;
+    background: url(https://e.jikexueyuan.com/headerandfooter/images/company_2.png) no-repeat;
+}
+
+#LYP-header .qy-box i.wr-icon{
+    background-position: -35px 0;
+    margin-top: 11px;
+}
+
+#LYP-header .qy-box i.baidu-icon{
+    background-position: -72px 0;
+    margin-top: 10px;
+}
+
+#LYP-header .qy-box i.aws-icon{
+    background-position: -20px 0;
+    margin-top: 9px;
+}
+
+#LYP-header .qy-box i.txy-icon{
+    background-position: 0px 0;
+    width: 20px;
+    margin-left: -2px;
+    margin-top: 10px;
+}
+
+#LYP-header .qy-box i.gt-icon{
+    background-position: -50px 0;
+    margin-left: 1px;
+    margin-top: 10px;
+}
+
+/* 头部搜索栏样式*/
+#LYP-header .search {
+    float: left;
+    border: 1px solid #e4e4e4;
+    width: 230px;
+    height: 32px;
+    display: inline-block;
+    margin-top: 20px;
+    transition: all .3s;
+}
+
+#LYP-header .search input {
+    float: left;
+    width: 190px;
+    height: 30px;
+    outline: none;
+    border: none;
+    border-right: 1px solid #e4e4e4;
+    padding: 0px 8px;
+    font-size: 12px;
+}
+
+#LYP-header .search-icon {
+    width: 18px;
+    height: 18px;
+    float: right;
+    cursor: pointer;
+    display: inline-block;
+    background: url(http://e.jikexueyuan.com/headerandfooter/images/icon.png) 0 0 no-repeat;
+    background-position: 0 0;
+    margin-top: 6px;
+    margin-right: 10px;
+}
+
+#LYP-header .search .search-result{
+    display: none;
+    width: 230px;
+    margin-left: -1px;
+    margin-top: 31px;
+    border:1px solid #e4e4e4;
+    background-color: #fff;
+    list-style: none;
+    box-shadow: -1px 3px 5px rgba(000, 000, 000, 0.3);
+}
+
+/* 用户信息样式*/
+#LYP-header .userInfo {
+    float: right;
+    height: 70px;
+    width: 122px;
+}
+
+#LYP-header .centerBox{
+    display: none;
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+    margin-top: 20px;
+}
+
+#LYP-header .centerBox:hover{
+    background: #fafafa;
+    border-radius: 5px;
+}
+
+#LYP-header .learn-center{
+    background: url(http://e.jikexueyuan.com/headerandfooter/images/center-icon.png) no-repeat 0 0;
+    width: 16px;
+    height: 16px;
+    margin:8px 0 0 8px;
+    display: block;
+}
+
+#LYP-header .centerBox:nth-child(2){
+    margin-right: 0;
+}
+
+#LYP-header .message{
+    cursor: pointer;
+    width: 15px;
+    height: 18px;
+    display: block;
+    position: relative;
+    margin:7px 0px 0 8px;
+    background: url(http://e.jikexueyuan.com/headerandfooter/images/icon.png) 0 0 no-repeat;
+    background-position: -26px 0;
+}
+
+#LYP-header .message .have{
+    position: absolute;
+    top: -5px;
+    right: -2px;
+    z-index: 700;
+    width: 6px;
+    height: 6px;
+    background: #ff7263;
+    border-radius: 50%;
+}
+
+/* 用户登录样式*/
+#LYP-header .notLogin{
+    display: inline-block;
+    float: right;
+    font-size: 14px;
+}
+
+#LYP-header .notLogin a{
+    padding: 0px 15px;
+    float: left;
+    font-size: 14px;
+}
+
+#LYP-header .notLogin i{
+    border-left: 1px solid #ccc;
+    height: 15px;
+    display: inline-block;
+    float: left;
+    overflow: hidden;
+    margin-top: 27px;
+}
+
+#LYP-header .notLogin a:nth-child(3){
+    padding-right: 0;
+}
+
+
+/*banner样式*/
+.LYP-banner {
+    background: orange url(img/top-bg.png) no-repeat;
+    width: 100%;
+    height: 360px;
+    overflow: hidden;
+}
+
+/* banner右侧列表样*/
+.subscription-container{
+    position: absolute;
+    top: 96px;
+    right: 50%;
+    margin-right: -500px;
+    background: #fff;
+    display: inline-block;
+    width: 210px;
+    height: 297px;
+}
+
+.subscription-container h3{
+    height: 32px;
+    text-align: center;
+    font-size: 13px;
+    color: #517896;
+    line-height: 32px;
+}
+
+.subscription-container .subscription-list{
+    height: 222px;
+    background: #fafafa;
+    border-top: 1px solid #f1f1f1;
+    border-bottom: 1px solid #f1f1f1;
+    padding: 0 15px;
+    font-size: 12px;
+    color: #333;
+    line-height: 16px;
+}
+
+.subscription-container .subscription-list li{
+    position: relative;
+    height: 44px;
+    border-bottom: 1px solid #f4f4f4;
+    padding-left: 20px;
+}
+
+.subscription-container .subscription-list li img{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -9px;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+}
+
+.subscription-container .subscription-list li>p{
+    position: relative;
+    top: 50%;
+    -webkit-transform:translateY(-50%);
+    -moz-transform:translateY(-50%);
+    -ms-transform:translateY(-50%);
+    -o-transform:translateY(-50%);
+    transform:translateY(-50%);
+    max-height: 32px;
+    overflow: hidden;
+    text-align: justify;
+}
+
+.subscription-container .subscription-list li>p a{
+    color: #333;
+}
+
+.subscription-container .subscription-sub{
+    display: block;
+    height: 43px;
+}
+
+.subscription-container .subscription-sub .form-container{
+    position: relative;
+    top: 50%;
+    margin:0 auto;
+    height: 27px;
+    width: 184px;
+    line-height: 25px;
+    -webkit-transform:translateY(-50%);
+    -ms-transform:translateY(-50%);
+    transform:translateY(-50%);
+    text-align: center;
+    color: #333;
+}
+
+.subscription-container .subscription-sub .form-container input{
+    vertical-align: middle;
+    display: inline-block;
+    border:1px solid #e4e4e4;
+    border-right: 0;
+    width: 133px;
+    height: 27px;
+    outline: 0;
+    padding: 5px 10px;
+    font-size: 12px;
+    color: #333;
+}
+
+.subscription-container .subscription-sub .form-container a{
+    vertical-align: middle;
+    display: inline-block;
+    float: right;
+    width: 51px;
+    height: 27px;
+    border:1px solid #e4e4e4;
+    font-size: 12px;
+    color: #35b558;
+    text-align: center;
+    -webkit-transition:all .2s;
+    -moz-transition:all .2s;
+    -o-transition:all .2s;
+    transition:all .2s;
+}
+
+/*banner左侧列表样*/
+.aside-allCategry{
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    display: inline-block;
+    min-width: 210px;
+    height: 360px;
+    background: rgba(0,0,0,.75);
+    margin-left: -500px;
+}
+
+.aside-allCategry .aside-CList>li{
+    padding: 0 20px;
+    height: 45px;
+    line-height: 44px;
+}
+
+.aside-allCategry .aside-CList>li:hover{
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    background: #fff;
+}
+
+.aside-allCategry .aside-CList>li:first-child{
+    height: 46px;
+    line-height: 45px;
+}
+
+.aside-allCategry .aside-CList>li:last-child{
+    height: 44px;
+    line-height: 44px;
+}
+
+.aside-allCategry .aside-CList>li>div{
+    display: block;
+    height: 100%;
+    padding-left: 5px;
+    padding-right: 10px;
+    border-bottom: 1px solid rgba(255,255,255,.2);
+}
+
+.aside-allCategry .aside-CList>li:hover>div>a{
+    color: #333;
+}
+
+.aside-allCategry .aside-CList>li>div>a{
+    display: block;
+    height: 100%;
+    color: #fff;
+    font-size: 14px;
+}
+
+.aside-allCategry .aside-CList>li>div>a:after{
+    position: relative;
+    top: 20px;
+    float: right;
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-bottom: 2px solid #b2b2b2;
+    border-right: 2px solid #b2b2b2;
+    transform: rotate(-23deg);
+    -ms-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+
+}
+
+.cf:after{
+    content: '';
+    display: block;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+/* ad-banner样式*/
+.minbanner{
+    width: 1000px;
+    padding-top: 20px;
+    margin:0 auto;
+    font-size: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ad-container{
+    display: inline;
+}
+
+.minbanner .ad-items{
+    display: inline-block;
+    height: 120px;
+    width: 327px;
+    margin-right: 10px;
+    background: #fff;
+    -webkit-transition:all .2s ease;
+    -o-transition:all .2s ease;
+    -moz-transition:all .2s ease;
+    transition:all .2s ease;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.minbanner .ad-items:last-child{
+    margin-right: 0px;
+}
+
+.minbanner .ad-items>img{
+    width: 100%;
+}
+
+/* 最新课程样式*/
+.LYP-uptodate{
+    position: relative;
+    width: 1000px;
+    margin: 10px auto 0;
+}
+
+.LYP-uptodate h2{
+    line-height: 60px;
+    height: 60px;
+    text-align: left;
+    font-size: 18px;
+    color: #333;
+}
+.LYP-uptodate .uptodate{
+    display: inline-block;
+    vertical-align: top;
+    height: 240px;
+    width: 235px;
+    background: #fff;
+    margin-right: 20px;
+}
+
+.LYP-uptodate .uptodate:last-child{
+    margin-right: 0px;
+}
+
+.LYP-uptodate .uptodate img{
+    display: block;
+    width: 233px;
+    height: 157px;
+}
+
+.LYP-uptodate .uptodate>a{
+    display: block;
+}
+
+.LYP-uptodate .uptodate .title{
+    padding: 10px 15px 0;
+    font-size: 13px;
+    color: #333;
+    line-height: 18px;
+    height: 46px;
+    margin-bottom: 4px;
+    overflow: hidden;
+    text-align: justify;
+}
+
+.LYP-uptodate .uptodate .uptodate-Info{
+    font-size: 12px;
+    line-height: 22px;
+    height: 22px;
+    overflow: hidden;
+    color: #999;
+    padding-left: 15px;
+    text-align: justify;
+}
+
+.LYP-uptodate ul{
+    display: flex;
+    justify-content: space-between;
+    font-size: 0;
+}
+
+/* 职业方向样式*/
+.career{
+    position: relative;
+    width: 1000px;
+    margin: 10px auto 0;
+}
+
+.career .status-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.career h2{
+    line-height: 60px;
+    height: 60px;
+    text-align: left;
+    font-size: 18px;
+    color: #333;
+}
+
+.career>a{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    width: 100px;
+    height: 60px;
+    font-size: 12px;
+    color: #333;
+    text-align: right;
+    line-height: 52px;
+    padding-top: 8px;
+    text-decoration: none;
+}
+
+.career .status{
+    position: relative;
+    vertical-align: middle;
+    display: inline-block;
+    margin: 0 5px 10px 0;
+    padding-top: 15px;
+    text-align: center;
+    height: 150px;
+    width: 192px;
+    background: #fff;
+    transition: all .2s ease;
+    -moz-transition:all .2s ease;
+    -webkit-transition:all .2s ease;
+    -o-transition:all .2s ease;
+}
+
+.career .status:last-child{
+    margin-right: 0px;
+}
+
+.career .status .card{
+    display: block;
+}
+
+.career .status:before{
+    display: inline-block;
+    width: 23px;
+    height: 11px;
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    background: url(https://s1.jikexueyuan.com/index/images/index_zhiye_protag_dcca6cf.png);
+    background-size: 23px 11px;
+}
+
+.career .status .card img{
+    height: 96px;
+}
+
+.career .status h3{
+    margin-top: 10px;
+    font-size: 12px;
+    color: #333;
+}
+
+/*知识体系样式*/
+.vip{
+    position: relative;
+    width: 1000px;
+    margin: 10px auto 0;
+}
+
+.vip h2{
+    line-height: 60px;
+    height: 60px;
+    text-align: left;
+    font-size: 18px;
+    color: #333;
+}
+
+.vip>a{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    width: 100px;
+    height: 60px;
+    font-size: 12px;
+    color: #333;
+    text-align: right;
+    line-height: 52px;
+    padding-top: 8px;
+}
+
+.vip a{
+     text-decoration: none;
+}
+
+.vip .list-style{
+    vertical-align: middle;
+    display: inline-block;
+    margin: 0 5px 10px 0;
+    text-align: center;
+    height: 130px;
+    width: 134px;
+    background: #fff;
+    transition: all .2s ease;
+    -moz-transition:all .2s ease;
+    -webkit-transition:all .2s ease;
+    -o-transition:all .2s ease;
+}
+
+.vip .list-style:last:child{
+    margin-right: 0px;
+}
+
+.vip .list-style .list-item{
+    display: block;
+    text-align: center;
+}
+
+.vip .list-style .list-item img{
+    display: inline-block;
+    height: 50px;
+    margin-top: 15px;
+}
+
+.vip .list-style h3{
+    font-size: 12px;
+    color: #555;
+    height: 30px;
+    line-height: 30px;
+}
+
+.vip .list-style span{
+    display: block;
+    font-size: 12px;
+    color: #35b558;
+}
+
+/*极客服务样式*/
+.service{
+    position: relative;
+    width: 1000px;
+    margin:10px auto 0;
+}
+.service>h2{
+    line-height: 60px;
+    height: 60px;
+    text-align: left;
+    font-size: 18px;
+    color: #333;
+}
+
+.service .service-card{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0;
+}
+
+.service .service-card li{
+    display: inline-block;
+    vertical-align: middle;
+    width: 326px;
+    height: 210px;
+    background: #fff;
+    margin: 10px auto 0;
+    position: relative;
+    padding-top: 30px;
+    text-align: center;
+    transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+}
+
+.service .service-card li:last-child{
+    margin-right: 0px;
+}
+
+.service .service-card li>i{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    min-width: 50px;
+    padding: 0 5px;
+    line-height: 20px;
+    height: 20px;
+    color: #bbb;
+    border:1px solid #f0f0f0;
+    font-size: 12px;
+    font-style: normal;
+}
+
+.service .service-card li .title{
+    font-size: 16px;
+    color: #009129;
+    line-height: 22px;
+    font-weight: 300;
+}
+
+.service .service-card li .sub{
+    font-size: 12px;
+    color: #999;
+    line-height: 22px;
+}
+
+.service .service-card li .ct{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-size: 13px;
+    color: #333;
+    line-height: 20px;
+}
+
+.service .service-card li .btn-container{
+    font-size: 0;
+}
+
+.service .service-card li .btn-container a{
+    display: inline-block;
+    min-width: 85px;
+    height: 32px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 13px;
+    color: #666;
+    border:1px solid #e4e4e4;
+    transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    margin-right: 20px;
+    padding: 0 8px;
+}
+
+.service .service-card li .btn-container a.apply{
+    borer:1px solid #35b558;
+    color: #35b558;
+    margin-right: 0;
+}
+
+.service .service-list{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    font-size: 0;
+}
+
+.service .service-list .quest,
+.service .service-list .teach{
+    position: relative;
+    vertical-align: top;
+    display: inline-block;
+    transition: all .2s;
+    -moz-transition: all .2s;
+    -webkit-transition: all .2s;
+    -o-transition: all .2s;
+    background: #fff;
+}
+
+.service .service-list h2{
+    height: 41px;
+    line-height: 40px;
+    font-size: 16px;
+    color: #333;
+    border-bottom: 1px solid #f1f1f1;
+    padding-left: 20px;
+    padding-right: 24px;
+}
+
+.service .service-list .quest>a,
+.service .service-list .teach>a{
+    position: absolute;
+    top: 0;
+    right: 24px;
+    display: inline-block;
+    width: 70px;
+    height: 40px;
+    line-height: 36px;
+    padding-top: 4px;
+    font-size: 12px;
+    color: #333;
+    text-align: right;
+}
+
+.service .service-list ul{
+    width: 495px;
+    padding-left: 20px;
+    padding-right: 24px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 12px;
+}
+
+.service .service-list ul li a{
+    position: relative;
+    display: block;
+    color: #333;
+    height: 26px;
+    line-height: 26px;
+    padding-left: 28px;
+    overflow: hidden;
+}
+
+.service .service-list ul li a>img{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -9px;
+    display: inline-block;
+    height: 18px;
+    max-width: 18px;
+}
+
+.service .service-list ul li a .text{
+    display: inline-block;
+    vertical-align: middle;
+    width: 340px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.service .service-list ul li a .num{
+    display: inline-block;
+    width: 78px;
+    float: right;
+    color: #999;
+    text-align: right;
+    vertical-align: middle;
+}

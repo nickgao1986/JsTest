@@ -1,0 +1,113 @@
+/* 总体样式 */
+*{
+    margin:0;
+    padding: 0;
+}
+
+
+.cf::after{
+    content:'';
+    width:0;
+    height:0;
+    clear:both;
+    overflow: hidden;
+}
+
+.w-1000{
+    width:1000px;
+    margin:0 auto;
+}
+
+#header{
+    position:relative;
+    height:50px;
+    padding:10px 0;
+    margin:0 auto;
+}
+
+#header .logo img{
+    width:113px;
+    height:41px;
+}
+
+#header .search{
+    position:absolute;
+    width:380px;
+    height:38px;
+    left:50%;
+    top:50%;
+    margin-left: -190px;
+    margin-top:-19px;
+    font-size:12px;
+}
+
+#header .search .search-input{
+    width:320px;
+    height:20px;
+    padding:8px;
+    border:1px solid #eee;
+    font-size:12px;
+    float:left;
+}
+
+#header .search .search-btn{
+    width:40px;
+    height:38px;
+    background:transparent;
+    float:left;
+    border:1px solid #eee;
+    cursor:pointer;
+    margin-left:-1px;
+}
+
+#header .search .hot-words{
+    position:absolute;
+}
+
+#header .search .search-btn:hover{
+    background-color:#35b558;
+}
+
+#header .search .hot-words{
+    position:absolute;
+    top:0;
+    right:35px;
+    width:140px;
+}
+
+#header .search .hot-words li{
+    display:inline-block;
+    text-align:center;
+    line-height:35px;
+}
+
+#header .hot-words li a{
+    color:#999;
+    padding:3px;
+    background:#eee;
+}
+
+#header .user-info{
+    position: absolute;
+    right:0;
+    top:13px;
+    width:205px;
+}
+
+#header .user-info li{
+    display:inline-block;
+    width:45px;
+    line-height:15px;
+    padding:5px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.right-border{
+    border-right:1px solid #333;
+}
+
+#loading{
+    height:2px;
+    background:#3c763d;
+}

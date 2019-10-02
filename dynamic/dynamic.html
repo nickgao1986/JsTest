@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>十字架</title>
+    <link href="cross.css" rel="stylesheet">
+</head>
+
+<style>
+
+    .left{
+        float:left;
+        width:20%;
+        height:500px;
+        background:aquamarine;
+    }
+
+    .middle{
+        float:left;
+        width:55%;
+        height:800px;
+        margin:0;
+        background-color:cadetblue;
+    }
+
+    .right{
+        float:left;
+        width:20%;
+        height:500px;
+        background:yellowgreen;
+    }
+
+    .container{
+        margin:5px;
+    }
+    @media only screen and (min-width: 1024) {
+        .content{
+            width:1000px;
+            margin:auto;
+        }
+    }
+    
+    @media only screen and (min-width:700px) and (max-width: 1024px) {
+        .right{
+            width:0;
+        }
+        .left{
+            width:30%;
+        }
+        .middle{
+            width:65%;
+        }
+    }
+
+    @media only screen and (max-width:700px) {
+        .left,.right,.middle{
+            width:98%;
+            height:300px;
+        }
+    }
+</style>
+<body>
+
+<div class="container">
+    <div class="left">
+        我是左边
+    </div>
+    <div class="middle">
+        我是中间
+    </div>
+    <div class="right">
+        我是右边
+    </div>
+</div>
+
+</body>
+</html>
