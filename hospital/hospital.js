@@ -12,10 +12,9 @@ var studentScore = {
             // });
            // studentScore.contentScroll();
             studentScore.dialog();
-            // studentScore.contentScroll();
             studentScore.subTab();
             studentScore.selectBox();
-            studentScore.contentScroll();
+            //studentScore.contentScroll();
         });
     },
     contentScroll: function () {
