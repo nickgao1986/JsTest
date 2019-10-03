@@ -14,7 +14,7 @@ var studentScore = {
             studentScore.dialog();
             studentScore.subTab();
             studentScore.selectBox();
-            //studentScore.contentScroll();
+            studentScore.contentScroll();
         });
     },
     contentScroll: function () {

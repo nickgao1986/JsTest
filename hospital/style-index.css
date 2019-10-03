@@ -1,0 +1,650 @@
+@charset "utf-8";
+
+#main {
+    overflow: hidden;
+    background: url(http://www.zsxmhospital.com/xm/images/bg-main.jpg) top center no-repeat #e8e8e8; background-size: cover;
+}
+.main-row {
+    overflow: hidden;
+    width: 1100px; margin: 0 auto; margin-bottom: 16px;
+}
+.col {
+    float: left;
+    padding: 0 20px;
+    background-color: #fff;
+}
+.col h2 {
+    height: 30px; margin: 10px 0;
+}
+.col h2 .icon {
+    float: left;
+    width: 30px; height: 30px; margin-right: 10px;
+}
+.col h2 span {
+    float: left;
+    height: 28px; padding: 0 20px; border: solid 1px #c6c6c6;
+    color: #002d81; background-color: #e2e2e2;
+    font-size: 18px; font-weight: normal; line-height: 26px;
+    border-radius: 4px; box-shadow: inset 0 1px 3px rgba(0,0,0,0.25);
+}
+.col article a.more {
+    color: #ac0b0b;
+    font-size: 14px; word-wrap: normal;
+}
+.col nav.more {
+    line-height: 1em; text-align: right;
+}
+.col nav.more a {
+    color: #ac0b0b;
+}
+
+.imageScroll {
+    float: left; overflow: hidden; position: relative;
+    width: 700px; height: 384px;
+}
+.imageScroll ul {
+    height: 100%;
+}
+.imageScroll li {
+    float: left;
+    width: 700px; height: 384px;
+}
+.imageScroll li img {
+    width: 100%; height: 100%;
+}
+.imageScroll nav {
+    position: absolute; z-index: 9;
+    width: 100%; height: 10px; left: 0; bottom: 20px;
+    font-size: 0; text-align: center;
+}
+.imageScroll nav a {
+    display: inline-block;
+    width: 10px; height: 10px; margin: 0 5px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.imageScroll nav a.selected,
+.imageScroll nav a:hover {
+    background-color: #002d83;
+}
+
+.col-about {
+    width: 360px;
+    background-color: transparent;
+}
+.col-about article {
+    padding: 10px 0;
+    font-size: 16px; line-height: 24px;
+}
+.col-about article.sub-nav-btn{
+    text-indent: 2em;
+}
+
+.col-video {
+    width: 280px; height: 270px; padding: 10px 20px;
+}
+.col-video .caroufredsel_wrapper {
+    margin: 0 auto !important; border: solid 2px #666;
+}
+.col-video ul {
+    overflow: hidden;
+    width: 200px; height: 150px; margin: 0 auto;
+}
+.col-video li {
+    float: left;
+    width: 200px; height: 150px;
+}
+.col-video li a {
+    display: block;
+    width: 100%; height: 100%;
+    background-color: #666;
+}
+.col-video p {
+    height: 30px; padding: 5px 0;
+    line-height: 24px; text-align: center;
+}
+.col-video nav {
+    height: 18px;
+    font-size: 0; text-align: center;
+}
+.col-video .btn {
+    width: 16px; height: 18px;
+}
+.col-video .btn-prev {
+    background: url(http://www.zsxmhospital.com/xm/images/btn-scroll-prev.png) no-repeat;
+}
+.col-video .btn-next {
+    background: url(http://www.zsxmhospital.com/xm/images/btn-scroll-next.png) no-repeat;
+}
+.col-video .select {
+    display: inline-block;
+    width: 60px; height: 18px; padding: 0 10px;
+    vertical-align: top;
+}
+.col-video .select a {
+    display: inline-block;
+    width: 10px; height: 10px; margin: 4px 5px;
+    background-color: #999;
+    border-radius: 5px;
+}
+.col-video .select a.selected,
+.col-video .select a:hover {
+    background-color: #002d83;
+}
+
+.col-news {
+    width: 720px; height: 270px; padding-top: 20px; margin-left: 20px;
+}
+.col-news .newsImage {
+    float: left;
+    width: 370px; height: 250px;
+}
+.col-news .newsList {
+    float: left;
+    width: 330px; margin-left: 20px;
+}
+.col-news .newsList .headline {
+    border-bottom: solid 1px #a6a6a6;
+}
+.col-news .newsList .headline h3 {
+    font-size: 24px; line-height: 34px;
+}
+.col-news .newsList .headline p {
+    padding: 10px 0;
+    line-height: 20px; text-indent: 2em;
+}
+.col-news .newsList ul {
+    padding: 10px 0;
+}
+.col-news .newsList ul li {
+    line-height: 34px;
+}
+
+#sub {
+    padding-bottom: 20px;
+}
+.sub-nav {
+    height: 350px; border-top: solid 10px #2f5492;
+    background-color: #fff;
+    font-size: 0; text-align: center;
+    transition: all ease-in-out 0.3s;
+}
+.sub-expand .sub-nav {
+    height: 100px; border: none;
+    background-color: #2f5492;
+}
+.sub-nav ul {
+    width: 1100px; height: 100%; margin: 0 auto;
+}
+.sub-nav li {
+    display: inline-block;
+    *display: inline; *vertical-align: middle; *zoom: 1;
+}
+.sub-nav .btn {
+    display: block; position: relative;
+    width: 250px; height: 250px;  margin: 50px;
+    border-radius: 125px;
+    transition: all ease-in-out 0.3s;
+}
+#sub-nav-clinic {
+    background-color: #c5948f;
+}
+#sub-nav-nursing {
+    background-color: #9dacd5;
+}
+#sub-nav-hospital {
+    background-color: #5ca697;
+}
+.sub-nav .btn:hover {
+    background-color: #2f5492 !important;
+}
+.sub-expand .sub-nav .btn {
+    width: 64px; height: 64px; margin: 18px 0; margin-right: 130px; border-color: #fff;
+}
+.sub-expand .sub-nav .btn + .btn {
+    margin-left: 100px;
+}
+.sub-expand .sub-nav .btn.active:after {
+    content: '';
+    position: absolute; z-index: 9;
+    width: 0; height: 0; border-style: solid; border-width: 30px 20px; border-color: transparent; top: 80px; right: 12px;
+    border-top-color: #2f5492;
+}
+.sub-nav .btn-bg {
+    display: block; overflow: hidden;
+    width: 100%; height: 100%;
+    font-size: 0;
+    border-radius: 125px;
+}
+.sub-nav .btn-bg img {
+    width: 100%; height: 100%; margin-top: -18px;
+    transition: all ease-in-out 0.3s;
+}
+.sub-expand .sub-nav .btn-bg img {
+    margin-top: 0;
+}
+.sub-nav .btn-txt {
+    position: absolute;
+    width: 100%; height: 34px; margin-top: 180px; left: 0; top: 0;
+    color: #fff;
+    font-size: 32px; line-height: 34px; *line-height: 36px; text-align: center; vertical-align: top; text-decoration: none;
+}
+.sub-expand .sub-nav .btn-txt {
+    width: 120px; height: 24px; *height: 28px; margin-top: 0; left: 74px; top: 20px;
+    color: #fff;
+    font-size: 24px; line-height: 1em; *line-height: 28px; text-align: left;
+}
+/*.sub-expand #sub-nav-clinic:hover .btn-txt,
+.sub-expand #sub-nav-clinic.active .btn-txt {
+    color: #c5948f;
+}
+.sub-expand #sub-nav-nursing:hover .btn-txt,
+.sub-expand #sub-nav-nursing.active .btn-txt {
+    color: #9dacd5;
+}
+.sub-expand #sub-nav-hospital:hover .btn-txt,
+.sub-expand #sub-nav-hospital.active .btn-txt {
+    color: #5ca697;
+}*/
+.sub-nav .btn-reflection {
+    position: absolute; *display: none;
+    width: 250px; height: 100px; left: 0; top: 253px;
+    background: url(http://www.zsxmhospital.com/xm/images/reflection-sub-nav-btn.png) no-repeat;
+}
+.sub-expand .sub-nav .btn-reflection {
+    display: none;
+}
+
+.sub-tab {
+    overflow: hidden; position: relative; z-index: 3;
+    height: 0;
+    transition: all ease-in-out 0.3s;
+}
+.sub-tab-sheet {
+    overflow: hidden;
+    width: 1100px; margin: 0 auto;
+    font-size: 0;
+}
+.sub-tab-sheet h2 {
+    position: relative;
+    height: 136px; margin-bottom: 20px;
+    background-repeat: no-repeat;
+}
+.sub-tab-sheet h2 span {
+    position: absolute;
+    width: 266px; height: 50px; margin-left: -133px; margin-top: -25px; left: 50%; top: 50%;
+    color: #fff;
+    font-size: 26px; line-height: 48px; text-align: center; letter-spacing: 4px;
+}
+.sub-tab-sheet .row {
+    width: 1030px; margin: 0 auto; margin-bottom: 20px;
+}
+.sub-tab-sheet .row .col {
+    float: left; position: relative; overflow: hidden;
+    padding: 0;
+    background: #eee;
+}
+.sub-tab-sheet .row .col + .col {
+    margin-left: 20px;
+}
+.sub-tab-sheet .row .col-2 {
+    width: 505px;
+}
+.sub-tab-sheet .row .col-3 {
+    width: 330px;
+}
+.sub-tab-sheet .row .col .more {
+    width: auto; height: 20px; padding: 0 8px;
+    background-color: #fff;
+    font-size: 12px; line-height: 18px;
+    border-radius: 4px;
+}
+.sub-tab-sheet .row .col h3 {
+    text-align: center;
+}
+.sub-tab-sheet .row .col-2.col-port h3 {
+    height: 196px;
+}
+.sub-tab-sheet .row .col-3.col-port h3 {
+    height: 266px;
+}
+.sub-tab-sheet .row .col-port h3 a {
+    display: block;
+    width: 100%; height: 100%;
+}
+.sub-tab-sheet .row .col h3 a span {
+    display: inline-block;
+    border-bottom: solid 2px #002d81; margin-top: 20px;
+    color: #002d81;
+    font-size: 26px; line-height: 46px;
+}
+.sub-tab-sheet .row .col-3 h3 a span {
+    padding-bottom: 10px;
+    line-height: 1em;
+}
+.sub-tab-sheet .row .col-port h3 a span {
+    border-color: #fff;
+    color: #fff;
+}
+#sub-sheet-nursing .row .col h3 a span {
+    border-color: #67348f;
+    color: #67348f;
+}
+#sub-sheet-nursing .row .col-port h3 a span {
+    border-color: #fff;
+    color: #fff;
+}
+#sub-sheet-hospital .row .col h3 a span {
+    border-color: #4c6168;
+    color: #4c6168;
+}
+.sub-tab-sheet .row .col-sub {
+    width: 292px; margin: 0 auto; margin-bottom: 20px;
+    font-size: 0; text-align: center;
+}
+.sub-tab-sheet .row .col-sub-port {
+    display: inline-block;
+    margin: 0 20px;
+    *display: inline; *vertical-align: middle; *zoom: 1;
+}
+.sub-tab-sheet .row .col-sub-port h4 {
+    padding: 0 12px; border-bottom: solid 2px #002d81;
+    color: #002d81;
+    font-size: 20px; font-weight: normal; line-height: 44px;
+}
+.sub-tab-sheet .row .col-sub-port .link {
+    display: inline-block;
+    margin: 12px auto;
+}
+.sub-tab-sheet .row .col-sub-port .more {
+    display: inline-block;
+}
+.sub-tab-sheet .row .col .caption {
+    position: absolute;
+    width: 100%; height: 60px; left: 0; bottom: 0;
+    color: #333; background: url(http://www.zsxmhospital.com/xm/images/bg-gradient-01.gif) repeat-x;
+    font-size: 16px; font-weight: bold; line-height: 58px; text-align: center;
+}
+.sub-tab-sheet .row .col .caption .more {
+    position: absolute; top: 20px; right: 30px;
+}
+.sub-tab-sheet .row .col .list {
+    padding: 10px 18px;
+}
+.sub-tab-sheet .row .col .list li {
+    font-size: 14px; line-height: 32px;
+}
+
+.sub-close {
+    display: none;
+    width: 160px; height: 34px; padding-top: 26px; margin: 0 auto;
+    color: #fff; background: url(http://www.zsxmhospital.com/xm/images/shape-triangle.png) center 12px no-repeat #474e64;
+    font-size: 16px; text-align: center;
+    border-radius: 30px;
+    transition: all ease-in-out 0.3s;
+}
+.sub-expand .sub-close {
+    display: block;
+}
+.sub-expand .sub-close:hover {
+    text-decoration: none;
+}
+
+#sub-sheet-clinic {
+
+}
+#sub-sheet-clinic h2 {
+    background-image: url(http://www.zsxmhospital.com/xm/images/bg-h2-sub-clinic.jpg);
+}
+#sub-sheet-clinic h2 span {
+    background-color: #002d81;
+}
+
+#col-location {
+    height: 256px;
+}
+#col-location h3 {
+    height: 196px;
+    background: url(http://www.zsxmhospital.com/xm/images/bg-h3-sub-location.jpg) no-repeat;
+}
+
+#col-map {
+    height: 256px;
+}
+#col-map h3 {
+    height: 196px;
+    background: url(http://www.zsxmhospital.com/xm/images/bg-h3-sub-map.jpg) no-repeat;
+}
+
+#col-reservation {
+    height: 332px;
+}
+#col-reservation .banner {
+    display: block;
+    width: 280px; height: 90px; margin: 0 auto; margin-top: 10px;
+    background: url(http://www.zsxmhospital.com/xm/images/banner-port-reservation.jpg) no-repeat;
+}
+
+#col-department {
+    height: 332px;
+}
+#col-department h3 {
+    position: relative;
+    background: url(http://www.zsxmhospital.com/xm/images/bg-h3-sub-department.jpg) no-repeat;
+}
+#col-department h3 .more {
+    position: absolute;
+    right: 10px; bottom: 10px;
+}
+#col-department .scroll {
+    position: relative;
+    height: 64px;
+}
+#col-department .scroll .window {
+    position: absolute; overflow: hidden;
+    width: 294px; height: 100%; left: 18px; top: 0;
+}
+#col-department .scroll ul {
+    position: absolute;
+    height: 100%; left: 0; top: 0;
+}
+#col-department .scroll ul li {
+    float: left;
+    height: 100%; padding: 0 8px;
+    font-size: 14px; line-height: 62px;
+}
+#col-department .scroll .btn {
+    position: absolute;
+    width: 10px; height: 15px; top: 25px;
+}
+#col-department .scroll .btn-prev {
+    left: 6px;
+    background: url(http://www.zsxmhospital.com/xm/images/btn-scroll-prev-1.png) no-repeat;
+}
+#col-department .scroll .btn-next {
+    display: none;
+    right: 6px;
+    background: url(http://www.zsxmhospital.com/xm/images/btn-scroll-next-1.png) no-repeat;
+}
+
+#col-specialist {
+    height: 332px;
+}
+#col-specialist nav {
+    padding: 10px 0;
+    font-size: 0; text-align: center;
+}
+#col-specialist nav .selectBox {
+    display: inline-block; position: relative; z-index: 9;
+    width: 156px; height: 28px; padding-left: 14px; padding-right: 30px; border: solid 2px #ccc; margin-right: 10px;
+    background: url(http://www.zsxmhospital.com/xm/images/btn-arr-down.png) 178px center no-repeat #fff;
+    font-size: 14px; line-height: 26px; text-align: left; vertical-align: top;
+    border-radius: 14px; cursor: pointer;
+    *display: inline; *vertical-align: middle; *zoom: 1;
+}
+#col-specialist nav .selectBox ul {
+    position: absolute; overflow: auto; display: none;
+    width: 174px; max-height: 224px; left: 12px; top: 26px; border: solid 1px #ccc;
+    background-color: #fff;
+    box-shadow: 0 3px 3px rgba(0,0,0,0.25);
+}
+#col-specialist nav .selectBox ul li {
+    height: 28px; padding: 0 10px;
+    font-size: 14px; line-height: 26px; text-align: left;
+}
+#col-specialist nav .selectBox ul li:hover {
+    color: #fff; background-color: #002d81;
+}
+#col-specialist nav .more {
+    display: inline-block;
+    margin: 6px 0;
+    vertical-align: top;
+}
+#col-specialist .scroll {
+    position: relative; z-index: 6;
+    height: 222px;
+}
+#col-specialist .scroll h4 {
+    display: none;
+}
+#col-specialist .scroll ul {
+    position: absolute; overflow: hidden;
+    width: 284px; height: 100%; left: 23px;
+}
+#col-specialist .scroll ul li {
+    float: left;
+    width: 106px; margin: 0 18px; top: 0;
+}
+#col-specialist .scroll ul li .photo {
+    display: block;
+    width: 104px; height: 130px; margin-bottom: 8px; border: solid 1px #ccc;
+    font-size: 0;
+}
+#col-specialist .scroll ul li .photo img {
+    width: 100%; height: 100%;
+}
+#col-specialist .scroll ul li .name {
+    display: block;
+    font-size: 16px; font-weight: bold; line-height: 32px; text-align: center;
+}
+#col-specialist .scroll ul li .title {
+    display: block;
+    padding: 4px 0;
+    font-size: 14px; line-height: 20px; text-align: center;
+}
+#col-specialist .scroll .btn {
+    position: absolute;
+    width: 10px; height: 15px; margin-top: -8px; top: 50%;
+}
+#col-specialist .scroll .btn-prev {
+    left: 10px;
+    background: url(http://www.zsxmhospital.com/xm/images/btn-scroll-prev-1.png) no-repeat;
+}
+#col-specialist .scroll .btn-next {
+    right: 10px;
+    background:  url(http://www.zsxmhospital.com/xm/images/btn-scroll-next-1.png) no-repeat;
+}
+
+#sub-sheet-nursing {
+
+}
+#sub-sheet-nursing h2 {
+    background-image: url(http://www.zsxmhospital.com/xm/images/bg-h2-sub-nursing.jpg);
+}
+#sub-sheet-nursing h2 span {
+    background-color: #67348f;
+}
+
+#col-office {
+    height: 326px;
+}
+#col-office h3 {
+    background: url(http://www.zsxmhospital.com/xm/images/bg-h3-sub-office.jpg) no-repeat;
+}
+
+#col-education {
+    height: 326px;
+}
+
+#col-speach {
+    height: 326px;
+}
+
+#sub-sheet-hospital {
+
+}
+#sub-sheet-hospital h2 {
+    background-image: url(http://www.zsxmhospital.com/xm/images/bg-h2-sub-hospital.jpg);
+}
+#sub-sheet-hospital h2 span {
+    background-color: #4c6168;
+}
+
+#col-bidding {
+    height: 340px;
+}
+
+#col-papers {
+    height: 340px;
+}
+#col-papers .issue {
+    width: 274px; padding-top: 12px; margin: 0 auto;
+}
+#col-papers .issue-cover {
+    float: left;
+    width: 124px; height: 190px; margin-right: 20px; border: solid 1px #ccc;
+}
+#col-papers .issue-list {
+    float: left;
+    width: 128px;
+}
+#col-papers .issue h4 {
+    font-size: 16px; line-height: 32px;
+}
+#col-papers .issue-list li {
+    float: left;
+    width: 64px; height: 30px;
+    font-size: 14px; line-height: 28px;
+}
+#col-papers .caption {
+    width: 290px; padding: 0 20px;
+    text-align: left;
+}
+#col-papers .issue-former {
+    display: inline;
+}
+#col-papers .issue-former li {
+    display: inline;
+    margin-right: 10px;
+    font-size: 16px; font-weight: bold; line-height: 58px;
+}
+
+#col-recruit {
+    height: 340px;
+}
+
+.dialog {
+    position: fixed; z-index: 999999; display: none;
+    width: 100%; height: 100%; left: 0; top: 0;
+    font-size: 0;
+}
+.dialog-window {
+    position: absolute; z-index: 9; display: none;
+    border: solid 2px #fff; left: 50%; top: 50%;
+    box-shadow: 0 3px 3px rgba(0,0,0,0.75);
+}
+.dialog-close {
+    position: absolute;
+    width: 40px; height: 40px; top: -20px; right: -20px;
+    background: url(http://www.zsxmhospital.com/xm/images/icon-cross.png) center no-repeat #999;
+    box-shadow: 0 3px 3px rgba(0,0,0,0.75); border-radius: 20px;
+}
+.dialog-close:hover {
+    background-color: #224f8b;
+}
+.dialog-bg {
+    position: absolute; z-index: 3;
+    width: 100%; height: 100%; left: 0; top: 0;
+    background-color: #000;
+}
+		
