@@ -3,7 +3,6 @@
  */
 var studentScore={
     init:function () {
-        console.log("ddd");
         $(document).ready(function () {
             console.log("bbbb");
             $(".sub-close").click(function () {
