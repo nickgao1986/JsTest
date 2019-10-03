@@ -580,6 +580,40 @@
         <br><a onclick="document.getElementById(&quot;lovexin14a&quot;).style.display=&quot;none&quot;">
         <div style="font-size:12px;width:110px;height:30px;padding-top:4px;text-align:right;cursor:pointer;">关闭</div></a></div>
 
+    <script language="JavaScript">// JavaScript Document
+    lastScrollY=0;
+    function heartBeat(){
+        var diffY;
+        var lasttop=parseInt(document.getElementById("lovexin14a").style.top);
+        if (document.documentElement && document.documentElement.scrollTop)
+            diffY = document.documentElement.scrollTop;
+        else if (document.body)
+            diffY = document.body.scrollTop
+        else
+        {/*Netscape stuff*/}
+
+//alert(diffY);
+        percent=.1*(diffY-lastScrollY);
+        if(percent>0)percent=Math.ceil(percent);
+        else percent=Math.floor(percent);
+        document.getElementById("lovexin14a").style.top=parseInt(document.getElementById("lovexin14a").style.top)+percent+"px";
+        lastScrollY=lastScrollY+percent;
+//alert(lastScrollY);
+    }
+    var strDate= new Date('5/1/2010');
+    var today = new Date();
+    var time = strDate.getTime() - today.getTime();
+    var date = Math.ceil(time/(1000*60*60*24));
+    if (time > 1)
+        time = date;
+    suspendcode14="<DIV id='lovexin14a' style='right:6px;POSITION:absolute;TOP:270px;z-index:500;'><a href='http://www.zsxmhospital.com/xm-hospital/n5/u1ai233.html' target=_blank><img border='0' src='/images/thumbnailimg/month_1806/201806260356068657.jpg' width='120' /></a><br><a onclick='document.getElementById(\"lovexin14a\").style.display=\"none\"'><div style='font-size:12px;width:110px;height:30px;padding-top:4px;text-align:right;cursor:pointer;'>关闭</div></a>"
+    suspendcode14+="</DIV>"
+
+    document.write(suspendcode14);
+
+    window.setInterval("heartBeat()",1);
+    </script>
+
 </body>
 
 <script type="text/javascript" src="jquery.min.js"></script>
@@ -596,4 +630,5 @@
     <!--});-->
 <!--</script>-->
 <script type="text/javascript" src="hospital.js"></script>
+
 </html>
