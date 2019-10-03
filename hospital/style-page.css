@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+.breadcrumb {
+    border-bottom: solid 1px #666;
+    background-color: #eee;
+}
+.breadcrumb .main {
+    width: 1020px; height: 60px; padding: 0 40px; margin: 0 auto;
+    font-size: 0; line-height: 58px;
+}
+.breadcrumb .main * {
+    margin-right: 12px;
+    font-size: 16px;
+}
+.breadcrumb .main .location {
+    font-weight: bold;
+}
+
+.article {
+    width: 1000px; margin: 0 auto; margin-bottom: 40px;
+}
+.article h2 {
+    margin: 20px 0;
+    font-size: 30px; line-height: 60px; text-align: center;
+}
+.article .pic {
+    overflow: hidden;
+    margin-bottom: 40px;
+    font-size: 0; text-align: center;
+}
+.article .pic img {
+    max-width: 960px !important;
+}
+.article .txt {
+    padding: 0 40px;
+    font-size: 16px; line-height: 28px;
+}
+.article .txt p{text-indent:2em;}
+
+.articleNav {
+    width: 1000px; height: 80px; border-top: solid 1px #ccc; margin: 0 auto; margin-bottom: 40px;
+    font-weight: bold; line-height: 80px;
+}
+.articleNav .prev {
+    float: left;
+    padding-left: 26px; margin-left: 40px;
+    background: url(http://www.zsxmhospital.com/xm/images/btn-scroll-prev.png) left center no-repeat;
+}
+.articleNav .next {
+    float: right;
+    padding-right: 26px; margin-right: 40px;
+    background: url(http://www.zsxmhospital.com/xm/images/btn-scroll-next.png) right center no-repeat;
+}
+
+.articleList {
+    width: 1000px; margin: 12px auto;
+}
+.articleList li {
+    border-bottom: solid 1px #ccc;
+    line-height: 42px;
+}
+.articleList li .date {
+    float: right;
+    *margin-top: -26px;
+}
+
+.articleList .list li {
+    padding-right: 25px;
+    float: left;
+    height: 140px;
+    padding-bottom: 15px;
+    line-height: 20px;
+    border: none;
+}
+
+.listNav {
+    padding-top: 20px; padding-bottom: 40px;
+    font-size: 0; text-align: center;
+}
+.listNav span,
+.listNav a {
+    margin: 0 10px;
+    font-size: 14px; line-height: 28px; font-weight: bold;
+}
+.listNav a {
+    padding-left: 14px;
+}
+.listNav a:link {
+    color: .333;
+}
+.listNav a.prev {
+    background: url(http://www.zsxmhospital.com/xm/images/btn-arr-up-blue.png) left center no-repeat;
+}
+.listNav a.next {
+    background: url(http://www.zsxmhospital.com/xm/images/btn-arr-down-blue.png) left center no-repeat;
+}
