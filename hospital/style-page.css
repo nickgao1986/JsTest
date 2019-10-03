@@ -5,8 +5,12 @@
     background-color: #eee;
 }
 .breadcrumb .main {
-    width: 1020px; height: 60px; padding: 0 40px; margin: 0 auto;
-    font-size: 0; line-height: 58px;
+    width: 1020px;
+    height: 60px;
+    padding: 0 40px;
+    margin: 0 auto;
+    font-size: 0;
+    line-height: 58px;
 }
 .breadcrumb .main * {
     margin-right: 12px;
