@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<link rel="stylesheet" href="nav.css">
+<body>
+<ul class="nav">
+    <li>
+        <a href="#">首页</a>
+    </li>
+    <li id="li1">
+        <a href="#">首页</a>
+        <ul id="ul1">
+            <li><a href="#" >界面设计</a></li>
+            <li><a href="#" >界面设计</a></li>
+            <li><a href="#" >界面设计</a></li>
+        </ul>
+    </li>
+    <li id="li2">
+        <a href="#">首页</a>
+        <ul id="ul2">
+            <li><a href="#" >界面设计</a></li>
+            <li><a href="#" >界面设计</a></li>
+            <li><a href="#" >界面设计</a></li>
+        </ul>
+    </li>
+    <li id="li3">
+        <a href="#">首页</a>
+        <ul id="ul3">
+            <li><a href="#" >界面设计</a></li>
+            <li><a href="#" >界面设计</a></li>
+            <li><a href="#" >界面设计</a></li>
+        </ul>
+    </li>
+</ul>
+</body>
+<script type="text/javascript">
+    function  nav(liID,ulID) {
+        var oLi = document.getElementById(liID);
+        var oUl = document.getElementById(ulID);
+
+        oLi.onmouseover = function () {
+            oUl.style.height = '130px';
+        };
+        oLi.onmouseout = function () {
+            oUl.style.height = '0';
+        }
+    }
+    nav('li1','ul1');
+    nav('li2','ul2');
+    nav('li3','ul3');
+</script>
+</html>
