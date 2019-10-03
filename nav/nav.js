@@ -1,1 +1,3 @@
-console.log("bbb");
+$(function() {
+    console.log("cccc");
+});
