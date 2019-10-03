@@ -10,11 +10,10 @@ var studentScore = {
             //     studentScore.subTab();
             //     alert("class="+$(".sub-close").text());
             // });
-           // studentScore.contentScroll();
+            studentScore.contentScroll();
             studentScore.dialog();
             studentScore.subTab();
             studentScore.selectBox();
-            studentScore.contentScroll();
         });
     },
     contentScroll: function () {
