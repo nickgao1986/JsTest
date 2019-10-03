@@ -1649,5 +1649,13 @@
 </body>
 
 <script type="text/javascript" src="jquery.min.js"></script>
-<link rel="script" href="hospital.js">
+<script type="text/javascript">
+    $(document).ready(function () {
+        console.log("bbbb");
+        $(".sub-close").click(function () {
+            console.log("aaaa");
+            alert("class="+$(".sub-close").text());
+        });
+    });
+</script>
 </html>
