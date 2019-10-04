@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>星级评分--第一种实现方式</title>
+    <style>
+        body,
+        ul,
+        li {
+            padding: 0;
+            margin: 0;
+            display: block;
+        }
+        li {
+            list-style-type: none;
+        }
+        .rating {
+            width: 165px;
+            height: 40px;
+            margin: 100px auto;
+            overflow: hidden;
+        }
+        .rating-item {
+            float: left;
+            width: 33px;
+            height: 33px;
+            background: url(star.png) no-repeat;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+<!-- 第一种实现方式 -->
+<ul class="rating" id="rating">
+    <li class="rating-item" title="很不好1"></li>
+    <li class="rating-item" title="不好1"></li>
+    <li class="rating-item" title="一般1"></li>
+    <li class="rating-item" title="好1"></li>
+    <li class="rating-item" title="很好1"></li>
+</ul>
+<ul class="rating" id="rating2">
+    <li class="rating-item" title="很不好"></li>
+    <li class="rating-item" title="不好"></li>
+    <li class="rating-item" title="一般"></li>
+    <li class="rating-item" title="好"></li>
+    <li class="rating-item" title="很好"></li>
+</ul>
+<script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript">
+    var rating = (function() {
+        // 点亮
+        var lightOn = function($item,num) {
+            $item.each(function(index) {
+                if (index < num) {
+                    $(this).css('background-position', '0 -40px');
+                } else {
+                    $(this).css('background-position', '0 0');
+                }
+            })
+        }
+        var init = function(el, num) {
+            var $rating = $(el),
+                $item = $rating.find('.rating-item');
+
+            // 初始化
+            lightOn($item,num);
+            //事件绑定
+            $rating.on('mouseover', '.rating-item', function() {
+                lightOn($item,$(this).index() + 1);
+                // console.log($(this).attr('title'))
+            }).on('click', '.rating-item', function() {
+                num = $(this).index() + 1;
+            }).on('mouseout', function() {
+                lightOn($item,num);
+            })
+        };
+        $.fn.extend({
+            rating: function(num){
+                return this.each(function(){
+                    init(this,num);
+                })
+            }
+        })
+        return {
+            init: init
+        };
+    })();
+
+    rating.init('#rating2', 3);
+    // rating.init('#rating', 2);
+    $('#rating').rating(4);
+</script>
+</body>
+
+</html>
