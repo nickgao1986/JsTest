@@ -1,0 +1,7 @@
+*{ margin: 0; padding: 0; list-style: none; }
+.nav { width: 430px; height: 40px; background: skyblue; margin: 100px auto; text-align: center; line-height: 40px; }
+a { color: #fff; text-decoration: none; }
+.nav li { width: 100px; height: 40px; background: skyblue; }
+.nav>li { float: left; margin-right: 10px;  }
+.nav>li:last-child { margin-right: 0; }
+.nav li ul { position: absolute; height: 0; overflow: hidden; transition: height 0.5s; }

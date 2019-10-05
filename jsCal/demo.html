@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <p>jquery test 1</p>
+    <p>jquery test 2</p>
+    <p>jquery test 3</p>
+
+    <div id="div1">
+        <p>jquery test in div</p>
+    </div>
+
+    <script type="text/javascript" src="./jquery.min.js"></script>
+    <script type="text/javascript">
+        // 插件扩展
+        $.fn.getNodeName = function () {
+            // this
+            alert(this[0].nodeName)
+        }
+    </script>
+    <script type="text/javascript">
+        // 验证
+//        var $p = $('p')
+//        $p.getNodeName()
+//        var $div1 = $('#div1')
+//        $div1.getNodeName()
+
+//        var $p = $('p')
+//        $p.css('font-size', '40px')
+//        alert($p.html())
+//
+//        var $div1 = $('#div1')
+//        $div1.css('color', 'blue')
+//        alert($div1.html())
+    </script>
+</body>
+</html>
