@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<link rel="stylesheet" href="nav.css">
+<body>
+<ul id="test">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+</ul>
+
+</body>
+<script type="text/javascript" src="jquery.min.js"></script>
+<!--<script>-->
+    <!--$(function() {-->
+        <!--console.log("<<<aaa");-->
+        <!--var oUL = document.getElementById("test");-->
+        <!--var oLi = oUL.getElementsByTagName("li");-->
+        <!--for(var i=0;i<oLi.length;i++){-->
+            <!--oLi[i].index = i;-->
+            <!--oLi[i].onclick = function(){-->
+                <!--alert(this.index);-->
+            <!--}-->
+        <!--}-->
+    <!--});-->
+<!--</script>-->
+<!--闭包做法-->
+<script>
+    $(function() {
+        var oUL = document.getElementById("test");
+        var oLi = oUL.getElementsByTagName("li");
+        for(var i=0;i<oLi.length;i++){
+            oLi[i].onclick = (function(a){
+                return function(){
+                    alert(a)
+                }
+            })(i)
+        };
+    });
+</script>
+
+</html>

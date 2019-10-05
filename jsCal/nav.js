@@ -218,4 +218,63 @@ $(function() {
     // console.log(t);
 
 
+
+    //给string增加空格并返回
+    function  addSpace() {
+        function addSpace(str) {
+            return String(str).split('').join(' ');
+        }
+        console.log(addSpace(100));
+
+        String.prototype.addSpace = function () {
+            return this.split('').join(' ')
+        }
+        var str = 'hello'.addSpace();
+        console.log(str);
+    }
+
+    // function outer(){
+    //     var a = 1;
+    //     function inner(){
+    //         alert(a);
+    //     }
+    //     return inner
+    // }
+    // var inn = outer();
+    // inn();
+
+    //深度克隆
+    // var arr = [1,2,43];
+    // var json = {a:6,b:4,c:[1,2,3]};
+    // var str = 'sdfsdf';
+    //
+    // var json2 = clone(json);
+    //
+    // alert(json2['c'])
+    function clone(obj){
+        var oNew = new obj.constructor(obj.valueOf());
+        if(obj.constructor == Object){
+            for(var i in obj){
+                oNew[i] = obj[i];
+                if(typeof(oNew[i]) == 'object'){
+                    clone(oNew[i]);
+                }
+            }
+        }
+        return oNew;
+    }
+
+
+    //64、网页中实现一个计算当年还剩多少时间的倒数计时程序，要求网页上实时动态显示“××年还剩××天××时××分××秒”
+    var oDate = new Date();
+    var oYear = oDate.getFullYear();
+
+    var oNewDate = new Date();
+    oNewDate.setFullYear(oYear, 11, 31, 23, 59, 59);
+    var iTime = oNewDate.getTime()-oDate.getTime();
+
+    var iS = iTime/1000;
+    var iM = oNewDate.getMonth()-oDate.getMonth();
+    var iDate =iS
+    console.log(iDate+'-'+iM);
 });

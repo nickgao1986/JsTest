@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<link rel="stylesheet" href="nav.css">
+<body>
+<input id="input" style="width:300px;height:100px;" value="">
+
+</body>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script>
+    $(function() {
+        counter();
+        function counter() {
+            var date = new Date();
+            var year = date.getFullYear();
+            var date2 = new Date(year, 12, 31, 23, 59, 59);
+            var time = (date2 - date)/1000;
+            var day =Math.floor(time/(24*60*60))
+            var hour = Math.floor(time%(24*60*60)/(60*60))
+            var minute = Math.floor(time%(24*60*60)%(60*60)/60);
+            var second = Math.floor(time%(24*60*60)%(60*60)%60);
+            var str = year + "年还剩"+day+"天"+hour+"时"+minute+"分"+second+"秒";
+            document.getElementById("input").value = str;
+        }
+    });
+</script>
+
+</html>
