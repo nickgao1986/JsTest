@@ -4,63 +4,8 @@
     复旦大学附属中山医院
 </title>
     <meta http-equiv="X-UA-Compatible" content="IE=9">
-    <script type="text/javascript" src="jquery.min.js"></script>
-    <script type="text/javascript" src="jquery.smooth-scroll.min.js"></script>
-    <script type="text/javascript" src="unslider.min.js"></script>
-    <script type="text/javascript" src="utility.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <script type="text/javascript">
-        jQuery(document).ready(function ($) {
-            $('.banner').unslider({
-                speed: 2000,
-                delay: 10000,
-                dots: true
-            });
-            var n = $('.dot');
-            for (var i = 0; i < n.length; i++) {
-                if (document.all) {
-                    n[i].innerText = i + 1;
-                }
-                else {
-                    n[i].textContent = i + 1;
-                }
-            };
-        });
-    </script>
-    <script type="text/javascript">
-        jQuery(document).ready(function ($) {
-            $('.banner2').unslider({
-                speed: 1000,
-                delay: 5000,
-                dots: true
-            });
-            var n = $('.dot2');
-            for (var x = 0; x < n.length; x++) {
-                if (document.all) {
-                    n[i].innerText = x + 1;
-                }
-                else {
-                    n[i].textContent = x + 1;
-                }
-            };
-        });
-        var formValue = {
-            cd:function(ele){
-                if(ele.value==ele.defaultValue){ele.value = "";}
-            },
-            rd:function(ele){
-                if(ele.value.replace(/\s+/g,'')==""){ele.value = ele.defaultValue;}
-            }
-        }
-    </script>
-    <style>
-        /*#top{background:url(/zsyy/images/top_01.jpg) top center no-repeat; background-color:#f6f6f6;}
-        #menu{background-color:#cc222a;}*/
-
-    </style>
 </head>
-
-<script type="text/javascript" src="/zsyy/n33/n67/n68/index.js"></script>
 <div id="top">
         <div class="content">
   		<div id="logo"></div>
@@ -203,6 +148,6 @@
 	    </ul>
 	</div>
 </div>
-
+<div class="clear" style="height:200px"></div>
 </body>
 </html>
