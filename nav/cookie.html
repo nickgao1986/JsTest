@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+    <title>js实现随机选取10–100之间的10个数字，存入一个数组，并排序</title>
+    <script src="https://www.imooc.com/static/lib/jquery/1.9.1/jquery.js"></script>
+    <style>
+        #div1 {
+            width: 100px;
+            height: 100px;
+            background: red;
+            position: absolute;
+        }
+
+        #div2 {
+            width: 200px;
+            height: 50px;
+            background: blue;
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+<div id="div1"></div>
+
+<div id="div2"></div>
+<script type="text/javascript">
+//    function setcookie(name,value,days){ //给 cookie 增加一个时间变量
+//        var exp = new Date();
+//        exp.setTime(exp.getTime() + days*24*60*60*1000); //设置过期时间为 days
+//        天
+//        document.cookie = name + "="+ escape (value) + ";expires=" +
+//            exp.toGMTString();
+//    }
+//
+//    function getCookie(name){
+//        var result = "";
+//        var myCookie = ""+document.cookie+";";
+//        var searchName = "+name+"=";
+//        var startOfCookie = myCookie.indexOf(searchName);
+//        var endOfCookie;
+//        if(satrtOfCookie != -1){
+//            startOfcookie += searchName.length;
+//            endOfCookie = myCookie.indexOf(";",startOfCookie);
+//            result = (myCookie.substring(startOfCookie,endOfCookie));
+//        }
+//        return result;
+//    }
+//
+//    (function(){
+//        var oTips = document.getElementById('tips');//假设 tips 的 id 为 tips
+//        var page = {
+//            check: function(){//检查 tips 的 cookie 是否存在并且允许显示
+//                var tips = getCookie('tips');
+//                if(!tips || tips == 'show') return true;//tips 的 cookie 不存在
+//                if(tips == "never_show_again") return false;
+//            },
+//            hideTip: function(bNever){
+//                if(bNever) setcookie('tips', 'never_show_again', 365);
+//                oTips.style.display = "none";//隐藏
+//            },
+//            showTip: function(){
+//                oTips.style.display = "inline";//显示，假设 tips 为行级元素
+//            },
+//            init: function(){
+//                var _this = this;
+//                if(this.check()){
+//                    _this.showTip();
+//                    setcookie('tips', 'show', 1);
+//                }
+//                oTips.onclick = function(){
+//                    _this.hideTip(true);
+//                };
+//            }
+//        };
+//        page.init();
+//    })();
+</script>
+
+</body>
+</html>

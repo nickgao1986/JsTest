@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+    <title>提取http://item.taobao.com/item.htm?a=1&b=2&c=&d=xxx&e,
+        写一段 JS 程序提取 URL 中的各个 GET 参数(参数名和参数个数不确定)，将其
+        按 key‐value 形式返回到一个 json 结构中</title>
+    <script src="https://www.imooc.com/static/lib/jquery/1.9.1/jquery.js"></script>
+    <style>
+        #div1 {
+            width: 100px;
+            height: 100px;
+            background: red;
+            position: absolute;
+        }
+
+        #div2 {
+            width: 200px;
+            height: 50px;
+            background: blue;
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+<div id="div1"></div>
+
+<div id="div2"></div>
+<script type="text/javascript">
+
+    var str = "http://item.taobao.com/item.htm?a=1&b=2&c=&d=xxx&e";
+    var s = serilizeUrl(str);
+    console.log(s);
+
+    function serilizeUrl(url) {
+        var urlObject = {};
+        if (/\?/.test(url)) {
+            var urlString = url.substring(url.indexOf("?") + 1);
+            var urlArray = urlString.split("&");
+            for (var i = 0, len = urlArray.length; i < len; i++) {
+                var urlItem = urlArray[i];
+                var item = urlItem.split("=");
+                urlObject[item[0]] = item[1];
+            }
+            return urlObject;
+        }
+        return null;
+    }
+</script>
+
+</body>
+</html>
