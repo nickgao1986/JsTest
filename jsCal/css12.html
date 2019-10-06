@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>菜单折叠</title>
+
+
+
+</head>
+
+<body>
+
+<div id="test">
+
+    <ul>
+
+        <a>a</a>
+
+        <li>a1</li>
+
+        <li>a2</li>
+
+        <li>a3</li>
+
+        <li>a4</li>
+    </ul>
+
+    <ul>
+
+        <a>b</a>
+
+        <li>b1</li>
+
+        <li>b2</li>
+
+        <li>b3</li>
+
+        <li>b4</li>
+
+    </ul>
+
+    <ul>
+
+        <a>c</a>
+
+        <li>c1</li>
+
+        <li>c2</li>
+
+        <li>c3</li>
+
+        <li>c4</li>
+
+    </ul>
+
+</div>
+<script type="text/javascript">
+
+    window.onload = function () {
+
+        var div = document.getElementById("test");
+
+        if (div.addEventListener) {
+
+            div.addEventListener("click", zhedie, false);
+
+        } else if (div.attachEvent) {
+
+            div.attachEvent("onclick", zhedie);
+
+        }
+
+    }
+
+    function zhedie(event) {
+
+        var e = event || window.event;
+
+        var element = e.target || e.srcElement;//获取触发事件的元素
+
+        if (element.tagName == "A") {//处理 a 下属节点
+
+            for (var node = element; node.nextSibling != null; node = node.nextSibling) {
+
+                if (node.nodeType == 1 && node.tagName == "LI") {
+
+                    var display = node.style.display;
+
+                    if (display == "none") {
+
+                        node.style.display = "block";
+
+                    } else {
+
+                        node.style.display = "none";
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+</script>
+</body>
+
+</html>

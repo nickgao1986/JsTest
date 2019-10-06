@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <title>请用 JavaScript 实现，控制一个文本框只能输入正整数，如输入不符合条件则文本框全 部字体标红。要求写出完整的文本框 HTML 代码和 JavaScript 逻辑代码。</title>
+    <link rel="stylesheet" href="imooc.css" type="text/css">
+    <script src="https://www.imooc.com/static/lib/jquery/1.9.1/jquery.js"></script>
+</head>
+
+<body>
+<input type="text" id="t1" onkeyup="onc()"/>
+<script type="text/javascript">
+    $("button:first").click(function() {
+        //?
+    })
+</script>
+
+<script>
+
+    function onc(){
+
+        var t1=document.getElementById('t1').value;
+
+        var regexp=/^[1-9]\d*$/;
+
+        if(regexp.test(t1)){
+
+            document.getElementById('t1').style.color='black';
+
+        }else{
+
+            document.getElementById('t1').style.color='red';
+
+        }
+
+    }
+
+</script>
+
+</body>
+
+</html>

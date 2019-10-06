@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>表格题目，请写一个表格以及对应的 CSS，使表格奇数行为白色背景，偶数行为灰色背景，鼠标移 上去时为黄色背景。</title>
+
+    <style>
+
+        table, td {
+            border: 1px solid black;
+        }
+
+        tr:nth-child(2n+1) {
+            background: white;
+
+        }
+
+        tr:nth-child(2n) {
+            background: gray;
+        }
+
+        tr:hover {
+            background: yellow;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<table>
+
+    <tr>
+
+        <td>1</td>
+
+        <td>2</td>
+
+        <td>3</td>
+
+    </tr>
+
+    <tr>
+
+        <td>4</td>
+
+        <td>5</td>
+
+        <td>6</td>
+
+    </tr>
+
+    <tr>
+
+        <td>7</td>
+
+        <td>8</td>
+
+        <td>9</td>
+
+    </tr>
+
+    <tr>
+
+        <td>10</td>
+
+        <td>11</td>
+
+        <td>12</td>
+
+    </tr>
+
+    <tr>
+
+        <td>13</td>
+
+        <td>14</td>
+
+        <td>15</td>
+
+    </tr>
+
+</table>
+
+</body>
+
+</html>
