@@ -1,0 +1,1012 @@
+html, body
+{
+    overflow-x: hidden;
+}
+body {
+    margin: 0px;
+    border: none;
+    font-family: "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", "Helvetica Neue", Helvetica, Tahoma, Verdana, sans-serif;
+    font-size: 13px;
+    cursor: default;
+    color: #3d3d3d;
+    text-align: center;
+}
+body, input, textarea, select, button {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -moz-font-feature-settings: "liga", "dlig", "calt", "kern";
+}
+a {
+    outline: none;
+    text-decoration: none;
+    cursor: pointer;
+    color: #226dc2;
+}
+a:hover {
+    text-decoration: underline;
+}
+a.no-underline:hover {
+    text-decoration: none !important;
+}
+.hr {
+    height: 1px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.more {
+    margin-top: 10px;
+}
+.more a {
+    color: #a0a0a0;
+}
+.hidden {
+    display: none;
+}
+.clear {
+    clear: both;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.center {
+    text-align: center;
+    margin: 0 auto;
+}
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.text {
+    font-size: 12px;
+    line-height: 18px;
+    overflow: hidden;
+    text-align: justify;
+    text-justify: distribute;
+    float:left;
+    width:960px;
+}
+.text p {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-indent:2em;
+    line-height:1.8em;
+    font-size:18px;
+}
+.text b {
+
+}
+.medium {
+    font-size: 14px;
+    line-height: 24px;
+}
+h1 {
+    font-size: 42px;
+    color: #3d3d3d;
+    font-weight: normal;
+}
+h2 {
+    font-size: 36px;
+    color: #979797;
+    font-weight: normal;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+ol {
+    margin: 0px;
+    padding-left: 18px;
+}
+ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+.content {
+    width: 960px;
+    margin: 0 auto;
+    text-align: left;
+}
+.title {
+    height: 30px;
+    line-height: 30px;
+    color: #226dc2;
+    font-size: 25px;
+    font-weight: bold;
+    padding-left: 20px;
+    border-left: 4px solid #226dc2;
+}
+.title.green {
+    color: #647e2f;
+    border-left: 4px solid #647e2f;
+}
+.title.orange {
+    color: #c5948e;
+    border-left: 4px solid #c5948e;
+}
+.title.cyan {
+    color: #5ca696;
+    border-left: 4px solid #5ca696;
+}
+
+table {
+    font-size: 12px;
+}
+.list th {
+    color: #fff;
+    background-color: #595757 !important;
+    text-align: left;
+    cursor: default !important;
+}
+.list tr.odd {
+    background-color: #e8e8e8;
+}
+.list.clickable tr {
+    cursor: pointer;
+}
+.list.clickable tr:hover, .list.clickable tr.over {
+    color: #fff;
+    background-color: #226dc2;
+}
+.list.clickable2 tr:hover, .list.clickable2 tr.over, .list.clickable2 tr:hover a, .list.clickable2 tr.over a {
+    color: #fff;
+    background-color: #226dc2;
+}
+
+.detail tr td.label {
+    background-color: #e8e8e8;
+}
+.detail tr td.text {
+    background-color: #f3f3f3;
+}
+
+.gray-text {
+    color: #acacac;
+    font-size: 14px;
+    font-style: italic;
+}
+
+
+#top {
+    width: 100%;
+    height: 150px;
+    background: url('http://www.zs-hospital.sh.cn/zsyy/web/images/top_bg.png') repeat-x;
+}
+#logo {
+    float: left;
+    width: 560px;
+    height: 150px;
+    background: url('http://www.zs-hospital.sh.cn/zsyy/web/images/logo_quan.png') no-repeat center;
+}
+#logo460 {
+    float: left;
+    width: 460px;
+    height: 120px;
+    margin-top:10px;
+    background: url('http://www.zs-hospital.sh.cn/zsyy/web/images/logo460.png') no-repeat;
+}
+#top .links {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: right;
+    color: #999999;
+    font-size: 11px;
+}
+#top .links a {
+    color: #999999;
+    font-size: 11px;
+}
+
+#search .input {
+    float: left;
+    width: 300px;
+    height: 34px;
+    line-height: 34px;
+    font-size: 12px;
+    padding-left: 40px;
+    border: 1px solid #e9e9e9;
+    border-right: none;
+    outline: none;
+    background-image: url('http://www.zs-hospital.sh.cn/zsyy/web/images/icon_search.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+#search .go {
+    float: left;
+    width: 38px;
+    height: 38px;
+    border: 1px solid #e9e9e9;
+    border-left: none;
+    background-color: #fff;
+    background-image: url('http://www.zs-hospital.sh.cn/zsyy/web/images/icon_go.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer;
+}
+#search .go:hover {
+    background-color: #f3f3f3;
+}
+
+#nav
+{
+    width: 960px;
+    margin: auto;
+}
+#nav a
+{
+    color: #fff;
+    height: 50px;
+    display: block;
+}
+#nav div a
+{
+    display: inline;
+}
+#nav a:hover {
+    text-decoration: none;
+}
+#nav li
+{
+    position: relative;
+}
+
+/* first level */
+
+#nav > ul
+{
+    height: 50px;
+}
+#nav > ul > li
+{
+    float: left;
+    width: 137px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    background:rgba(0,0,0,0);
+}
+#nav > ul > li:hover
+{
+    background-color: #2f90ff;
+}
+#nav > ul > li.has-sub {
+    background-image: url(http://www.zs-hospital.sh.cn/zsyy/web/images/arrow_menu.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
+/* second level */
+
+#nav li > ul, #nav li > div
+{
+    display: none;
+    position: relative;
+    top: 0px;
+    background-color: #2f90ff;
+    z-index: 9999;
+    min-width: 137px;
+}
+#nav li:hover > ul, #nav li:hover > div
+{
+    display: block;
+}
+#nav li:hover ul li {
+
+}
+#nav li:hover ul li:hover {
+    background-color: #226dc2;
+}
+
+#nav .dept {
+    width: 600px;
+    text-align: left;
+    cursor: default;
+    padding: 20px;
+    font-size: 12px;
+}
+#nav .dept a {
+    float: left;
+    width: 80px;
+    height: 20px;
+    line-height: 20px;
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    behavior: url(../libs/pie.htc);
+}
+#nav .dept a:hover {
+    background-color: #226dc2;
+}
+#nav .dept .title {
+    border: none;
+    font-size: 15px;
+    font-weight: normal;
+    color: #fff;
+    padding: 0px;
+    margin: 0px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+#menu {
+    width: 100%;
+    height: 50px;
+    background-color: #226dc2;
+    position:relative;
+    z-index:9999;
+}
+#menu td {
+    text-align: center;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #226dc2;
+}
+#menu td:hover, #menu td.over, #menu td.active {
+    background-color: #2f90ff;
+}
+
+#sub-head {
+    width: 100%;
+    height: 150px;
+    background: url('http://www.zs-hospital.sh.cn/zsyy/web/images/sub_bg.jpg') no-repeat;
+}
+.sub-title {
+    width: 960px;
+    margin: auto;
+    text-align: left;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 150px;
+}
+#navbar {
+    width: 100%;
+    height: 40px;
+    color: #fff;
+    background-color: #595757;
+}
+#navbar a {
+    color: #fff;
+}
+#navbar .content div {
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    padding-right: 30px;
+    padding-left: 20px;
+    background: url('http://www.zs-hospital.sh.cn/zsyy/web/images/nav_arrow.png') center right no-repeat;
+}
+#navbar li {
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    padding-right: 30px;
+    padding-left: 20px;
+    background: url('http://www.zs-hospital.sh.cn/zsyy/web/images/nav_arrow.png') center right no-repeat;
+}
+#navbar .content div.first {
+    padding-left: 0px;
+}
+#navbar .content div.last {
+    background: none;
+}
+
+.submenu {
+    float: left;
+}
+.submenu a {
+    color: #595757;
+}
+.submenu a:hover {
+    text-decoration: none;
+}
+.submenu div {
+    font-size: 15px;
+    line-height: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    border-left: 3px solid #595757;
+    cursor: pointer;
+}
+.submenu div.active, .submenu div:hover, .submenu div.over {
+    color: #226dc2;
+    border-left: 3px solid #226dc2;
+    font-weight: bold;
+}
+.submenu div:hover, .submenu div.over {
+    font-weight: normal;
+}
+
+.icon {
+    width: 120px;
+    float: left;
+    cursor: pointer;
+}
+.icon div.image {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    background-color: #595757;
+}
+.icon div.text {
+    text-align: center;
+    font-size: 13px;
+    padding: 10px;
+    margin-bottom: 20px;
+    width:100px;
+}
+.icon:hover div.image, .icon.over div.image {
+    background-color: #226dc2;
+}
+.icon:hover div.text, .icon.over div.text {
+    color: #226dc2;
+}
+
+#search-doctor {
+    width: 100%;
+    height: 200px;
+    background-color: #226dc2;
+}
+#search-doctor .title {
+    color: #fff;
+    border: 0px;
+    font-size: 30px;
+    font-weight: normal;
+    padding: 0px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+#search-doctor .form {
+    height: 40px;
+    border: 1px solid #fff;
+}
+#search-doctor input[type='text'] {
+    height: 40px;
+    line-height: 40px;
+    width: 600px;
+    border: 0px;
+    padding: 0px;
+    padding-left: 10px;
+    font-size: 14px;
+    float: left;
+}
+#search-doctor input[type='submit'] {
+    border: none;
+    filter:chroma(color=#000000);
+    height: 40px;
+    width: 80px;
+    background-color: #595757;
+    color: #fff;
+    font-size: 14px;
+    padding-left: 25px;
+    background-image: url('http://www.zs-hospital.sh.cn/zsyy/web/images/icon_search2.png');
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    cursor: pointer;
+}
+#search-doctor input[type='submit']:hover {
+    background-color: #226dc2;
+}
+#search-doctor input[type='submit']:active {
+    background-color: #000;
+}
+#search-doctor input[type='button'] {
+    border: none;
+    filter:chroma(color=#000000);
+    height: 40px;
+    width: 80px;
+    background-color: #595757;
+    color: #fff;
+    font-size: 14px;
+    padding-left: 25px;
+    background-image: url('http://www.zs-hospital.sh.cn/zsyy/web/images/icon_search2.png');
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    cursor: pointer;
+}
+#search-doctor input[type='button']:hover {
+    background-color: #226dc2;
+}
+#search-doctor input[type='button']:active {
+    background-color: #000;
+}
+.doctor-detail img {
+    float: left;
+    margin-right: 20px;
+    border: 1px solid #595757;
+}
+.doctor-detail .title {
+    border: none;
+    color: #595757;
+    margin-bottom: 20px;
+}
+.doctor-detail .subtitle {
+    font-size: 14px;
+    color: #595757;
+    line-height: 40px;
+    width: 262px;
+    float: left;
+}
+.doctor-detail .subtitle div {
+    width: 80px;
+    float: left;
+}
+
+.news-nav {
+    border-top: 1px solid #ccc;
+    margin-top: 30px;
+    padding-top: 30px;
+}
+.news-nav a {
+    color: #3d3d3d;
+}
+
+.pager {
+
+}
+.pager div {
+    float: left;
+    padding: 5px;
+    background-color: #595757;
+    color: #fff;
+    margin-right: 5px;
+    padding: 10px;
+    font-size: 11px;
+    cursor: pointer;
+}
+.pager div.active, .pager div:hover, .pager div.over {
+    background-color: #226dc2;
+}
+.pager div.active {
+    cursor: default;
+}
+
+.title-block {
+    background-color: #595757;
+    padding: 20px;
+    cursor: pointer;
+}
+.title-block:hover, .title-block.over {
+    background-color: #226dc2;
+}
+.title-block img {
+    margin-right: 20px;
+}
+.title-block .title {
+    color: #fff;
+    border: none;
+    margin-top: 10px;
+}
+.title-block .text {
+    color: #fff;
+    font-size: 14px;
+    margin-top: 10px;
+    line-height: 25px;
+}
+
+.link-block {
+    width: 440px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 14px;
+    color: #fff;
+    float: left;
+    background-color: #595757;
+    cursor: pointer;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+.link-block:hover, .link-block.over {
+    background-color: #226dc2;
+}
+.link-block-space {
+    float: left;
+    width: 40px;
+    height: 50px;
+}
+
+.search-item {
+    margin-top: 30px;
+}
+.search-item a {
+    color: #3d3d3d;
+}
+.search-item .title {
+    border: none;
+    font-size: 16px;
+    color: #3d3d3d;
+    margin: 0px;
+    padding: 0px;
+    font-weight: normal;
+}
+.search-item .date {
+    background-color: #cfcfcf;
+    color: #878787;
+    padding: 3px;
+    margin-left: 10px;
+    font-size: 11px;
+    padding-left: 10px;
+    padding-right: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    behavior: url(../libs/pie.htc);
+    position: relative;
+    top: -4px;
+}
+.search-item .category {
+    background-color: #cfcfcf;
+    color: #878787;
+    padding: 3px;
+    margin-left: 10px;
+    font-size: 11px;
+    padding-left: 10px;
+    padding-right: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    behavior: url(../libs/pie.htc);
+    position: relative;
+    top: -4px;
+}
+.search-item .excerpt {
+
+}
+
+.banner {
+    position: relative;
+    overflow: auto;
+    /*z-index: -1;*/
+}
+.banner ol {
+    margin: 0px;
+    padding-left: 0px;
+}
+.banner ul {
+    /*z-index: -1;*/
+}
+.banner li {
+    list-style: none;
+}
+.banner ul li {
+    float: left;
+    height: 400px;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size:1280px 400px;
+}
+.banner ul li div {
+    display: inline-block;
+    *display: block;
+    width:700px;
+    background-color: #fafff0;
+    padding:5px;
+    margin-top:340px;
+    opacity: .7;
+    font-size: 14px;
+    font-weight:bold;
+}
+.banner .dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    width: 100%;
+    z-index: 10;
+    height:22px;
+    /*background:url(../images/pbg.png) no-repeat center;*/
+}
+.banner .dots li {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    font-size: 0px;
+    font-family: Arial;
+
+    line-height: 22px;
+    width: 22px;
+    height: 22px;
+
+
+    text-align: center;
+    /*text-indent: -1000em;*/
+    overflow:hidden;
+    color: #f3f3f3;
+    background:url(http://www.zs-hospital.sh.cn/zsyy/web/images/2.png) no-repeat center;
+
+    cursor: pointer;
+}
+.banner .dots li.active {
+    line-height: 22px;
+    width: 22px;
+    height: 22px;
+    font-size: 0px;
+
+
+    background:url(http://www.zs-hospital.sh.cn/zsyy/web/images/1.png) no-repeat center;
+    font-weight: bold;
+    color:#989898;
+}
+
+ul.news {
+    list-style: none;
+}
+ul.news li {
+    float: left;
+    width: 33%;
+    height: 25px;
+    line-height: 25px;
+    background: url(http://www.zs-hospital.sh.cn/zsyy/web/images/arrow_tiny.png) right center no-repeat;
+}
+ul.news li.even {
+    text-indent: 30px;
+}
+ul.news li a {
+    color: #000;
+}
+ul.news li .date {
+    font-size: 10px;
+    font-family: tahoma;
+    font-weight: bold;
+    color: #fff;
+    background-color: #c5b8a6;
+    margin-right: 10px;
+    padding: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.block {
+    float: left;
+    width: 300px;
+    height: 200px;
+    background-color: #3c83bf;
+    cursor: pointer;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.block:hover {
+    -webkit-opacity: 0.9;
+    -moz-opacity: 0.9;
+    -khtml-opacity: 0.9;
+    opacity: .9;
+    filter:alpha(opacity=90);
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+    filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+}
+
+ul.block-list {
+    list-style: circle;
+    margin-left: 15px;
+    text-indent: 10px;
+}
+ul.block-list li {
+    height: 25px;
+    line-height: 25px;
+    background: url(http://www.zs-hospital.sh.cn/zsyy/web/images/arrow_tiny.png) right center no-repeat;
+}
+ul.block-list li a {
+    color: #000;
+}
+
+.orange .block {
+    background-color: #c5948e;
+}
+.cyan .block {
+    background-color: #5ca696;
+}
+.dept-name {
+    color: #3069c2;
+    font-size: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-weight: bold;
+    margin-top: 60px;
+    border-left: 4px solid #3069c2;
+    margin-left: 10px;
+    padding-left: 20px;
+}
+.dept-block {
+    color: #fff;
+    width: 50%;
+    height: 50%;
+    cursor: pointer;
+}
+.dept-block:hover {
+    -webkit-opacity: 0.9;
+    -moz-opacity: 0.9;
+    -khtml-opacity: 0.9;
+    opacity: .9;
+    filter:alpha(opacity=90);
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+    filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+}
+.dept-block a {
+    color: #fff;
+}
+.dept-block a:hover {
+    text-decoration: none;
+}
+.dept-block .title {
+    border: none;
+    color: #fff;
+}
+.dept-block .subtitle {
+    margin-left: 20px;
+}
+
+.login-block  {
+    padding:20px;
+    border:2px solid #ddd;
+    float:right;
+    margin-right:100px;
+    margin-top:0px;
+    border-top:2px solid rgb(34, 109, 194);
+}
+
+.login-block .table-text  {
+    text-align:left;
+}
+.login-block .table-text tr {
+    height: 30px;
+}
+.login-block .table-text .input  {
+    width: 150px;
+    height:18px;
+    border:1px solid #ddd;
+}
+.login-block .table-text .button  {
+    width: 150px;
+    height:28px;
+    border:1px solid #ddd;
+    color:White;
+    background-color:rgb(34, 109, 194);
+}
+.login-block .table-text img  {
+    margin:0px 2px;
+    padding:0px;
+    vertical-align:bottom;
+}
+.login-block .login-text  {
+    font-size:16px;
+    font-weight:bold;
+    color: #333;
+    text-align:center;
+}
+
+#footer {
+    width: 100%;
+    height: 200px;
+    color: #fff;
+    background-color: #595757;
+}
+#footer a {
+    color: #fff;
+}
+#footer small {
+    color: #afafaf;
+}
+#footer small a {
+    color: #afafaf;
+}
+#footer .content {
+    padding-top: 30px;
+}
+#footer .left {
+    width: 350px;
+}
+#footer .right {
+    font-size: 12px;
+    line-height: 13px;
+}
+#footer .right > div {
+    float: left;
+    padding-left: 80px;
+}
+#footer .right > div > div {
+    line-height: 20px;
+}
+#footer .right b {
+    line-height: 40px;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2){
+
+
+
+}
+
+
+.banner2 {
+    position: relative;
+    overflow: auto;
+    /*z-index: -1;*/
+}
+
+.banner2 ul {
+    /*z-index: -1;*/
+}
+.banner2 li {
+    list-style: none;
+}
+.banner2 ul li {
+    float: left;
+    width:320px;
+    height: 275px;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+.banner2 ul li div {
+    display: inline-block;
+    *display: block;
+    width:440px;
+    height:20px;
+    background-color: #fafff0;
+    padding:5px;
+    margin-top:215px;
+    opacity: 0.7;
+    font-size: 14px;
+    font-weight:bold;
+    position: absolute;
+    filter:alpha(opacity:70);
+    text-align:center;
+}
+.banner2 .dots {
+    position: absolute;
+
+    right: 0;
+    bottom: 9px;
+    width: 135px;
+    z-index: 9999;
+}
+.banner2 .dots li {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    font-size: 0px;
+    font-family: Arial;
+
+    line-height: 16px;
+    width: 16px;
+    height: 16px;
+    margin-left: 3px;
+
+    text-align: center;
+    *text-indent: 0;
+
+
+    color: #f3f3f3;
+    background: url(http://www.zs-hospital.sh.cn/zsyy/web/images/2.png) no-repeat center;
+    cursor: pointer;
+
+}
+.banner2 .dots li.active {
+    line-height: 16px;
+    width: 16px;
+    height: 16px;
+    font-size: 0px;
+
+    background: url(http://www.zs-hospital.sh.cn/zsyy/web/images/1.png) no-repeat center;
+    font-weight: bold;
+    color: #989898;
+}
+.banner2 ul li img{position:absolute;}
+
+
+.related_news{font-size:18px;}

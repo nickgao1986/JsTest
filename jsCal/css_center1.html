@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>有一个高度自适应的div，里面有两个div，一个高度100px，希望另一个填满剩下的高度(三种方案)</title>
+    <style type="text/css">
+        html,
+        body { height: 100%; padding: 0; margin: 0; }
+
+        #div1{
+            width: 200px;
+            height: 200px;
+            background-color: #e8e8e8;
+            margin:auto;
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+        }
+        div{
+            background-color:#6699FF;
+            width:200px; height:200px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top:-100px ;
+            margin-left: -100px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="outer">
+</div>
+
+<div id="div1">
+</div>
+</body>
+</html>

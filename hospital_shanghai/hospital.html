@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>
+    复旦大学附属中山医院
+</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=9">
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.smooth-scroll.min.js"></script>
+    <script type="text/javascript" src="unslider.min.js"></script>
+    <script type="text/javascript" src="utility.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $('.banner').unslider({
+                speed: 2000,
+                delay: 10000,
+                dots: true
+            });
+            var n = $('.dot');
+            for (var i = 0; i < n.length; i++) {
+                if (document.all) {
+                    n[i].innerText = i + 1;
+                }
+                else {
+                    n[i].textContent = i + 1;
+                }
+            };
+        });
+    </script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $('.banner2').unslider({
+                speed: 1000,
+                delay: 5000,
+                dots: true
+            });
+            var n = $('.dot2');
+            for (var x = 0; x < n.length; x++) {
+                if (document.all) {
+                    n[i].innerText = x + 1;
+                }
+                else {
+                    n[i].textContent = x + 1;
+                }
+            };
+        });
+        var formValue = {
+            cd:function(ele){
+                if(ele.value==ele.defaultValue){ele.value = "";}
+            },
+            rd:function(ele){
+                if(ele.value.replace(/\s+/g,'')==""){ele.value = ele.defaultValue;}
+            }
+        }
+    </script>
+    <style>
+        /*#top{background:url(/zsyy/images/top_01.jpg) top center no-repeat; background-color:#f6f6f6;}
+        #menu{background-color:#cc222a;}*/
+
+    </style>
+</head>
+<body>
+
+<script type="text/javascript" src="/zsyy/n33/n67/n68/index.js"></script>
+<div id="top">
+        <div class="content">
+  		<div id="logo"></div>
+            <div class="right" style="width:380px;">
+                <div class="links">
+                　　</div>
+                <div id="search">
+<form method="post" action="http://odbapp.eastday.com/zsyy_search/Search.aspx" id="ctl00">
+                    <input id="txtKey" name="q" class="input" type="text" value="找医生 / 找科室 / 找病症 / 找信息" maxlength="15" onfocus="formValue.cd(this)" onblur="formValue.rd(this)">
+					<input class="go" type="submit" value="">
+</form>
+                </div>
+<div class="links" style="margin:0;float:right;">
+                　<a href="http://newweb.zs-hospital.sh.cn:5691/index1.htm" target="_blank">旧版网站</a>　|　<a href="/zsyy/n15/index.html" target="_blank">English</a></div>
+            </div>
+        </div>
+    </div>
+<div id="menu">
+	<div id="nav" role="navigation">
+	    <ul>
+
+              <li>
+                <a href="/zsyy/n33/index.html">网站首页</a>
+              </li>
+
+              <li class="has-sub">
+                <a href="/zsyy/n33/n34/index.html">就医入口</a>
+                <ul>
+                        <li>
+                        <a href="/zsyy/n33/n34/n40/index.html">预约挂号</a>
+                        </li>
+                        <li>
+                        <a href="/zsyy/n33/n34/n41/index.html">体检中心</a>
+                        </li>
+
+                        <li>
+                        <a href="http://newweb.zs-hospital.sh.cn:5691/dyxx.htm">导医信息</a>
+                        </li>
+                        <li>
+                        <a href="http://newweb.zs-hospital.sh.cn:5691/menzhen/zjmz.htm" target="_blank">专家门诊</a>
+                        </li>
+                        <li>
+                        <a href="http://newweb.zs-hospital.sh.cn:5691/menzhen/gkmz.htm" target="_blank">普通及专病门诊 </a>
+                        </li>
+                        <li>
+                        <a href="http://newweb.zs-hospital.sh.cn:5691/yuyue/yuyue.htm" target="_blank">门诊出停诊信息查询 </a>
+                        </li>
+                        <li>
+                        <a href="/zsyy/n33/n34/n47/index.html">交通指南</a>
+                        </li>
+                </ul>
+              </li>
+
+              <li class="has-sub">
+                <a href="#">学科及专家</a>
+                <ul>
+                        <li>
+                        <a href="/zsyy/n33/n35/n48/index.html">学科及专家介绍</a>
+                        </li>
+
+                </ul>
+              </li>
+
+              <li class="has-sub">
+                <a href="/zsyy/n33/n36/index.html">科学研究</a>
+                <ul>
+                        <li>
+                        <a href="/zsyy/n33/n36/n49/index.html">科研处</a>
+                        </li>
+                        <li>
+                        <a href="/zsyy/n33/n36/n50/index.html">科研信息</a>
+                        </li>
+                        <li>
+                        <a href="/zsyy/n33/n36/n51/index.html">临床医学研究院</a>
+                        </li>
+                        <li>
+                        <a href="http://www.c-jcm.com/zglcyx/ch/index.aspx" target="_blank">临床医学杂志编辑部</a>
+                        </li>
+                </ul>
+              </li>
+
+              <li class="has-sub">
+                <a href="/zsyy/n33/n37/index.html" target="_blank">医学教育</a>
+                <ul>
+                        <li>
+                        <a href="/zsyy/n33/n37/index.html" target="_blank">教育处首页</a>
+                        </li>
+                        <li>
+                        <a href="/zsyy/n33/n37/n525/index.html" target="_blank">本科生教育</a>
+                        </li>
+                        <li>
+                        <a href="/zsyy/n33/n37/n526/index.html" target="_blank">研究生教育</a>
+                        </li>
+                        <li>
+                        <a href="/zsyy/n33/n37/n527/index.html" target="_blank">住院医生培养</a>
+                        </li>
+                        <li>
+                        <a href="/zsyy/n33/n37/n528/index.html" target="_blank">专科医生培养</a>
+                        </li>
+                        <li>
+                        <a href="/zsyy/n33/n37/n529/index.html" target="_blank">进修教育</a>
+                        </li>
+                        <li>
+                        <a href="/zsyy/n33/n37/n530/index.html" target="_blank">继续医学教育</a>
+                        </li>
+                        <li>
+                        <a href="/zsyy/n33/n37/n531/index.html" target="_blank">远程医学网</a>
+                        </li>
+                </ul>
+              </li>
+
+              <li>
+                <a href="/zsyy/n33/n38/index.html">人才招聘</a>
+              </li>
+
+              <li class="has-sub">
+                <a href="/zsyy/n33/n39/index.html">中山信息</a>
+                <ul>
+
+                        <li>
+                        <a href="/zsyy/n33/n39/n52/index.html" target="_blank">中山医院报</a>
+                        </li>
+                        <li>
+                        <a href="/zsyy/n33/n39/n53/index.html">院史考据</a>
+                        </li>
+                        <li>
+                        <a href="http://zhushou.360.cn/detail/index/soft_id/2635919">中山手机App(安卓版)</a>
+                        </li>
+                        <li>
+                        <a href="/zsyy/n33/n39/n55/index.html">中山手机App下载</a>
+                        </li>
+                        <li>
+                        <a href="/zsyy/n33/n39/n56/index.html">媒体视点</a>
+                        </li>
+                        <li>
+                        <a href="/zsyy/n33/n39/n694/u1ai3497.html">中山故事</a>
+                        </li>
+                </ul>
+              </li>
+	    </ul>
+	</div>
+</div>
+
+
+<div class="banner">
+    <ul>
+
+        <li  title="庆祝中华人民共和国成立70周年" >
+
+            <img src="http://www.zs-hospital.sh.cn/images/thumbnailimg/month_1909/201909250930313284.jpg" width="1280" height="400">
+
+        </li>
+
+        <li  title="中山医院门诊夜景" >
+
+            <img src="http://www.zs-hospital.sh.cn/images/thumbnailimg/month_1701/201701040838419015.jpg" width="1280" height="400">
+
+        </li>
+
+        <li  title="手术中" >
+
+            <img src="http://www.zs-hospital.sh.cn/images/thumbnailimg/month_1701/20170103112224153.jpg" width="1280" height="400">
+
+        </li>
+
+        <li  title="东院区外景" >
+
+            <img src="http://www.zs-hospital.sh.cn/images/thumbnailimg/month_1701/201701250831103109.jpg" width="1280" height="400">
+
+        </li>
+
+        <li  title="手术室" >
+
+            <img src="http://www.zs-hospital.sh.cn/images/thumbnailimg/month_1701/201701031120535219.jpg" width="1280" height="400">
+
+        </li>
+
+        <li  title="特需服务" >
+
+            <img src="http://www.zs-hospital.sh.cn/images/thumbnailimg/month_1701/201701031120014106.jpg" width="1280" height="400">
+
+        </li>
+
+
+    </ul>
+</div>
+
+
+<div class="content">
+    <div class="clear" style="height:50px"></div>
+    <div class="title green left">中山新闻</div>
+    <div class="right more"><a href="/zsyy/n33/n66/index.html">更多>></a></div>
+    <div class="clear" style="height:30px"></div>
+    <div style="width:450px;float:left">
+        <div class="banner2">
+            <ul>
+
+                <li title="“传承中山精神，坚守初心使命”——庆祝中国共产党成立98周年大会" >
+
+                    <img src="http://www.zs-hospital.sh.cn/images/thumbnailimg/month_1907/201907220837399712.jpg" width="450" height="275">
+
+                    <div>“传承中山精神，坚守初心使命”——庆祝中国共产党成立9...</div>
+                </li>
+
+                <li title="中山医院召开“不忘初心、牢记使命”主题教育调研会议" >
+
+                    <img src="http://www.zs-hospital.sh.cn/images/thumbnailimg/month_1906/201906130213248707.jpg" width="450" height="275">
+
+                    <div>中山医院召开“不忘初心、牢记使命”主题教育调研会议</div>
+                </li>
+
+                <li title="全球首台全景动态PET-CT落户上海中山医院！" >
+
+                    <img src="http://www.zs-hospital.sh.cn/images/thumbnailimg/month_1904/201904220405527462.jpg" width="450" height="275">
+
+                    <div>全球首台全景动态PET-CT落户上海中山医院！</div>
+                </li>
+
+                <li title="1月25日至26日，中山医院2019年度工作会议召开。" >
+
+                    <img src="http://www.zs-hospital.sh.cn/images/thumbnailimg/month_1902/201902011000216249.jpg" width="450" height="275">
+
+                    <div>1月25日至26日，中山医院2019年度工作会议召开。</div>
+                </li>
+
+                <li title="12月18日，复旦大学附属中山医院第九届职工代表大会第五次会议暨第十七届工会会员代表大会第三次会议召开" >
+
+                    <img src="http://www.zs-hospital.sh.cn/images/thumbnailimg/month_1901/201901090359395701.jpg" width="450" height="275">
+
+                    <div>12月18日，复旦大学附属中山医院第九届职工代表大会第...</div>
+                </li>
+
+
+            </ul>
+        </div>
+    </div>
+    <ul class="news list" style="list-style: circle inside none;width:495px;float:right;">
+
+        <li class="even" style="width:100%;"> <a title="与新中国共成长，听从医70年前辈话医者的国家使命" href="/zsyy/n33/n66/u1ai4618.html" target="_blank" style="padding-left: 30px;">与新中国共成长，听从医70年前辈话医者的国家使命</a></li>
+
+        <li class="even" style="width:100%;"> <a title="我院2019年国家自然科学基金立项数再创新高" href="/zsyy/n33/n66/u1ai4617.html" target="_blank" style="padding-left: 30px;">我院2019年国家自然科学基金立项数再创新高</a></li>
+
+        <li class="even" style="width:100%;"> <a title="“心·肝宝贝”医疗公益项目获救“心宝贝”回家了！" href="/zsyy/n33/n66/u1ai4616.html" target="_blank" style="padding-left: 30px;">“心·肝宝贝”医疗公益项目获救“心宝贝”回家了！</a></li>
+
+        <li class="even" style="width:100%;"> <a title="六十厘米长钢筋贯穿胸腹" href="/zsyy/n33/n66/u1ai4615.html" target="_blank" style="padding-left: 30px;">六十厘米长钢筋贯穿胸腹</a></li>
+
+        <li class="even" style="width:100%;"> <a title="我院援藏医疗队赴藏开展义诊活动" href="/zsyy/n33/n66/u1ai4614.html" target="_blank" style="padding-left: 30px;">我院援藏医疗队赴藏开展义诊活动</a></li>
+
+        <li class="even" style="width:100%;"> <a title="阿拉伯国家联盟成员国卫生高级官员来我院核医学科调研" href="/zsyy/n33/n66/u1ai4613.html" target="_blank" style="padding-left: 30px;">阿拉伯国家联盟成员国卫生高级官员来我院核医学科调研</a></li>
+
+        <li class="even" style="width:100%;"> <a title="最多生吞40多根钢针！ 如此搏命就能逃避法律惩罚？" href="/zsyy/n33/n66/u1ai4612.html" target="_blank" style="padding-left: 30px;">最多生吞40多根钢针！ 如此搏命就能逃避法律惩罚？</a></li>
+
+        <li class="even" style="width:100%;"> <a title="“中国医学创新大赛·医院联赛”在我院启动" href="/zsyy/n33/n66/u1ai4611.html" target="_blank" style="padding-left: 30px;">“中国医学创新大赛·医院联赛”在我院启动</a></li>
+
+        <li class="even" style="width:100%;"> <a title="我院开展“疾病诊断相关分组”（DRGs）专题讲座" href="/zsyy/n33/n66/u1ai4610.html" target="_blank" style="padding-left: 30px;">我院开展“疾病诊断相关分组”（DRGs）专题讲座</a></li>
+
+        <li class="even" style="width:100%;"> <a title="育人重任  敬业奉献" href="/zsyy/n33/n66/u1ai4609.html" target="_blank" style="padding-left: 30px;">育人重任  敬业奉献</a></li>
+
+        <li class="even" style="width:100%;"> <a title="图片新闻" href="/zsyy/n33/n66/u1ai4608.html" target="_blank" style="padding-left: 30px;">图片新闻</a></li>
+
+
+
+    </ul>
+</div>
+
+<div class="clear" style="height:50px"></div>
+<div class="hr"></div>
+
+<div class="content">
+    <div class="clear" style="height:50px"></div>
+    <div class="title">患者通道</div>
+    <div style="height:30px"></div>
+
+    <table border="0" cellpadding="0" cellspacing="0" height="200">
+        <tr>
+
+            <td width="300"><a href="/zsyy/n33/n35/n48/index.html"><div class="block" style="background-color:#c5948e; background-image:url(http://www.zs-hospital.sh.cn/zsyy/web/images/home_block_1-1.png)"></div></a></td>
+            <td width="30"></td>
+
+            <td width="300"><a href="http://newweb.zs-hospital.sh.cn:5691/menzhen/zjmz.htm"><div class="block" style="background-color:#9cacd2; background-image:url(http://www.zs-hospital.sh.cn/zsyy/web/images/home_block_1-2.png)"></div></a></td>
+            <td width="30"></td>
+
+            <td width="300"><a href="/zsyy/n33/n34/n40/index.html"><div class="block" style="background-color:#c5b8a6; background-image:url(http://www.zs-hospital.sh.cn/zsyy/web/images/home_block_1-3.png)"></div></a></td>
+
+        </tr>
+    </table>
+</div>
+
+<div class="clear" style="height:50px"></div>
+<div class="hr"></div>
+
+<div class="content">
+    <div class="clear" style="height:50px"></div>
+    <div class="title orange">医护通道</div>
+    <div style="height:30px"></div>
+
+    <table border="0" cellpadding="0" cellspacing="0" height="200">
+        <tr>
+
+            <td width="300"><a href="/zsyy/n33/n37/index.html"><div class="block" style="background-color:#3c83bf; background-image:url(http://www.zs-hospital.sh.cn/zsyy/web/images/home_block_2-1.png)"></div></a></td>
+            <td width="30"></td>
+
+            <td width="300"><a href="/zsyy/n33/n70/index.html"><div class="block" style="background-color:#f58d27; background-image:url(http://www.zs-hospital.sh.cn/zsyy/web/images/home_block_2-2.png)"></div></a></td>
+            <td width="30"></td>
+
+            <td width="300"><a href="/zsyy/n33/n36/n49/index.html"><div class="block" style="background-color:#5ca696; background-image:url(http://www.zs-hospital.sh.cn/zsyy/web/images/home_block_3-3.png)"></div></a></td>
+
+        </tr>
+    </table>
+</div>
+
+<div class="clear" style="height:50px"></div>
+<div class="hr"></div>
+
+<div class="content">
+    <div class="clear" style="height:50px"></div>
+    <div class="title cyan">医院信息</div>
+    <div style="height:30px"></div>
+
+    <table border="0" cellpadding="0" cellspacing="0" height="200" class="cyan">
+        <tr>
+
+            <td width="300"><a href="/zsyy/n33/n39/n53/index.html"><div class="block" style="background-color:#c5b8a6; background-image:url(http://www.zs-hospital.sh.cn/zsyy/web/images/home_block_3-1.png)"></div></a></td>
+            <td width="30"></td>
+
+            <td width="300"><a href="/zsyy/n33/n71/index.html"><div class="block" style="background-color:#585fa9; background-image:url(http://www.zs-hospital.sh.cn/zsyy/web/images/home_block_3-2.png)"></div></a></td>
+            <td width="30"></td>
+
+            <td width="300"><a href="/zsyy/n33/n38/index.html"><div class="block" style="background-color:#d0b6a7; background-image:url(http://www.zs-hospital.sh.cn/zsyy/web/images/home_block_2-3.png)"></div></a></td>
+
+        </tr>
+    </table>
+</div>
+
+<div class="clear" style="height:50px"></div>
+<div class="hr"></div>
+
+<div class="content">
+    <div class="clear" style="height:50px"></div>
+    <table border="0" cellpadding="0" cellspacing="0">
+        <tr>
+
+            <td width="455" valign="top">
+                <div class="title green left">中山信息</div>
+                <div class="right more"><a href="/zsyy/n33/n39/index.html">更多>></a></div>
+                <div class="clear" style="height:30px"></div>
+                <ul class="block-list">
+
+                    <li> <a title="中山故事" href="/zsyy/n33/n39/u1ai3496.html" target="_blank" style="padding-left: 10px;">中山故事</a></li>
+
+                    <li> <a title="新OA系统" href="http://woa.zs-hospital.sh.cn:8680/" target="_blank" style="padding-left: 10px;">新OA系统</a></li>
+
+                    <li> <a title="中山手机App下载" href="/zsyy/n33/n39/n55/index.html" target="_blank" style="padding-left: 10px;">中山手机App下载</a></li>
+
+                    <li> <a title="中山手机App(安卓版)" href="http://zhushou.360.cn/detail/index/soft_id/2635919" target="_blank" style="padding-left: 10px;">中山手机App(安卓版)</a></li>
+
+                    <li> <a title="院史考据" href="/zsyy/n33/n39/n53/index.html" target="_blank" style="padding-left: 10px;">院史考据</a></li>
+
+
+
+                </ul>
+            </td>
+            <td width="50"></td>
+
+            <td width="455" valign="top">
+                <div class="title left">党工团建设</div>
+                <div class="right more"></div>
+                <div class="clear" style="height:30px"></div>
+                <ul class="block-list">
+
+                    <li><a href="/zsyy/n33/n589/index.html" target="_blank">党建</a></li>
+
+                    <li><a href="http://gonghui.zs-hospital.sh.cn:6404" target="_blank">工会</a></li>
+
+                    <li><a href="/zsyy/n33/n72/index.html" target="_blank">团委</a></li>
+
+                    <li><a href="/zsyy/n33/n704/index.html" target="_blank">红十字宣传栏</a></li>
+
+                </ul>
+            </td>
+
+        </tr>
+    </table>
+</div>
+
+<div class="clear" style="height:50px"></div>
+<div class="hr"></div>
+
+<div class="content">
+
+    <div class="clear" style="height:50px"></div>
+    <table border="0" cellpadding="0" cellspacing="0">
+        <tr>
+
+            <td width="455" valign="top">
+                <div class="title orange left">学术会议</div>
+                <div class="right more"><a href="/zsyy/n33/n64/index.html">更多>></a></div>
+                <div class="clear" style="height:30px"></div>
+                <ul class="block-list">
+
+                    <li> <a title="2019年国家科技部“3D打印技术在医疗领域的应用与分析”培训班英语志愿者招募" href="/zsyy/n33/n64/u1ai4498.html" target="_blank" style="padding-left: 10px;">2019年国家科技部“3D打印技术在医疗领域的应用与分...</a></li>
+
+                    <li> <a title="2019年国家科技部“3D打印技术在医疗领域的应用与分析”培训班招生通知" href="/zsyy/n33/n64/u1ai4495.html" target="_blank" style="padding-left: 10px;">2019年国家科技部“3D打印技术在医疗领域的应用与分...</a></li>
+
+                    <li> <a title="2019年卵巢癌学习班最终会议通知" href="/zsyy/n33/n64/u1ai4342.html" target="_blank" style="padding-left: 10px;">2019年卵巢癌学习班最终会议通知</a></li>
+
+                    <li> <a title="第十六届全国消化内镜诊断与治疗新进展学习班暨护士内镜消毒与保养学习班" href="/zsyy/n33/n64/u1ai4060.html" target="_blank" style="padding-left: 10px;">第十六届全国消化内镜诊断与治疗新进展学习班暨护士内镜消...</a></li>
+
+                    <li> <a title="2018年第十四届上海国际大肠癌高峰论坛" href="/zsyy/n33/n64/u1ai3932.html" target="_blank" style="padding-left: 10px;">2018年第十四届上海国际大肠癌高峰论坛</a></li>
+
+                </ul>
+            </td>
+            <td width="50"></td>
+
+            <td width="455" valign="top">
+                <div class="title cyan left">招标通知</div>
+                <div class="right more"><a href="/zsyy/n33/n65/index.html">更多>></a></div>
+                <div class="clear" style="height:30px"></div>
+                <ul class="block-list">
+
+                    <li> <a title="中山医院关于三类止血防粘连产品的通知" href="/zsyy/n33/n65/u1ai973.html" target="_blank" style="padding-left: 10px;">中山医院关于三类止血防粘连产品的通知</a></li>
+
+                    <li> <a title="设备科进口设备采购外贸代理机构比选公告" href="/zsyy/n33/n65/u1ai972.html" target="_blank" style="padding-left: 10px;">设备科进口设备采购外贸代理机构比选公告</a></li>
+
+                    <li> <a title="中山医院医生服、护士服招标中标目录" href="/zsyy/n33/n65/u1ai971.html" target="_blank" style="padding-left: 10px;">中山医院医生服、护士服招标中标目录</a></li>
+
+                    <li> <a title="设备科院外委托招标项目招标公司比选公告" href="/zsyy/n33/n65/u1ai970.html" target="_blank" style="padding-left: 10px;">设备科院外委托招标项目招标公司比选公告</a></li>
+
+                    <li> <a title="中山医院关于医生服、护士服招标的通知" href="/zsyy/n33/n65/u1ai969.html" target="_blank" style="padding-left: 10px;">中山医院关于医生服、护士服招标的通知</a></li>
+
+
+                </ul>
+            </td>
+
+        </tr>
+    </table>
+</div>
+
+<div class="clear" style="height:50px"></div>
+
+
+
+<script type="text/javascript" src="/zsyy/n33/n67/n73/index.js?v=1"></script>
+
+
+
+
+
+
+
+</body>
+</html>
