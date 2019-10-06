@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+    <title>请使用原生 js 实现一个 div 可拖拽，需要考虑浏览器兼容性。。</title>
+    <script src="https://www.imooc.com/static/lib/jquery/1.9.1/jquery.js"></script>
+    <style>
+        #div1 {
+            width: 100px;
+            height: 100px;
+            background: red;
+            position: absolute;
+        }
+
+        #div2 {
+            width: 200px;
+            height: 50px;
+            background: blue;
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+<div id="div1"></div>
+
+<div id="div2"></div>
+<script type="text/javascript">
+    function htmlEscape(text){
+        return text.replace(/[<>"&]/g, function(match, pos, originalText){
+            switch(match){
+                case "<": return "&lt;";
+                case ">":return "&gt;";
+                case "&":return "&amp;";
+                case "\"":return "&quot;";
+            }
+        });
+    }
+
+    var str = "aaa&bbb";
+    var s = htmlEscape(str);
+    console.log("<<<<s="+s);
+
+</script>
+
+</body>
+</html>
