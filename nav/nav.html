@@ -2,40 +2,144 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>原生js实现二级伸缩菜单</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        ul,li{
+            list-style: none;
+        }
+        .closed{
+            display: block;
+            width: 200px;
+            background-color: coral;
+        }
+        #manager ul li{
+            width: 200px;
+            line-height: 30px;
+            text-align: center;
+            cursor: pointer;
+        }
+        .hide{
+            display: none;
+        }
+        .show{
+            display: block;
+        }
+        .open{
+            display: block;
+            background-color: coral;
+        }
+        .hide{
+            display: none;
+        }
+        #manager ul li.pro{
+            border:1px solid #fff;
+        }
+        #manager ul li ul li{
+            padding:3px 0;
+            border: 0;
+            color:lightgray;
+            line-height: 20px;
+            border-top:1px solid #fff;
+            background-color: darkorchid;
+        }
+        #manager ul li ul li:hover{
+            color: #fff;
+        }
+        #manager ul li ul li:last-child{
+            border-bottom:1px solid #fff;
+        }
+    </style>
 </head>
-<link rel="stylesheet" href="nav.css">
 <body>
-<ul class="nav">
-    <li>
-        <a href="#">首页</a>
-    </li>
-    <li id="li1">
-        <a href="#">首页</a>
-        <ul id="ul1">
-            <li><a href="#" >界面设计</a></li>
-            <li><a href="#" >界面设计</a></li>
-            <li><a href="#" >界面设计</a></li>
-        </ul>
-    </li>
-    <li id="li2">
-        <a href="#">首页</a>
-        <ul id="ul2">
-            <li><a href="#" >界面设计</a></li>
-            <li><a href="#" >界面设计</a></li>
-            <li><a href="#" >界面设计</a></li>
-        </ul>
-    </li>
-    <li id="li3">
-        <a href="#">首页</a>
-        <ul id="ul3">
-            <li><a href="#" >界面设计</a></li>
-            <li><a href="#" >界面设计</a></li>
-            <li><a href="#" >界面设计</a></li>
-        </ul>
-    </li>
-</ul>
+
+
+<div id="manager">
+    <ul class="tree">
+        <li class="pro">
+            <span class="open" onclick="toggleTable(this)">考勤管理</span>
+            <ul class="show">
+                <li>日常考勤</li>
+                <li>请假申请</li>
+                <li>加班/出差</li>
+            </ul>
+        </li>
+        <li class="pro">
+            <span class="closed" onclick="toggleTable(this)">信息中心</span>
+            <ul class="hide">
+                <li>通知公告</li>
+                <li>公司新闻</li>
+                <li>规章制度</li>
+            </ul>
+        </li>
+        <li class="pro">
+            <span class="closed" onclick="toggleTable(this)">协同办公</span>
+            <ul class="hide">
+                <li>公文流转</li>
+                <li>文件中心</li>
+                <li>内部邮件</li>
+                <li>即时通讯</li>
+                <li>短信提醒</li>
+            </ul>
+        </li>
+        <li class="pro">
+            <span class="closed" onclick="toggleTable(this)">合同管理</span>
+            <ul class="hide">
+                <li>内部合同</li>
+                <li>外部合同</li>
+                <li>到期合同</li>
+                <li>未签合同</li>
+                <li>保密合同</li>
+            </ul>
+        </li>
+        <li class="pro">
+            <span class="closed" onclick="toggleTable(this)">人事流程</span>
+            <ul class="hide">
+                <li>人事入职</li>
+                <li>职工保险</li>
+                <li>职工升值</li>
+                <li>薪资计划</li>
+                <li>员工福利</li>
+            </ul>
+        </li>
+        <li class="pro">
+            <span class="closed" onclick="toggleTable(this)">客户管理</span>
+            <ul class="hide">
+                <li>企业客户</li>
+                <li>一般客户</li>
+                <li>重要客户</li>
+                <li>小区客户</li>
+                <li>外地客户</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<script src="jquery.min.js"></script>
+<script>
+    function toggleTable(span){
+//            如果span的class为open
+        if(span.className=="open"){
+//                将span的class设为closed
+            span.className="closed";
+//                将span的下一个兄弟元素的class改为hide
+            span.nextElementSibling.className="hide";
+        }else{//否则
+//                查找class为tree的元素下的一个class为open的span,保存在open中
+            var open=document.querySelector("[class=tree] span[class=open]");
+            if(open!=null){
+//                    设置open的class为closed
+                open.className="closed";
+//                    设置open的下一个兄弟元素的class为hide
+                open.nextElementSibling.className="hide";
+            }
+            span.className="open";
+            span.nextElementSibling.className="show";
+        }
+    }
+</script>
+
 </body>
-<script type="text/javascript" src="jquery.min.js"></script>
-<script type="text/javascript" src="nav.js"></script>
 </html>
