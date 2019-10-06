@@ -3,7 +3,7 @@
 
 <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
-    <title>转义字符</title>
+    <title>js实现随机选取10–100之间的10个数字，存入一个数组，并排序</title>
     <script src="https://www.imooc.com/static/lib/jquery/1.9.1/jquery.js"></script>
     <style>
         #div1 {
@@ -27,21 +27,22 @@
 
 <div id="div2"></div>
 <script type="text/javascript">
-    function htmlEscape(text){
-        return text.replace(/[<>"&]/g, function(match, pos, originalText){
-            switch(match){
-                case "<": return "&lt;";
-                case ">":return "&gt;";
-                case "&":return "&amp;";
-                case "\"":return "&quot;";
-            }
-        });
+    function sortNumber(a,b){
+        return a-b;//升序
+        //return b-a;//降序
     }
 
-    var str = "aaa&bbb";
-    var s = htmlEscape(str);
-    console.log("<<<<s="+s);
-
+    //js实现随机选取10–100之间的10个数字，存入一个数组，并排序
+    var iArray =[];
+    function getRandom(iStart,iEnd){
+        var iChoice = iStart-iEnd+1;
+        return Math.abs(Math.floor(Math.random()*iChoice))+iStart;
+    }
+    for(var i=0;i<10;i++){
+        iArray.push(getRandom(10,100))
+    }
+    iArray.sort(sortNumber);
+    console.log(iArray)
 </script>
 
 </body>
