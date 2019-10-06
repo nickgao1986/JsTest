@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>css3实现简单幻灯片效果</title>
+    <style type="text/css">
+        html,
+        body {
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+
+        .ani {
+            width: 480px;
+            height: 320px;
+            margin: 50px auto;
+            overflow: hidden;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+            background-size: cover;
+            background-position: center;
+            -webkit-animation-name: "loops";
+            -webkit-animation-duration: 20s;
+            -webkit-animation-iteration-count: infinite;
+
+        }
+
+        @-webkit-keyframes "loops" {
+            0% {
+                background: url(./image/banner/banner1.jpg) no-repeat;
+            }
+
+            25% {
+                background: url(./image/banner/banner2.jpg) no-repeat;
+            }
+
+            50% {
+                background: url(./image/banner/banner3.jpg) no-repeat;
+            }
+
+            75% {
+                background: url(./image/banner/banner4.jpg) no-repeat;
+            }
+
+            100% {
+                background: url(./image/banner/banner5.jpg) no-repeat;
+            }
+
+        }
+    </style>
+</head>
+<body>
+<div class="ani">
+</div>
+</body>
+</html>

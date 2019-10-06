@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>品字布局</title>
+    <style>
+        * {margin: 0;padding: 0;}/* 去除所有元素默认的内外边距的值 */
+        html, body {height: 100%;}/* 默认HTML，body的高度为0，为其设置高度以使后面的div可以用百分比设置高度 */
+        .header {height: 50%;width: 50%;background-color:  rgb(255,2545,167);margin: 0 auto;}
+        .main {height: 50%;width: 100%;}
+        .main .left {float: left;width: 50%;height: 100%;background-color: rgb(204,255,102);}
+        .main .right {float: left;width: 50%;height: 100%;background-color: rgb(189,255,255);}
+    </style>
+</head>
+<body>
+<div class="header"></div>
+<div class="main">
+    <div class="left"></div>
+    <div class="right"></div>
+</div>
+</body>
+</html>

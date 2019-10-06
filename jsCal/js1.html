@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div{
+            width:100px;
+            height:100px;
+            vertical-align: middle;
+            display:table-cell;
+            text-align: center;
+            background-color: #e8e8e8;
+            /*position:absolute;*/
+            /*left:50%;*/
+            /*top:50%;*/
+        }
+        #test{
+            font-size:14px;
+            color:#000;
+        }
+    </style>
+</head>
+<body>
+<!--数字从5递减至1，每秒递减1个数字-->
+    <div>
+        <span id="test">60</span>
+    </div>
+
+    <script type="text/javascript" src="./jquery.min.js"></script>
+    <script type="text/javascript">
+    var i = 59;
+    var t = setInterval(function(){
+        if (i == 0) {
+            clearInterval(t);
+            return;
+        }
+        document.getElementById("test").innerHTML = i;
+        i--;
+    }, 1000)
+    </script>
+</body>
+</html>

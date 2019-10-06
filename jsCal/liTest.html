@@ -30,15 +30,21 @@
 <!--闭包做法-->
 <script>
     $(function() {
-        var oUL = document.getElementById("test");
-        var oLi = oUL.getElementsByTagName("li");
-        for(var i=0;i<oLi.length;i++){
-            oLi[i].onclick = (function(a){
-                return function(){
-                    alert(a)
-                }
-            })(i)
-        };
+        fn();
+        function fn() {
+            for (var i = 0; i < 2; i++) {
+                (function () {
+                    var variate = i;
+                    setTimeout(function () {
+                        console.log("setTimeout执行后:"+variate);
+                    }, 1000);
+                })();//闭包,立即执行函数,匿名函数
+
+            }
+            console.log(i);//2
+            console.log(variate);//variate is not defined
+        }
+
     });
 </script>
 

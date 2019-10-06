@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>品字布局</title>
+    <style>
+        * {margin: 0;padding: 0;}
+        html, body {height: 100%;}/* 默认HTML，body的高度为0，为其设置高度以使后面的div可以用百分比设置高度 */
+        .pinzi-flex {position: fixed;left: 0;top: 0;height: 100%;width: 100%;}
+        .header {height: 50%;}
+        .header .div-up {width: 50%;height: 100%;background-color:  rgb(255,2545,167);margin: 0 auto;}
+        .main {height: 50%;position: relative;}
+        .main .div-left {position: absolute;left: 0; width: 50%;height: 100%;background-color: rgb(204,255,102);}
+        .main .div-right {position: absolute;right: 0; width: 50%;height: 100%;background-color: rgb(189,255,255);}
+    </style>
+</head>
+<body>
+<div class="pinzi-flex">
+    <div class="header">
+        <div class="div-up"></div>
+    </div>
+    <div class="main">
+        <div class="div-left"></div>
+        <div class="div-right"></div>
+    </div>
+</div>
+</body>
+</html>
