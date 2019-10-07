@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <title></title>
+    <style>
+
+    </style>
+</head>
+<style>
+
+</style>
+<body>
+<p id="test1">这是段落1。</p>
+<input id="input1" type="text"/>
+<select id="select">
+    <option value ="mul">*</option>
+    <option value ="minus">-</option>
+    <option value="add">+</option>
+    <option value="divide">/</option>
+</select>
+<input id="input2" type="text"/>
+<input type="submit" id="submit"/>
+<p id="result"></p>
+
+<script src="https://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $("#submit").click(function() {
+          var value1 =  parseFloat(document.getElementById("input1").value);
+          var value2 =  parseFloat(document.getElementById("input2").value);
+          var selectValue = document.getElementById('select').value;
+
+            if(checkNum(value1,value2,selectValue)) {
+              console.log(value2);
+              switch(selectValue) {
+                  case 'add':
+                      document.getElementById('result').innerHTML = value1+value2;
+                      break;
+                  case 'mul':
+                      document.getElementById('result').innerHTML = value1*value2;
+                      break;
+                  case 'divide':
+                      document.getElementById('result').innerHTML = value1/value2;
+                      break;
+              }
+          }
+
+
+        });
+
+
+    });
+    
+    function checkNum(num1,num2,select) {
+        if(isNaN(num1) || isNaN(num2)) {
+            alert("请输入数字");
+            return false;
+        }
+
+        if(num2 === 0 && 'divide'===select) {
+            alert("除数不能为0");
+            return false;
+        }
+        return true;
+    }
+</script>
+</body>
+
+</html>

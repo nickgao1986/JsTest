@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <title></title>
+    <style>
+
+    </style>
+</head>
+<style>
+    #aaron{
+        margin-left:20px;
+        width:100px;
+        height:100px;
+        background-color: #3c763d;
+    }
+</style>
+<body>
+<h2>等高布局</h2>
+<div class="left">
+    <div id="aaron">点击body区域会动态创建元素节点</div>
+</div>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var element = $('#aaron');
+        //var left = $(".left");
+//        element.on('click', function() {
+//            var node = document.createTextNode("aaa");
+//            left[0].appendChild(node);
+//            $('<p>prependTo增加的p元素</p>')
+//                .prependTo($('.aaron2'))
+//
+//        })
+
+        document.getElementById("aaron").addEventListener("click",function () {
+            alert("ccc");
+        });
+
+    });
+</script>
+</body>
+
+</html>
