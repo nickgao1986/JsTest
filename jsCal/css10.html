@@ -7,131 +7,31 @@
     <title>实现如下页面布局。核心区域左侧自适应，右侧固定宽度 200px</title>
 
     <style>
+        .outer{border: 1px solid #ccc;background: #fc9;color: #fff; margin: 50px auto;padding: 50px;}
+        .div1{width: 80px;height: 80px;background: red;float: left;}
+        .div2{width: 80px;height: 80px;background: blue;float: left;}
+        .div3{width: 80px;height: 80px;background: sienna;float: left;}
+        .clear{clear:both; height: 0; line-height: 0; font-size: 0}
+        .outer {zoom:1;}
+        .outer :after {clear:both;content:'.';display:block;width: 0;height: 0;visibility:hidden;}
 
-        body {
-            margin: 0;
-        }
-
-        .fn-clear:after {
-
-            content: " ";
-
-            clear: both;
-
-            display: block;
-            font-size: 0;
-
-            visibility: hidden;
-
-            height: 0;
-
-        }
-
-        .fn-clear {
-
+        .over-flow {
+            overflow: auto;
             zoom: 1;
-
         }
 
-        .container {
-
-            padding: 10px;
-
-        }
-
-        .header {
-
-            background: #eee;
-
-            position: relative;
-
-            margin-bottom: 10px;
-
-        }
-
-        .logo {
-
-            width: 100px;
-
-            height: 100px;
-
-            float: left;
-
-            background: #f60;
-
-        }
-
-        .username {
-
-            position: absolute;
-
-            right: 10px;
-
-            bottom: 10px;
-
-        }
-
-        .main {
-
-            margin-bottom: 10px;
-
-        }
-
-        .side-bar {
-
-            width: 200px;
-
-            float: right;
-
-            background: #ccc;
-
-        }
-
-        .content {
-
-            margin-right: 200px;
-
-            background: #f6f6f6;
-
-        }
-
-        .footer {
-
-            background: #999;
-
-        }
     </style>
 
 </head>
 
 <body>
 
-<div class="container">
-    <div class="header fn-clear">
-
-        <div class="logo">logo</div>
-        <div
-                class="username">zhoumingXXX@163.com
-        </div>
-
-    </div>
-
-    <div class="main">
-
-        <div
-                class="side-bar">menu
-        </div>
-
-        <div class="content">左侧内容</div>
-
-    </div>
-
-    <div class="footer">
-        footer
-    </div>
+<div class="outer">
+    <div class="div1">1</div>
+    <div class="div2">2</div>
+    <div class="div3">3</div>
 
 </div>
-
 </body>
 
 </html>
