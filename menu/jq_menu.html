@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="*/*" charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {width:100px; height:100px; display:block;}
+        p,ui { padding: 0; marginn:0; list-style:none;}
+        ul { padding: 0; marginn:0; list-style:none;
+            display: none;}
+        #box { font-size: 12px; color: #00c; width:58px; margin: 0 auto;}
+    </style>
+
+</head>
+<body>
+<div>
+    <img src="1.jpg" style="align-content: center">
+</div>
+<div id="box">
+    <p>社会类</p>
+    <ul>
+        <li>1
+
+        </li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+    <p>自然类</p>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+    <p>科学类</p>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+</div>
+</body>
+
+<script>
+    onload = function () {
+        var oP = document.getElementsByTagName('p');
+        var oUl = document.getElementsByTagName('ul');
+        var i;
+        for (i=0;i<oP.length;i++)
+        {
+            oP[i].index=i;
+            oP[i].onclick = function () {
+                if(oUl[this.index].style.display == 'block')
+                {
+                    oUl[this.index].style.display='none';
+                }
+                else
+                {
+                    for(var i=0;i<oUl.length;i++)
+                    {
+                        oUl[i].style.display='none';
+                    }
+                    oUl[this.index].style.display='block';
+                }
+            }
+        }
+
+    }
+</script>
+
+</html>

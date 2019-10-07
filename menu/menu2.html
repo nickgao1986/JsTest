@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>菜单的收起和展开</title>
+    <style type="text/css">
+        ul{
+            list-style-type: none;
+        }
+        #cityList1{
+            display: none;
+        }
+        #cityList2{
+            display: none;
+        }
+        #cityList3{
+            display: none;
+        }
+        #cityList4{
+            display: none;
+        }
+    </style>
+    <script type="text/javascript">
+        //默认隐藏的
+        var hide=true;
+        //显示或者隐藏的函数
+        function displayOrHide1(){
+            var cityList=document.getElementById("cityList1");
+            if(hide){
+                //显示
+                cityList.style.display="block";
+                hide=false;
+            }else{
+                //隐藏
+                cityList.style.display="none";
+                hide=true;
+            }
+        }
+        function displayOrHide2(){
+            var cityList=document.getElementById("cityList2");
+            if(hide){
+                //显示
+                cityList.style.display="block";
+                hide=false;
+            }else{
+                //隐藏
+                cityList.style.display="none";
+                hide=true;
+            }
+        }
+        function displayOrHide3(){
+            var cityList=document.getElementById("cityList3");
+            if(hide){
+                //显示
+                cityList.style.display="block";
+                hide=false;
+            }else{
+                //隐藏
+                cityList.style.display="none";
+                hide=true;
+            }
+        }
+        function displayOrHide4(){
+            var cityList=document.getElementById("cityList4");
+            if(hide){
+                //显示
+                cityList.style.display="block";
+                hide=false;
+            }else{
+                //隐藏
+                cityList.style.display="none";
+                hide=true;
+            }
+        }
+    </script>
+</head>
+<body>
+<ul>
+    <li><a style="color:blue;cursor:pointer;" οnclick="displayOrHide1();">北京市</a>
+        <ul id="cityList1">
+            <li>东城区</li>
+            <li>西城区</li>
+            <li>朝阳区</li>
+            <li>海淀区</li>
+            <li>丰台区</li>
+        </ul>
+    </li>
+    <li><a style="color:blue;cursor:pointer;" οnclick="displayOrHide2();">广东省</a>
+        <ul id="cityList2">
+            <li>深圳市</li>
+            <li>广州市</li>
+            <li>珠海市</li>
+            <li>汕头市</li>
+            <li>佛山市</li>
+        </ul>
+    </li>
+    <li><a style="color:blue;cursor:pointer;" οnclick="displayOrHide3();">浙江省</a>
+        <ul id="cityList3">
+            <li>杭州市</li>
+            <li>宁波市</li>
+            <li>温州市</li>
+            <li>嘉兴市</li>
+            <li>嘉兴市</li>
+        </ul>
+    </li>
+    <li><a style="color:blue;cursor:pointer;" οnclick="displayOrHide4();">陕西省</a>
+        <ul id="cityList4">
+            <li>雁塔区</li>
+            <li>碑林区</li>
+            <li>临潼区</li>
+            <li>新城区</li>
+            <li>长安区</li>
+        </ul>
+    </li>
+</ul>
+</body>
+</html>
