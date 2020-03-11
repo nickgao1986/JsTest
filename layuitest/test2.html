@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="layui/css/layui.css">
+    <script src="layui/layui.js"></script>
+</head>
+<body class="layui-layout-body" style="overflow: hidden">
+<div class="layui-layout layui-layout-admin">
+    <div class="layui-header">
+        <div class="layui-logo">layui 后台布局</div>
+        <ul class="layui-nav layui-layout-left">
+            <li class="layui-nav-item"><a href="">layui文档</a></li>
+        </ul>
+        <ul class="layui-nav layui-layout-right">
+            <li class="layui-nav-item"><a href="">layui文档111</a></li>
+        </ul>
+    </div>
+
+    <div class="layui-side layui-bg-black">
+        <div class="layui-side-scroll">
+            <ul class="layui-nav layui-nav-tree"  lay-filter="test">
+                <li class="layui-nav-item"><a href="">侧边栏导航</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="layui-body" >
+        <!-- 内容主体区域 -->
+        <iframe src="https://www.baidu.com/" frameborder="0" height="100%" width="100%"></iframe>
+    </div>
+
+    <div class="layui-footer">
+        <!-- 底部固定区域 -->
+        © layui.com - 底部固定区域111
+    </div>
+</div>
+<!--<script src="../src/layer.js"></script>-->
+<script>
+    //JavaScript代码区域
+    layui.use('element', function(){
+        var element = layui.element;
+
+    });
+</script>
+</body>
+</body>
+</html>

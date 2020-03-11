@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-on="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+<div id="root">
+    <button @click="boost">触发事件</button>
+</div>
+<script>
+    var app5 = new Vue({
+        el: '#root',
+        data() {
+            return {
+                message: 'Hello Vue.js!'
+            }
+        },
+        created() {
+            this.$on(['my_events','my_events2'],this.handleEvents);
+        },
+        methods: {
+            handleEvents(e) {
+                console.log(this.message,e)
+           },
+            handleEvents2(e) {
+                console.log(this.message,e)
+            },
+            boost() {
+                this.$emit('my_events3','my param');
+            }
+        }
+    })
+</script>
+</body>
+</html>
