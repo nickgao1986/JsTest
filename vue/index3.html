@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-on="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script  src="vue.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="root">
+    <Test :msg="message"></Test>
+</div>
+<script>
+   Vue.component('Test',{
+       template:'<div>{{msg}}</div>',
+       props:{
+           msg:{
+               type:String,
+               default:'default message'
+           }
+       }
+   });
+   new Vue({
+        el: '#root',
+        data() {
+            return {
+                message:'Test Component'
+            }
+        },
+        methods: {
+        }
+    })
+</script>
+</body>
+
+</html>
