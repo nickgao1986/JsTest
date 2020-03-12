@@ -3,17 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script  src="vue.js" type="text/javascript"></script>
 </head>
 <body>
 <div id="root">
     <div>slot的基本用法</div>
     <Test>
-        <template v-slot:header="{{user}}">
-            <div>自定义header{{user.a}}</div>
-        </template>
-        <template v-slot:header="{{user}}">
-            <div>自定义body{{user.b}}</div>
+        <template v-slot:header="{user}">
+            <div>自定义111body{{user.b}}</div>
         </template>
     </Test>
 </div>
@@ -21,10 +18,10 @@
     Vue.component('Test',{
         template:
             '<div>'+
-                '<slot name="header" :user="obj" :section="\'header\'">' +
-                '<div>默认header</div>'+
-                '</slot>'+
-                '<slot :user="obj" :section="\'body\'">默认body</slot>'+
+            '<slot name="header" :user="obj" :section="\'header\'">' +
+            '<div>默认111header</div>'+
+            '</slot>'+
+            '<slot :user="obj" :section="\'body\'">默认111body</slot>'+
             '</div>',
         data() {
             return {

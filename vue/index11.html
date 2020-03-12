@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-on="http://www.w3.org/1999/xhtml" xmlns:v-slot="http://www.w3.org/1999/XSL/Transform">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script  src="vue.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="root">
+    {{data}}
+</div>
+<div id="root2">
+    {{data2}}
+</div>
+<div id="root3">
+    <button @click="change">change</button>
+</div>
+<script>
+   function registerPlugin(Vue) {
+        const vuex = {}
+        vuex._vm = new Vue({
+            data:{
+                message:"hello vue js"
+            }
+        })
+       vuex.state = vuex._vm;
+       vuex.mutations={
+           setMessage(value) {
+               vuex.state.message = value
+           }
+       }
+       function init() {
+           this.$store= vuex
+       }
+       Vue.mixin({
+           beforeCreate:init
+       })
+   }
+    Vue.use(registerPlugin)
+    new Vue({
+        el: '#root',
+        computed:{
+            data() {
+                return this.$store.state.message;
+            }
+        }
+    })
+   new Vue({
+       el: '#root2',
+       computed:{
+           data2() {
+               return this.$store.state.message;
+           }
+       }
+   })
+   new Vue({
+       el: '#root3',
+       methods:{
+           change() {
+               const newValue = this.$store.state.message+".";
+               console.log(newValue)
+               this.$store.mutations.setMessage(newValue)
+           }
+       }
+   })
+</script>
+</body>
+</html>
