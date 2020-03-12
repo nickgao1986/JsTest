@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-on="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+<div id="root">{{message}}
+    <button @click="change">Change</button>
+</div>
+<script>
+    const state = Vue.observable({message:"vue 2.6"})
+    const mutation = {
+        setMessage(value) {
+            state.message=value;
+        }
+    }
+    var app5 = new Vue({
+        el: '#root',
+        computed: {
+            message() {
+               return state.message;
+            }
+        },
+        methods: {
+            change() {
+                mutation.setMessage("Vue 3.0")
+           }
+        }
+    })
+</script>
+</body>
+</html>

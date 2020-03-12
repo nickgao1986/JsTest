@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-on="http://www.w3.org/1999/xhtml" xmlns:v-slot="http://www.w3.org/1999/XSL/Transform">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+<div id="root">
+    <div>slot的基本用法</div>
+    <Test>
+        <template v-slot:header="{{user}}">
+            <div>自定义header{{user.a}}</div>
+        </template>
+        <template v-slot:header="{{user}}">
+            <div>自定义body{{user.b}}</div>
+        </template>
+    </Test>
+</div>
+<script>
+    Vue.component('Test',{
+        template:
+            '<div>'+
+                '<slot name="header" :user="obj" :section="\'header\'">' +
+                '<div>默认header</div>'+
+                '</slot>'+
+                '<slot :user="obj" :section="\'body\'">默认body</slot>'+
+            '</div>',
+        data() {
+            return {
+                obj:{a:1,b:2}
+            }
+        }
+    });
+    new Vue({
+        el: '#root'
+    })
+</script>
+</body>
+</html>
